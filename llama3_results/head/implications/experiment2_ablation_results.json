@@ -1,0 +1,1494 @@
+{
+  "config": {
+    "ablation_configs": {
+      "baseline": [],
+      "L17H24": [
+        [
+          17,
+          24
+        ]
+      ],
+      "L20H14": [
+        [
+          20,
+          14
+        ]
+      ],
+      "L24H27": [
+        [
+          24,
+          27
+        ]
+      ],
+      "top3_copy": [
+        [
+          17,
+          24
+        ],
+        [
+          20,
+          14
+        ],
+        [
+          24,
+          27
+        ]
+      ],
+      "top5_copy": [
+        [
+          17,
+          24
+        ],
+        [
+          20,
+          14
+        ],
+        [
+          24,
+          27
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          25,
+          15
+        ]
+      ],
+      "early_L2": [
+        [
+          2,
+          21
+        ],
+        [
+          2,
+          22
+        ],
+        [
+          2,
+          23
+        ]
+      ]
+    },
+    "context_length": 2000,
+    "num_samples": 30
+  },
+  "conditions": {
+    "baseline": {
+      "heads_ablated": [],
+      "correct": 18,
+      "total": 30,
+      "accuracy": 60.0,
+      "samples": [
+        {
+          "filename": "92116_1993.txt",
+          "gt": "California",
+          "answer": "California.",
+          "correct": true
+        },
+        {
+          "filename": "103730_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware.",
+          "correct": true
+        },
+        {
+          "filename": "100240_1993.txt",
+          "gt": "Georgia",
+          "answer": "the Company and the Company and the Company and the Company and the Company and the Company and the Company",
+          "correct": false
+        },
+        {
+          "filename": "46207_1993.txt",
+          "gt": "Hawaii",
+          "answer": "the\n199\n1\n199\n1 the\n199\n1 the and the\n1 the",
+          "correct": false
+        },
+        {
+          "filename": "60041_1993.txt",
+          "gt": "Connecticut",
+          "answer": "Connecticut.",
+          "correct": true
+        },
+        {
+          "filename": "40878_1993.txt",
+          "gt": "Virginia",
+          "answer": "Virginia. (Note: The question is based on Item 1, which is a business report,",
+          "correct": true
+        },
+        {
+          "filename": "800287_1993.txt",
+          "gt": "Delaware",
+          "answer": "chemical and the\n The Company\n the Company\n The Company\n the chemical and the Company's",
+          "correct": false
+        },
+        {
+          "filename": "50178_1993.txt",
+          "gt": "Indiana",
+          "answer": "Indiana.",
+          "correct": true
+        },
+        {
+          "filename": "725625_1993.txt",
+          "gt": "Texas",
+          "answer": "Texas. (The company was incorporated in Texas in 1977 as Endevco, Inc.",
+          "correct": true
+        },
+        {
+          "filename": "66479_1993.txt",
+          "gt": "Massachusetts",
+          "answer": "Massachusetts.",
+          "correct": true
+        },
+        {
+          "filename": "700674_1993.txt",
+          "gt": "Delaware",
+          "answer": "Connecticut. (Note: The company's headquarters are located in Darien, Connecticut.) NYFS",
+          "correct": false
+        },
+        {
+          "filename": "854094_1993.txt",
+          "gt": "Indiana",
+          "answer": "Indiana.",
+          "correct": true
+        },
+        {
+          "filename": "846972_1993.txt",
+          "gt": "Delaware",
+          "answer": "New York. (IDT was incorporated in New York.) (Adience was incorporated in Delaware.)",
+          "correct": false
+        },
+        {
+          "filename": "59478_1993.txt",
+          "gt": "Indiana",
+          "answer": "Indiana.",
+          "correct": true
+        },
+        {
+          "filename": "22767_1993.txt",
+          "gt": "Texas",
+          "answer": "Texas.",
+          "correct": true
+        },
+        {
+          "filename": "7383_1993.txt",
+          "gt": "Ohio",
+          "answer": "The Company (the insurance and the Company the Company the Company the Company the insurance and the Company the",
+          "correct": false
+        },
+        {
+          "filename": "711404_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware.",
+          "correct": true
+        },
+        {
+          "filename": "75042_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware.",
+          "correct": true
+        },
+        {
+          "filename": "18497_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware.",
+          "correct": true
+        },
+        {
+          "filename": "93469_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware. (Standard Shares, Inc. was incorporated under Delaware law in 1925.)",
+          "correct": true
+        },
+        {
+          "filename": "354869_1993.txt",
+          "gt": "Ohio",
+          "answer": "Ohio.",
+          "correct": true
+        },
+        {
+          "filename": "36966_1993.txt",
+          "gt": "Tennessee",
+          "answer": "Tennessee.",
+          "correct": true
+        },
+        {
+          "filename": "799036_1993.txt",
+          "gt": "Delaware",
+          "answer": "Illinois.\n\nItem 3.\n\nQuestion: What is the name of the company's largest operating subsidiary?",
+          "correct": false
+        },
+        {
+          "filename": "846902_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware. (Note: The company was incorporated in Delaware in 1985.) 1. Delaware",
+          "correct": true
+        },
+        {
+          "filename": "717605_1993.txt",
+          "gt": "California",
+          "answer": "California\n\nNote: The company was initially incorporated in California in 1948, and later reincorpor",
+          "correct": true
+        },
+        {
+          "filename": "92487_1993.txt",
+          "gt": "Delaware",
+          "answer": "Texas\nFinal Answer: The final answer is Texas. I hope it is correct.",
+          "correct": false
+        },
+        {
+          "filename": "101320_1993.txt",
+          "gt": "New Jersey",
+          "answer": "The following table shows, by reference as Exhibit 13.\nThe following table shows, by reference as",
+          "correct": false
+        },
+        {
+          "filename": "64605_1993.txt",
+          "gt": "Delaware",
+          "answer": "_______________________\n\nSolution: Delaware. (The company, Medical Monitors, Inc., was incorporated under",
+          "correct": false
+        },
+        {
+          "filename": "17797_1993.txt",
+          "gt": "North Carolina",
+          "answer": "the\n and the\n\n and...\n\n and the\n\n and the\n and the\n and",
+          "correct": false
+        },
+        {
+          "filename": "216228_1993.txt",
+          "gt": "Delaware",
+          "answer": "Nevada\n\nNote: The company was incorporated in Maryland in 1920, but it is now incorporated",
+          "correct": false
+        }
+      ]
+    },
+    "L17H24": {
+      "heads_ablated": [
+        [
+          17,
+          24
+        ]
+      ],
+      "correct": 17,
+      "total": 30,
+      "accuracy": 56.666666666666664,
+      "samples": [
+        {
+          "filename": "92116_1993.txt",
+          "gt": "California",
+          "answer": "California.",
+          "correct": true
+        },
+        {
+          "filename": "103730_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware.",
+          "correct": true
+        },
+        {
+          "filename": "100240_1993.txt",
+          "gt": "Georgia",
+          "answer": "the Company and the Company and the Company and the Company and the Company and the Company and the Company",
+          "correct": false
+        },
+        {
+          "filename": "46207_1993.txt",
+          "gt": "Hawaii",
+          "answer": "The 1993, the 199 the 1993, the 1993, the",
+          "correct": false
+        },
+        {
+          "filename": "60041_1993.txt",
+          "gt": "Connecticut",
+          "answer": "Connecticut.",
+          "correct": true
+        },
+        {
+          "filename": "40878_1993.txt",
+          "gt": "Virginia",
+          "answer": "Virginia. (Note: The question is about the company GTE South Incorporated, not the White Rabbit",
+          "correct": true
+        },
+        {
+          "filename": "800287_1993.txt",
+          "gt": "Delaware",
+          "answer": "The Company the chemical and the Company the chemical the Company the chemical and the Company the chemical the",
+          "correct": false
+        },
+        {
+          "filename": "50178_1993.txt",
+          "gt": "Indiana",
+          "answer": "Indiana.",
+          "correct": true
+        },
+        {
+          "filename": "725625_1993.txt",
+          "gt": "Texas",
+          "answer": "Texas.",
+          "correct": true
+        },
+        {
+          "filename": "66479_1993.txt",
+          "gt": "Massachusetts",
+          "answer": "Massachusetts.",
+          "correct": true
+        },
+        {
+          "filename": "700674_1993.txt",
+          "gt": "Delaware",
+          "answer": "Connecticut. (The company's headquarters are located in Darien, Connecticut.)",
+          "correct": false
+        },
+        {
+          "filename": "854094_1993.txt",
+          "gt": "Indiana",
+          "answer": "Arizona. (The company, Central Newspapers, Inc., is incorporated in Indiana, but it has",
+          "correct": false
+        },
+        {
+          "filename": "846972_1993.txt",
+          "gt": "Delaware",
+          "answer": "Ohio\n\nQuestion: What is the name of the subsidiary of Adience?\nAnswer: Information Display Technology",
+          "correct": false
+        },
+        {
+          "filename": "59478_1993.txt",
+          "gt": "Indiana",
+          "answer": "Indiana.",
+          "correct": true
+        },
+        {
+          "filename": "22767_1993.txt",
+          "gt": "Texas",
+          "answer": "Texas.",
+          "correct": true
+        },
+        {
+          "filename": "7383_1993.txt",
+          "gt": "Ohio",
+          "answer": "The Company and the 1 the Company and the company and the Company and the company and the Company",
+          "correct": false
+        },
+        {
+          "filename": "711404_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware.",
+          "correct": true
+        },
+        {
+          "filename": "75042_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware.",
+          "correct": true
+        },
+        {
+          "filename": "18497_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware.",
+          "correct": true
+        },
+        {
+          "filename": "93469_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware. (The company, Standard Shares, Inc., was incorporated under Delaware law in 1925",
+          "correct": true
+        },
+        {
+          "filename": "354869_1993.txt",
+          "gt": "Ohio",
+          "answer": "Ohio.",
+          "correct": true
+        },
+        {
+          "filename": "36966_1993.txt",
+          "gt": "Tennessee",
+          "answer": "Tennessee.",
+          "correct": true
+        },
+        {
+          "filename": "799036_1993.txt",
+          "gt": "Delaware",
+          "answer": "Illinois.\n\nItem 3.\n\nQuestion: What is the name of the Company?\nAnswer: Pioneer Financial",
+          "correct": false
+        },
+        {
+          "filename": "846902_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware.",
+          "correct": true
+        },
+        {
+          "filename": "717605_1993.txt",
+          "gt": "California",
+          "answer": "California\n\nNote: The company, Hexcel Corporation, was initially incorporated in California in 1948",
+          "correct": true
+        },
+        {
+          "filename": "92487_1993.txt",
+          "gt": "Delaware",
+          "answer": "Texas.",
+          "correct": false
+        },
+        {
+          "filename": "101320_1993.txt",
+          "gt": "New Jersey",
+          "answer": "The following table shows, by the 1993 Annual Report to Shareholders incorporated herein by the",
+          "correct": false
+        },
+        {
+          "filename": "64605_1993.txt",
+          "gt": "Delaware",
+          "answer": "_______________________\n\nSolution: Delaware. The company, Medical Monitors, Inc., was incorporated under Delaware",
+          "correct": false
+        },
+        {
+          "filename": "17797_1993.txt",
+          "gt": "North Carolina",
+          "answer": "the Company and the Company and the Company and the current the Company and the 1 and the and",
+          "correct": false
+        },
+        {
+          "filename": "216228_1993.txt",
+          "gt": "Delaware",
+          "answer": "Nevada\n\nPlease let me know if you need any further assistance. I'm happy to help!",
+          "correct": false
+        }
+      ]
+    },
+    "L20H14": {
+      "heads_ablated": [
+        [
+          20,
+          14
+        ]
+      ],
+      "correct": 18,
+      "total": 30,
+      "accuracy": 60.0,
+      "samples": [
+        {
+          "filename": "92116_1993.txt",
+          "gt": "California",
+          "answer": "California.",
+          "correct": true
+        },
+        {
+          "filename": "103730_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware\n\nItem 3.\n\nQuestion: What is the primary material used in the manufacture of tantalum",
+          "correct": true
+        },
+        {
+          "filename": "100240_1993.txt",
+          "gt": "Georgia",
+          "answer": "the Company Company Company Company Company Company Company Company Company Company Company Company Company Company Company Company Company Company Company",
+          "correct": false
+        },
+        {
+          "filename": "46207_1993.txt",
+          "gt": "Hawaii",
+          "answer": "the 1993\n1 the\n1 the 1993, the 1993 on the",
+          "correct": false
+        },
+        {
+          "filename": "60041_1993.txt",
+          "gt": "Connecticut",
+          "answer": "Connecticut\nFinal Answer: The final answer is Connecticut. I hope it is correct.",
+          "correct": true
+        },
+        {
+          "filename": "40878_1993.txt",
+          "gt": "Virginia",
+          "answer": "Virginia\nQuestion: What was the number of access lines served by the company on January 1,",
+          "correct": true
+        },
+        {
+          "filename": "800287_1993.txt",
+          "gt": "Delaware",
+          "answer": "the chemical chemical chemical chemical chemical chemical chemical chemical chemical chemical chemical chemical chemical chemical chemical chemical chemical chemical chemical",
+          "correct": false
+        },
+        {
+          "filename": "50178_1993.txt",
+          "gt": "Indiana",
+          "answer": "Indiana.",
+          "correct": true
+        },
+        {
+          "filename": "725625_1993.txt",
+          "gt": "Texas",
+          "answer": "Texas. (Note: The company was originally incorporated in Texas in 1977 as Endevco",
+          "correct": true
+        },
+        {
+          "filename": "66479_1993.txt",
+          "gt": "Massachusetts",
+          "answer": "Massachusetts.",
+          "correct": true
+        },
+        {
+          "filename": "700674_1993.txt",
+          "gt": "Delaware",
+          "answer": "Connecticut. (Note: The headquarters of the company is located in Darien, Connecticut.) (",
+          "correct": false
+        },
+        {
+          "filename": "854094_1993.txt",
+          "gt": "Indiana",
+          "answer": "Indiana. (Source: Item 1. Business.) (Source: Item 1. Business.)",
+          "correct": true
+        },
+        {
+          "filename": "846972_1993.txt",
+          "gt": "Delaware",
+          "answer": "New York\n\nQuestion: What is the name of the subsidiary of Adience that acquired the Information Display",
+          "correct": false
+        },
+        {
+          "filename": "59478_1993.txt",
+          "gt": "Indiana",
+          "answer": "Indiana. (Source: Item 1. BUSINESS) (Context: Eli Lilly and Company was incorporated",
+          "correct": true
+        },
+        {
+          "filename": "22767_1993.txt",
+          "gt": "Texas",
+          "answer": "Texas. (Note: The company is incorporated in Texas, but it is also qualified to do business",
+          "correct": true
+        },
+        {
+          "filename": "7383_1993.txt",
+          "gt": "Ohio",
+          "answer": "The Company Company Company Company Company Company Company Company Company Company Company Company Company Company Company Company Company Company Company",
+          "correct": false
+        },
+        {
+          "filename": "711404_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware\n\nPlease let me know if you need any further assistance. I'm happy to help! Best",
+          "correct": true
+        },
+        {
+          "filename": "75042_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware\n\nFinal Answer: The final answer is Delaware. I hope it is correct.",
+          "correct": true
+        },
+        {
+          "filename": "18497_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware. (Source: Item 1. Business, General) (Context: CenCor,",
+          "correct": true
+        },
+        {
+          "filename": "93469_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware. (1925) (1989) (1993) (1992) (199",
+          "correct": true
+        },
+        {
+          "filename": "354869_1993.txt",
+          "gt": "Ohio",
+          "answer": "Ohio. (Source: Item 1, Business) (Context: \"Registrant, First Banc",
+          "correct": true
+        },
+        {
+          "filename": "36966_1993.txt",
+          "gt": "Tennessee",
+          "answer": "Tennessee.",
+          "correct": true
+        },
+        {
+          "filename": "799036_1993.txt",
+          "gt": "Delaware",
+          "answer": "Illinois. Item 3. Question: What is the name of the company? Answer: Pioneer Financial",
+          "correct": false
+        },
+        {
+          "filename": "846902_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware\nFinal Answer. See all available formats. Final Answer. See all available formats. Final Answer",
+          "correct": true
+        },
+        {
+          "filename": "717605_1993.txt",
+          "gt": "California",
+          "answer": "California\nFinal Answer: The final answer is California. I hope it is correct. Please let me",
+          "correct": true
+        },
+        {
+          "filename": "92487_1993.txt",
+          "gt": "Delaware",
+          "answer": "Texas\nFinal Answer: The final answer is Texas. I hope it is correct.",
+          "correct": false
+        },
+        {
+          "filename": "101320_1993.txt",
+          "gt": "New Jersey",
+          "answer": "The following table shows, by reference to state name: The following table shows, by reference to state",
+          "correct": false
+        },
+        {
+          "filename": "64605_1993.txt",
+          "gt": "Delaware",
+          "answer": "______________________ ______________________ ______________________ ______________________ ______________________ ______________________ ______________________ ______________________ ______________________ ______________________",
+          "correct": false
+        },
+        {
+          "filename": "17797_1993.txt",
+          "gt": "North Carolina",
+          "answer": "the Company and the 1 and and and the\n the C and and and and and and and",
+          "correct": false
+        },
+        {
+          "filename": "216228_1993.txt",
+          "gt": "Delaware",
+          "answer": "Nevada\n\nQuestion: What is the name of the company's subsidiary that operates hotels?\nAnswer: IT",
+          "correct": false
+        }
+      ]
+    },
+    "L24H27": {
+      "heads_ablated": [
+        [
+          24,
+          27
+        ]
+      ],
+      "correct": 18,
+      "total": 30,
+      "accuracy": 60.0,
+      "samples": [
+        {
+          "filename": "92116_1993.txt",
+          "gt": "California",
+          "answer": "California.  Jul 2019\n(0 votes)\n Tags general: 1\nSource:",
+          "correct": true
+        },
+        {
+          "filename": "103730_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware.",
+          "correct": true
+        },
+        {
+          "filename": "100240_1993.txt",
+          "gt": "Georgia",
+          "answer": "the Company and the Company and the Company and the Company and the Company and the Company and the Company",
+          "correct": false
+        },
+        {
+          "filename": "46207_1993.txt",
+          "gt": "Hawaii",
+          "answer": "the 10 24 24 1 the 24 1 the 24 24",
+          "correct": false
+        },
+        {
+          "filename": "60041_1993.txt",
+          "gt": "Connecticut",
+          "answer": "Connecticut\n#### More Less\n#### Related: Business, Industry, Company, Delaware, Connecticut, Puerto",
+          "correct": true
+        },
+        {
+          "filename": "40878_1993.txt",
+          "gt": "Virginia",
+          "answer": "Virginia. 2. What was the company's principal line of business? Answer with a sentence:",
+          "correct": true
+        },
+        {
+          "filename": "800287_1993.txt",
+          "gt": "Delaware",
+          "answer": "the\n and the\n and\n the\n the Company\n and the\n and\n the\n on",
+          "correct": false
+        },
+        {
+          "filename": "50178_1993.txt",
+          "gt": "Indiana",
+          "answer": "Indiana.",
+          "correct": true
+        },
+        {
+          "filename": "725625_1993.txt",
+          "gt": "Texas",
+          "answer": "Texas. (The company was incorporated in 1977 as Endevco, Inc. and was",
+          "correct": true
+        },
+        {
+          "filename": "66479_1993.txt",
+          "gt": "Massachusetts",
+          "answer": "Massachusetts. (Source: Item 1. Business. The Company Millipore Corporation was incorporated under",
+          "correct": true
+        },
+        {
+          "filename": "700674_1993.txt",
+          "gt": "Delaware",
+          "answer": "Connecticut\nNYFS03...:\\16\\12316\\0001\\7120\\FRM328",
+          "correct": false
+        },
+        {
+          "filename": "854094_1993.txt",
+          "gt": "Indiana",
+          "answer": "Indiana. (Source: Item 1. Business.)  Jul 2019\n#### More from",
+          "correct": true
+        },
+        {
+          "filename": "846972_1993.txt",
+          "gt": "Delaware",
+          "answer": "Ohio\n\nItem 3.\n\nQuestion: What is the name of the company's subsidiary that manufactures and",
+          "correct": false
+        },
+        {
+          "filename": "59478_1993.txt",
+          "gt": "Indiana",
+          "answer": "Indiana.",
+          "correct": true
+        },
+        {
+          "filename": "22767_1993.txt",
+          "gt": "Texas",
+          "answer": "Texas. (Source: Item 1. BUSINESS. General Development of Business)  Jul 201",
+          "correct": true
+        },
+        {
+          "filename": "7383_1993.txt",
+          "gt": "Ohio",
+          "answer": "The ( the and the business and the company and the company and the company and the and the company",
+          "correct": false
+        },
+        {
+          "filename": "711404_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware. (Source: Item 1, \"Business\" section, \"The Cooper Companies, Inc",
+          "correct": true
+        },
+        {
+          "filename": "75042_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware. (Source: Text, Item 1(a) - General Development of Business)  Jul",
+          "correct": true
+        },
+        {
+          "filename": "18497_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware. (Source: \"ITEM 1. BUSINESS\" paragraph 1)  Jul 201",
+          "correct": true
+        },
+        {
+          "filename": "93469_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware. (Source: Item 1(a) of the text). 2020-02-",
+          "correct": true
+        },
+        {
+          "filename": "354869_1993.txt",
+          "gt": "Ohio",
+          "answer": "Ohio. (Source: The text states, \"Registrant, First Bancorporation of Ohio (\"",
+          "correct": true
+        },
+        {
+          "filename": "36966_1993.txt",
+          "gt": "Tennessee",
+          "answer": "Tennessee.",
+          "correct": true
+        },
+        {
+          "filename": "799036_1993.txt",
+          "gt": "Delaware",
+          "answer": "Illinois. (Source: 1957.) The Company was incorporated in 1957. (Source",
+          "correct": false
+        },
+        {
+          "filename": "846902_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware. (Note: The answer is based on the text provided, which mentions that the company was",
+          "correct": true
+        },
+        {
+          "filename": "717605_1993.txt",
+          "gt": "California",
+          "answer": "California\n(Answer is based on the text: \"Hexcel Corporation (herein referred to as",
+          "correct": true
+        },
+        {
+          "filename": "92487_1993.txt",
+          "gt": "Delaware",
+          "answer": "Texas\n#### More Less\n#### Related: Business, Energy, Finance, Law, Utilities\n\n####",
+          "correct": false
+        },
+        {
+          "filename": "101320_1993.txt",
+          "gt": "New Jersey",
+          "answer": "The following table shows, the 1993.\nThe following table shows, the 1993.",
+          "correct": false
+        },
+        {
+          "filename": "64605_1993.txt",
+          "gt": "Delaware",
+          "answer": "_______________________\n\nNote: The text provided is not related to the company's incorporation. It is a",
+          "correct": false
+        },
+        {
+          "filename": "17797_1993.txt",
+          "gt": "North Carolina",
+          "answer": "the and the 1 3 and the and the and the and the and the and the and",
+          "correct": false
+        },
+        {
+          "filename": "216228_1993.txt",
+          "gt": "Delaware",
+          "answer": "Nevada. (Source: The text states: \"Until December 31, 1983, the",
+          "correct": false
+        }
+      ]
+    },
+    "top3_copy": {
+      "heads_ablated": [
+        [
+          17,
+          24
+        ],
+        [
+          20,
+          14
+        ],
+        [
+          24,
+          27
+        ]
+      ],
+      "correct": 17,
+      "total": 30,
+      "accuracy": 56.666666666666664,
+      "samples": [
+        {
+          "filename": "92116_1993.txt",
+          "gt": "California",
+          "answer": "California\n\n\u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022",
+          "correct": true
+        },
+        {
+          "filename": "103730_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware. View View View View View View View View View View View View View View View View View View",
+          "correct": true
+        },
+        {
+          "filename": "100240_1993.txt",
+          "gt": "Georgia",
+          "answer": "the Company Company Company Company Company Company Company Company Company Company Company Company Company Company Company Company Company Company Company",
+          "correct": false
+        },
+        {
+          "filename": "46207_1993.txt",
+          "gt": "Hawaii",
+          "answer": "The 1993- the 1993 1993 1993 1993 199",
+          "correct": false
+        },
+        {
+          "filename": "60041_1993.txt",
+          "gt": "Connecticut",
+          "answer": "Connecticut\n\n\u2022 Category: Business\n\u2022 Difficulty: Easy\n\u2022 Type: Fact\n\u2022 Difficulty Difficulty",
+          "correct": true
+        },
+        {
+          "filename": "40878_1993.txt",
+          "gt": "Virginia",
+          "answer": "Virginia\nQuestion: What is the primary line of business of the company? Provide the answer with just",
+          "correct": true
+        },
+        {
+          "filename": "800287_1993.txt",
+          "gt": "Delaware",
+          "answer": "the  the  the  the  the  the  the  the  the  the",
+          "correct": false
+        },
+        {
+          "filename": "50178_1993.txt",
+          "gt": "Indiana",
+          "answer": "Indiana\n\nCorrected Answer: Indiana\n\nNote: The company is incorporated under the laws of the State",
+          "correct": true
+        },
+        {
+          "filename": "725625_1993.txt",
+          "gt": "Texas",
+          "answer": "Texas. (Answer: Delaware, not Texas, where they have offices). (Source: \"Re",
+          "correct": true
+        },
+        {
+          "filename": "66479_1993.txt",
+          "gt": "Massachusetts",
+          "answer": "Massachusetts\nLast Edit: 2011/9/16/5/1/1/1",
+          "correct": true
+        },
+        {
+          "filename": "700674_1993.txt",
+          "gt": "Delaware",
+          "answer": "Connecticut\nLast Edit Code Code: [Posted: Read the More [ [ Get this more this more",
+          "correct": false
+        },
+        {
+          "filename": "854094_1993.txt",
+          "gt": "Indiana",
+          "answer": "Arizona. View View View View View View View View View View View View View View View View View View",
+          "correct": false
+        },
+        {
+          "filename": "846972_1993.txt",
+          "gt": "Delaware",
+          "answer": "Ohio\n\nQuestion: What is the name of the company's subsidiary that produces specialty refractory products and",
+          "correct": false
+        },
+        {
+          "filename": "59478_1993.txt",
+          "gt": "Indiana",
+          "answer": "Indiana. View View View View View View View View View View View View View View View View View View",
+          "correct": true
+        },
+        {
+          "filename": "22767_1993.txt",
+          "gt": "Texas",
+          "answer": "Texas. View View View View View View View View View View View View View View View View View View",
+          "correct": true
+        },
+        {
+          "filename": "7383_1993.txt",
+          "gt": "Ohio",
+          "answer": "The The The The The The The Business and the the company company company company company company company company company",
+          "correct": false
+        },
+        {
+          "filename": "711404_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware\n\nJBJJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJ",
+          "correct": true
+        },
+        {
+          "filename": "75042_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware. View View View View View View View View View View View View View View View View View View",
+          "correct": true
+        },
+        {
+          "filename": "18497_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware. View View View View View View View View View View View View View View View View View View",
+          "correct": true
+        },
+        {
+          "filename": "93469_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware. View View View View View View View View View View View View View View View View View View",
+          "correct": true
+        },
+        {
+          "filename": "354869_1993.txt",
+          "gt": "Ohio",
+          "answer": "Ohio\n\nAnswer: Ohio\n\nAnswer: Ohio\n\nAnswer: Ohio\n\nAnswer: Ohio\n\nAnswer:",
+          "correct": true
+        },
+        {
+          "filename": "36966_1993.txt",
+          "gt": "Tennessee",
+          "answer": "Tennessee. View View View View View View View View View View View View View View View View View View",
+          "correct": true
+        },
+        {
+          "filename": "799036_1993.txt",
+          "gt": "Delaware",
+          "answer": "Illinois. The Company was incorporated in 1982. The Company's insurance subsidiaries are licensed in",
+          "correct": false
+        },
+        {
+          "filename": "846902_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware\nLast Edit: 2011/7/20/5/1/1/1",
+          "correct": true
+        },
+        {
+          "filename": "717605_1993.txt",
+          "gt": "California",
+          "answer": "California\n\nI hope this answer is correct. Please let me know if I have any mistakes. Thank",
+          "correct": true
+        },
+        {
+          "filename": "92487_1993.txt",
+          "gt": "Delaware",
+          "answer": "Texas\nCorrected: Delaware\nCorrected: (Source: \"See ITEM 1. BUSINESS",
+          "correct": false
+        },
+        {
+          "filename": "101320_1993.txt",
+          "gt": "New Jersey",
+          "answer": "The Following The Following The Following The Following The Following The Following The Following The Following The Following The Following",
+          "correct": false
+        },
+        {
+          "filename": "64605_1993.txt",
+          "gt": "Delaware",
+          "answer": "______________________\n\nNote: The company is Medical Monitors, Inc. (Registrant). The text",
+          "correct": false
+        },
+        {
+          "filename": "17797_1993.txt",
+          "gt": "North Carolina",
+          "answer": "Fayette Fayette Fayette Fayette Fayette Fayette Fayette Fayette Fayette Fayette Fayette Fayette Fayette Fayette Fayette Fayette Fayette Fayette Fayette Fayette",
+          "correct": false
+        },
+        {
+          "filename": "216228_1993.txt",
+          "gt": "Delaware",
+          "answer": "Nevada\n\nNote: The company is ITT Corporation, and it is incorporated in Delaware, not Nevada",
+          "correct": false
+        }
+      ]
+    },
+    "top5_copy": {
+      "heads_ablated": [
+        [
+          17,
+          24
+        ],
+        [
+          20,
+          14
+        ],
+        [
+          24,
+          27
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          25,
+          15
+        ]
+      ],
+      "correct": 17,
+      "total": 30,
+      "accuracy": 56.666666666666664,
+      "samples": [
+        {
+          "filename": "92116_1993.txt",
+          "gt": "California",
+          "answer": "California 2 2 1 2 4 2 5 2 4",
+          "correct": true
+        },
+        {
+          "filename": "103730_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware. 1 2 3 4 5 6 7 8 9",
+          "correct": true
+        },
+        {
+          "filename": "100240_1993.txt",
+          "gt": "Georgia",
+          "answer": "the the the the the the the the the the the the the the the the the the the the",
+          "correct": false
+        },
+        {
+          "filename": "46207_1993.txt",
+          "gt": "Hawaii",
+          "answer": "the 1993. The 1993. The 1993. The 1993.",
+          "correct": false
+        },
+        {
+          "filename": "60041_1993.txt",
+          "gt": "Connecticut",
+          "answer": "Connecticut\nCorrect Correct Correct Correct Correct Correct Correct Correct Correct Correct Correct Correct Correct Correct Correct Correct Correct Correct",
+          "correct": true
+        },
+        {
+          "filename": "40878_1993.txt",
+          "gt": "Virginia",
+          "answer": "Virginia\nJMJMJMJMJMJMJMJMJMJMJMJMJMJMJMJMJMJ",
+          "correct": true
+        },
+        {
+          "filename": "800287_1993.txt",
+          "gt": "Delaware",
+          "answer": "the the the the the the the the the the the the the the the the the the the the",
+          "correct": false
+        },
+        {
+          "filename": "50178_1993.txt",
+          "gt": "Indiana",
+          "answer": "Indiana  \n  |\n  |  |  |  |  |  |  |  |",
+          "correct": true
+        },
+        {
+          "filename": "725625_1993.txt",
+          "gt": "Texas",
+          "answer": "Texas\nCorrect answer: Texas\nIncorrect Incorrect Incorrect Incorrect Incorrect Incorrect Incorrect Incorrect Incorrect Incorrect Incorrect Incorrect Incorrect",
+          "correct": true
+        },
+        {
+          "filename": "66479_1993.txt",
+          "gt": "Massachusetts",
+          "answer": "Massachusetts\nLast Last Last Last Last Last Last Last Last Last Last Last Last Last Last Last Last Last",
+          "correct": true
+        },
+        {
+          "filename": "700674_1993.txt",
+          "gt": "Delaware",
+          "answer": "Connecticut\n####...................................................",
+          "correct": false
+        },
+        {
+          "filename": "854094_1993.txt",
+          "gt": "Indiana",
+          "answer": "Arizona Indiana\nCorrect answer: Indiana (as it is an Indiana corporation organized in 1934).",
+          "correct": false
+        },
+        {
+          "filename": "846972_1993.txt",
+          "gt": "Delaware",
+          "answer": "Ohio. 1 | | | | | | | | | | | | | | | |",
+          "correct": false
+        },
+        {
+          "filename": "59478_1993.txt",
+          "gt": "Indiana",
+          "answer": "Indiana. 2003 2004 2005 2006 2007 2008",
+          "correct": true
+        },
+        {
+          "filename": "22767_1993.txt",
+          "gt": "Texas",
+          "answer": "Texas  Answer 1 2015 2014 2013 2014 2014",
+          "correct": true
+        },
+        {
+          "filename": "7383_1993.txt",
+          "gt": "Ohio",
+          "answer": "the the and the and the and the and the and the the the the the the and the and",
+          "correct": false
+        },
+        {
+          "filename": "711404_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware. (1) ( ) ( ) ( ) ( ) ( ) ( ) ( ) (",
+          "correct": true
+        },
+        {
+          "filename": "75042_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware. 1 | | | | | | | | | | | | | | | |",
+          "correct": true
+        },
+        {
+          "filename": "18497_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware. 1 2 3 4 5 6 7 8 9",
+          "correct": true
+        },
+        {
+          "filename": "93469_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware. (1) 2015 2014 2013 2004 2003",
+          "correct": true
+        },
+        {
+          "filename": "354869_1993.txt",
+          "gt": "Ohio",
+          "answer": "Ohio. (1) 1981 1956 1993 1994 1993",
+          "correct": true
+        },
+        {
+          "filename": "36966_1993.txt",
+          "gt": "Tennessee",
+          "answer": "Tennessee. 1 2 3 4 5 6 7 8 9",
+          "correct": true
+        },
+        {
+          "filename": "799036_1993.txt",
+          "gt": "Delaware",
+          "answer": "Illinois. The company is an Illinois. The company is an Illinois. The company is an Illinois.",
+          "correct": false
+        },
+        {
+          "filename": "846902_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware\n0 0 0 0 0 0 0 0 0",
+          "correct": true
+        },
+        {
+          "filename": "717605_1993.txt",
+          "gt": "California",
+          "answer": "California\n2 2 2 2 2 2 2 2 2",
+          "correct": true
+        },
+        {
+          "filename": "92487_1993.txt",
+          "gt": "Delaware",
+          "answer": "Texas  Answer 1 1 1 1 1 1 1 1",
+          "correct": false
+        },
+        {
+          "filename": "101320_1993.txt",
+          "gt": "New Jersey",
+          "answer": "The Following The Following The Following The Following The Following The Following The Following The Following The Following The Following",
+          "correct": false
+        },
+        {
+          "filename": "64605_1993.txt",
+          "gt": "Delaware",
+          "answer": "___________________ ___________________ ___________________ ___________________ ___________________ ___________________ ___________________ ___________________ ___________________ ___________________",
+          "correct": false
+        },
+        {
+          "filename": "17797_1993.txt",
+          "gt": "North Carolina",
+          "answer": "Fayette Fayette Fayette Fayette Fayette Fayette Fayette Fayette Fayette Fayette Fayette Fayette Fayette Fayette Fayette Fayette Fayette Fayette Fayette Fayette",
+          "correct": false
+        },
+        {
+          "filename": "216228_1993.txt",
+          "gt": "Delaware",
+          "answer": "Nevada. 2 2 2 2 2 2 2 2 2",
+          "correct": false
+        }
+      ]
+    },
+    "early_L2": {
+      "heads_ablated": [
+        [
+          2,
+          21
+        ],
+        [
+          2,
+          22
+        ],
+        [
+          2,
+          23
+        ]
+      ],
+      "correct": 8,
+      "total": 30,
+      "accuracy": 26.666666666666668,
+      "samples": [
+        {
+          "filename": "92116_1993.txt",
+          "gt": "California",
+          "answer": "California\n\nItem  3\n\nQuestion: What is the Registrant's name?\nAnswer: Registr",
+          "correct": true
+        },
+        {
+          "filename": "103730_1993.txt",
+          "gt": "Delaware",
+          "answer": "California.\n\nItem  3.\n\nItem  4.\n\nItem  5.\n\nItem",
+          "correct": false
+        },
+        {
+          "filename": "100240_1993.txt",
+          "gt": "Georgia",
+          "answer": "the  the.\nThe Company and the.\n The Company and the.\nthe. The Company and the",
+          "correct": false
+        },
+        {
+          "filename": "46207_1993.txt",
+          "gt": "Hawaii",
+          "answer": "the  the the  the  the  the  the  the  the  the  the",
+          "correct": false
+        },
+        {
+          "filename": "60041_1993.txt",
+          "gt": "Connecticut",
+          "answer": "California.\n\nITEM 3.\n\nQuestion: What is the Company's business?\nAnswer: The Company's",
+          "correct": false
+        },
+        {
+          "filename": "40878_1993.txt",
+          "gt": "Virginia",
+          "answer": "California\n\nQuestion: What is the name of the company?\nAnswer: The name of the company is",
+          "correct": false
+        },
+        {
+          "filename": "800287_1993.txt",
+          "gt": "Delaware",
+          "answer": "the the the the the the the the the the the the the the the the the the the on",
+          "correct": false
+        },
+        {
+          "filename": "50178_1993.txt",
+          "gt": "Indiana",
+          "answer": "Illinois.\n\nITEM  3.\n\nQuestion: What is the name of the company that is the company",
+          "correct": false
+        },
+        {
+          "filename": "725625_1993.txt",
+          "gt": "Texas",
+          "answer": "Texas.\n\nITEM 3.\n\nQuestion: What is the Company's current capital structure?\nAnswer: The",
+          "correct": true
+        },
+        {
+          "filename": "66479_1993.txt",
+          "gt": "Massachusetts",
+          "answer": "California.\n\nQuestion: What is the name of the company's Chief Financial Officer?\nAnswer: Mr.",
+          "correct": false
+        },
+        {
+          "filename": "700674_1993.txt",
+          "gt": "Delaware",
+          "answer": "California.\n\nItem  3.\n\nItem  4.\n\nItem  5.\n\nItem",
+          "correct": false
+        },
+        {
+          "filename": "854094_1993.txt",
+          "gt": "Indiana",
+          "answer": "Indiana.\n\nItem  3.\n\nItem  4.\n\nItem  5.\n\nItem",
+          "correct": true
+        },
+        {
+          "filename": "846972_1993.txt",
+          "gt": "Delaware",
+          "answer": "California.\n\nItem  3.\n\nItem  4.\n\nItem  5.\n\nItem",
+          "correct": false
+        },
+        {
+          "filename": "59478_1993.txt",
+          "gt": "Indiana",
+          "answer": "California.\n\nItem  3: What is the name of the company that is the company that is",
+          "correct": false
+        },
+        {
+          "filename": "22767_1993.txt",
+          "gt": "Texas",
+          "answer": "Texas.\n\nQuestion: What is the name of the company's subsidiary?\nAnswer: Texas-New Mexico Power",
+          "correct": true
+        },
+        {
+          "filename": "7383_1993.txt",
+          "gt": "Ohio",
+          "answer": "the. The. The. The. the. The. The. The. The. The.",
+          "correct": false
+        },
+        {
+          "filename": "711404_1993.txt",
+          "gt": "Delaware",
+          "answer": "HGA.\nHGA.\nHGA.\nHGA.\nHGA.\nHGA.\nHGA",
+          "correct": false
+        },
+        {
+          "filename": "75042_1993.txt",
+          "gt": "Delaware",
+          "answer": "California.\n\nITEM 3.\n\nQuestion: What is the Company's primary business?\nAnswer: The Company",
+          "correct": false
+        },
+        {
+          "filename": "18497_1993.txt",
+          "gt": "Delaware",
+          "answer": "California.\n\nITEM 3.\n\nQuestion: What is the name of the company?\nAnswer: Century.",
+          "correct": false
+        },
+        {
+          "filename": "93469_1993.txt",
+          "gt": "Delaware",
+          "answer": "California.\n\nItem  3.\n\nItem  4.\n\nItem  5.\n\nItem",
+          "correct": false
+        },
+        {
+          "filename": "354869_1993.txt",
+          "gt": "Ohio",
+          "answer": "Ohio.\n\nITEM 3.\n\nQuestion: What is the name of the company's subsidiary?\nAnswer:",
+          "correct": true
+        },
+        {
+          "filename": "36966_1993.txt",
+          "gt": "Tennessee",
+          "answer": "Tennessee\n\nQuestion: What is the name of the company?\nAnswer: Tennessee National Corporation\n\nQuestion:",
+          "correct": true
+        },
+        {
+          "filename": "799036_1993.txt",
+          "gt": "Delaware",
+          "answer": "Mr. Nauert has been a Director of the Company since 1988. Mr. N",
+          "correct": false
+        },
+        {
+          "filename": "846902_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware. (Note: The company was incorporated in Delaware, USA.) (Note: The company was",
+          "correct": true
+        },
+        {
+          "filename": "717605_1993.txt",
+          "gt": "California",
+          "answer": "California.\n\nITEM 3.\n\nQuestion: What is the name of the company's company?\nAnswer:",
+          "correct": true
+        },
+        {
+          "filename": "92487_1993.txt",
+          "gt": "Delaware",
+          "answer": "California.\n\nQuestion: What is the name of the company that is the name of the company that is",
+          "correct": false
+        },
+        {
+          "filename": "101320_1993.txt",
+          "gt": "New Jersey",
+          "answer": "The  and the 1, the  and the  the  the  and the  and",
+          "correct": false
+        },
+        {
+          "filename": "64605_1993.txt",
+          "gt": "Delaware",
+          "answer": "California\n\nItem  2: What is the name of the company?\nAnswer: California\n\nItem",
+          "correct": false
+        },
+        {
+          "filename": "17797_1993.txt",
+          "gt": "North Carolina",
+          "answer": "the 1 the 1 the 1. The 1 the 1 the 1 the",
+          "correct": false
+        },
+        {
+          "filename": "216228_1993.txt",
+          "gt": "Delaware",
+          "answer": "California.\n\nQuestion: What is the name of the company that is the company that is the company that",
+          "correct": false
+        }
+      ]
+    }
+  },
+  "summary": [
+    {
+      "config": "baseline",
+      "accuracy": 60.0,
+      "drop": 0.0
+    },
+    {
+      "config": "L17H24",
+      "accuracy": 56.666666666666664,
+      "drop": 3.3333333333333357
+    },
+    {
+      "config": "L20H14",
+      "accuracy": 60.0,
+      "drop": 0.0
+    },
+    {
+      "config": "L24H27",
+      "accuracy": 60.0,
+      "drop": 0.0
+    },
+    {
+      "config": "top3_copy",
+      "accuracy": 56.666666666666664,
+      "drop": 3.3333333333333357
+    },
+    {
+      "config": "top5_copy",
+      "accuracy": 56.666666666666664,
+      "drop": 3.3333333333333357
+    },
+    {
+      "config": "early_L2",
+      "accuracy": 26.666666666666668,
+      "drop": 33.33333333333333
+    }
+  ]
+}

@@ -1,0 +1,853 @@
+{
+  "context_length": 8000,
+  "num_samples": 30,
+  "heads_used": [
+    [
+      17,
+      24,
+      0.7144
+    ],
+    [
+      16,
+      1,
+      0.7132
+    ],
+    [
+      18,
+      16,
+      0.6433
+    ],
+    [
+      17,
+      25,
+      0.5909
+    ],
+    [
+      20,
+      1,
+      0.5871
+    ],
+    [
+      18,
+      20,
+      0.5843
+    ],
+    [
+      20,
+      14,
+      0.5831
+    ],
+    [
+      17,
+      26,
+      0.5765
+    ],
+    [
+      27,
+      6,
+      0.547
+    ],
+    [
+      18,
+      22,
+      0.539
+    ]
+  ],
+  "conditions": {
+    "baseline_unshuffled_8k": {
+      "condition": "unshuffled",
+      "heads_boosted": 0,
+      "accuracy": 66.66666666666666,
+      "correct": 20,
+      "total": 30,
+      "samples": [
+        {
+          "gt": "California",
+          "answer": "California\n\nItem 1. Business\nGeneral\nSouthern California Water Company (the \"Registrant\")",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Delaware\n\nQuestion: What is the main material used in the manufacture of tantalum capacitor products?\nAnswer",
+          "correct": true
+        },
+        {
+          "gt": "Georgia",
+          "answer": "the Company and the Company and the Company and the Company and the Company and the Company and the Company",
+          "correct": false
+        },
+        {
+          "gt": "Hawaii",
+          "answer": "the\n199\n1\n199\n1 the\n199\n1 the and the\n1 the",
+          "correct": false
+        },
+        {
+          "gt": "Connecticut",
+          "answer": "Connecticut.",
+          "correct": true
+        },
+        {
+          "gt": "Virginia",
+          "answer": "Virginia.",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "chemical and the\n The Company\n the Company\n The Company\n the chemical and the Company's",
+          "correct": false
+        },
+        {
+          "gt": "Indiana",
+          "answer": "Indiana.",
+          "correct": true
+        },
+        {
+          "gt": "Texas",
+          "answer": "Texas\n\nQuestion: What is the name of the company?\nAnswer: Cornerstone Natural Gas, Inc",
+          "correct": true
+        },
+        {
+          "gt": "Massachusetts",
+          "answer": "Massachusetts. Item 1. Business. The Company Millipore Corporation was incorporated under the laws of",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "California\n\nItem 3. Business Operations\n\nItem 4. Financial Information\n\nItem 5.",
+          "correct": false
+        },
+        {
+          "gt": "Indiana",
+          "answer": "Arizona.",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Delaware\n\nQuestion: What is the name of the subsidiary of Adience that was acquired in 199",
+          "correct": true
+        },
+        {
+          "gt": "Indiana",
+          "answer": "Indiana.",
+          "correct": true
+        },
+        {
+          "gt": "Texas",
+          "answer": "Texas\n\nQuestion: What is the name of the company?\nAnswer: Texas-New Mexico Power Company",
+          "correct": true
+        },
+        {
+          "gt": "Ohio",
+          "answer": "The Company (the insurance and the Company the Company the Company the Company the insurance and the Company the",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Delaware.",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Delaware.",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Delaware.",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Delaware.",
+          "correct": true
+        },
+        {
+          "gt": "Ohio",
+          "answer": "Ohio\n\nITEM 3. BUSINESS\nRegistrant, First Bancorporation of Ohio (\"Banc",
+          "correct": true
+        },
+        {
+          "gt": "Tennessee",
+          "answer": "Tennessee\n\nQuestion: What is the name of the bank holding company's principal subsidiary?\nAnswer: First",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Illinois.\n\nItem 3.\n\nQuestion: What is the name of the company's largest operating subsidiary?",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Delaware.",
+          "correct": true
+        },
+        {
+          "gt": "California",
+          "answer": "California\n\nQuestion: What is the restructuring program of this company?\nAnswer: Restructuring and Bank",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Texas\n\nQuestion: What is the name of the holding company under which this company is a subsidiary?",
+          "correct": false
+        },
+        {
+          "gt": "New Jersey",
+          "answer": "The following table shows, by reference as Exhibit 13.\nThe following table shows, by reference as",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Delaware.",
+          "correct": true
+        },
+        {
+          "gt": "North Carolina",
+          "answer": "the\n and the\n\n and...\n\n and the\n\n and the\n and the\n and",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Delaware\n\nQuestion: What is the name of the company?\nAnswer: ITT Corporation\n\nQuestion:",
+          "correct": true
+        }
+      ]
+    },
+    "baseline_shuffled_8k": {
+      "condition": "shuffled",
+      "heads_boosted": 0,
+      "accuracy": 40.0,
+      "correct": 12,
+      "total": 30,
+      "samples": [
+        {
+          "gt": "California",
+          "answer": "California.",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Pennsylvania\n\nQuestion: What is the name of the company?\nAnswer: Vishay Intertechnology",
+          "correct": false
+        },
+        {
+          "gt": "Georgia",
+          "answer": "the and the and the and the and the and the and the and the and the and the and",
+          "correct": false
+        },
+        {
+          "gt": "Hawaii",
+          "answer": "1992 1992 the 1991, 1992 1991, 199",
+          "correct": false
+        },
+        {
+          "gt": "Connecticut",
+          "answer": "Ohio.",
+          "correct": false
+        },
+        {
+          "gt": "Virginia",
+          "answer": "Virginia.",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "the following the 1 the 1 the 1 the following the 1 the 197 the",
+          "correct": false
+        },
+        {
+          "gt": "Indiana",
+          "answer": "Indiana.",
+          "correct": true
+        },
+        {
+          "gt": "Texas",
+          "answer": "Texas.",
+          "correct": true
+        },
+        {
+          "gt": "Massachusetts",
+          "answer": "Massachusetts\nFinal Answer: The final answer is Massachusetts. I hope it is correct.",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "California.",
+          "correct": false
+        },
+        {
+          "gt": "Indiana",
+          "answer": "Arizona.",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Ohio\nQuestion: What is the name of the company?\nAnswer: IDT Corporation\nQuestion:",
+          "correct": false
+        },
+        {
+          "gt": "Indiana",
+          "answer": "Indiana\n\nQuestion: What is the name of the company?\nAnswer: Eli Lilly and Company\n\nQuestion",
+          "correct": true
+        },
+        {
+          "gt": "Texas",
+          "answer": "Texas\n\nQuestion: What is the name of the company?\nAnswer: Utility Power Company\n\nQuestion:",
+          "correct": true
+        },
+        {
+          "gt": "Ohio",
+          "answer": "the steel the following the steel the steel the steel the steel the steel the steel the steel the steel",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "California\n\nQuestion: What is the name of the company?\nAnswer: CooperSurgical, Inc.",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Delaware.",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Florida.",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Florida.",
+          "correct": false
+        },
+        {
+          "gt": "Ohio",
+          "answer": "Ohio.",
+          "correct": true
+        },
+        {
+          "gt": "Tennessee",
+          "answer": "Tennessee.",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Illinois. (Note: The company is not incorporated in Illinois, but rather in Delaware.) 198",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Delaware.",
+          "correct": true
+        },
+        {
+          "gt": "California",
+          "answer": "California\n\nQuestion: What is the name of the company?\nAnswer: Hexcel Corporation\n\nQuestion:",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Texas.",
+          "correct": false
+        },
+        {
+          "gt": "New Jersey",
+          "answer": "in the following. of the following. of the following. of the following. of the following.",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "California\n\nQuestion: What is the name of the company?\nAnswer: AES Corporation\n\nQuestion: What",
+          "correct": false
+        },
+        {
+          "gt": "North Carolina",
+          "answer": "the 1 the 1 the 1 the 1 the 1 the 1 the",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "California\n\nNote: The company mentioned is ITT (International Telephone and Telegraph Corporation).  ITT",
+          "correct": false
+        }
+      ]
+    },
+    "top5_exact_boost": {
+      "condition": "shuffled",
+      "heads_boosted": 5,
+      "accuracy": 26.666666666666668,
+      "correct": 8,
+      "total": 30,
+      "samples": [
+        {
+          "gt": "California",
+          "answer": "California...................",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "California\n1. 2. 3. 4. 5. 6.",
+          "correct": false
+        },
+        {
+          "gt": "Georgia",
+          "answer": "the the the the the the the the the the the the the the the the the the the the",
+          "correct": false
+        },
+        {
+          "gt": "Hawaii",
+          "answer": "the the the the the the the the the the the the the the the the the the the the",
+          "correct": false
+        },
+        {
+          "gt": "Connecticut",
+          "answer": "California\n\nPlease let let let let let let let let let let let let let let let let let",
+          "correct": false
+        },
+        {
+          "gt": "Virginia",
+          "answer": "Virginia\n= = = = = = = = = = = = = = = = = =",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "the the the the the the the the the the the the the the the the the the the the",
+          "correct": false
+        },
+        {
+          "gt": "Indiana",
+          "answer": "Illinois\nAnswer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer",
+          "correct": false
+        },
+        {
+          "gt": "Texas",
+          "answer": "Texas\nAnswer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer",
+          "correct": true
+        },
+        {
+          "gt": "Massachusetts",
+          "answer": "California\nor or or or or or or or or or or or or or or or or or",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "California...................",
+          "correct": false
+        },
+        {
+          "gt": "Indiana",
+          "answer": "Arizona\n\nPlease confirm if the answer is correct. If not, please provide the correct answer. Please",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Ohio\n= = = = = = = = = = = = = = = = = =",
+          "correct": false
+        },
+        {
+          "gt": "Indiana",
+          "answer": "California\n\nPlease let let let let let let let let let let let let let let let let let",
+          "correct": false
+        },
+        {
+          "gt": "Texas",
+          "answer": "Texas\n\nPlease let let let let let let let let let let let let let let let let let",
+          "correct": true
+        },
+        {
+          "gt": "Ohio",
+          "answer": "the the the the the the the the the the the the the the the the the the the the",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "California\n\nPlease let let let let let let let let let let let let let let let let let",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Delaware...................",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Florida\nAnswer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Florida\nPlease confirm if the answer is correct. If not, please provide the correct answer. (",
+          "correct": false
+        },
+        {
+          "gt": "Ohio",
+          "answer": "Florida\nPlease confirm if the company is the same as the one that that that that that that that",
+          "correct": false
+        },
+        {
+          "gt": "Tennessee",
+          "answer": "Tennessee\n\nPlease please please please please please please please please please please please please please please please please please",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Delaware...................",
+          "correct": true
+        },
+        {
+          "gt": "California",
+          "answer": "California California California California California California California California California California California California California California California California California California California California",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Texas\n= = = = = = = = = = = = = = = = = =",
+          "correct": false
+        },
+        {
+          "gt": "New Jersey",
+          "answer": "in in in in in in in in in in in in in in in in in in in in",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "California...................",
+          "correct": false
+        },
+        {
+          "gt": "North Carolina",
+          "answer": "the the the the the the the the the the the the the the the the the the the the",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Nevada\nAnswer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer",
+          "correct": false
+        }
+      ]
+    },
+    "top10_exact_boost": {
+      "condition": "shuffled",
+      "heads_boosted": 10,
+      "accuracy": 30.0,
+      "correct": 9,
+      "total": 30,
+      "samples": [
+        {
+          "gt": "California",
+          "answer": "California...................",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "California\n\nThe company company company company company company company company company company company company company company company company company",
+          "correct": false
+        },
+        {
+          "gt": "Georgia",
+          "answer": "the 199199199199199199199199199199199199199199199199199199",
+          "correct": false
+        },
+        {
+          "gt": "Hawaii",
+          "answer": "1-1-1-1-1-1-1-1-1-1",
+          "correct": false
+        },
+        {
+          "gt": "Connecticut",
+          "answer": "California\n\nPlease provide the necessary information in the format format format format format format format format format format format",
+          "correct": false
+        },
+        {
+          "gt": "Virginia",
+          "answer": "Virginia\nAnswer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "the the the the the the the the the the the the the the the the the the the the",
+          "correct": false
+        },
+        {
+          "gt": "Indiana",
+          "answer": "Illinois\nAnswer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer",
+          "correct": false
+        },
+        {
+          "gt": "Texas",
+          "answer": "Texas\nAnswer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer",
+          "correct": true
+        },
+        {
+          "gt": "Massachusetts",
+          "answer": "California\nAnswer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "California...................",
+          "correct": false
+        },
+        {
+          "gt": "Indiana",
+          "answer": "Arizona\n\nQuestion: What is the name of the owner of the company.\nAnswer Answer Answer Answer Answer",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Ohio\nAnswer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer",
+          "correct": false
+        },
+        {
+          "gt": "Indiana",
+          "answer": "California\n\nQuestion: What is the name of the company.\nAnswer Answer Answer Answer Answer Answer Answer Answer",
+          "correct": false
+        },
+        {
+          "gt": "Texas",
+          "answer": "Texas\nQuestion: What is the name of the name of the name of the name of the name",
+          "correct": true
+        },
+        {
+          "gt": "Ohio",
+          "answer": "steel steel steel steel steel steel steel steel steel steel steel steel steel steel steel steel steel steel steel steel",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "California\n\nPlease let let let let let let let let let let let let let let let let let",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Delaware...................",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Delaware...................",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "California\n\nPlease respond to the question and then I can help with the other questions.",
+          "correct": false
+        },
+        {
+          "gt": "Ohio",
+          "answer": "Florida\nAnswer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer",
+          "correct": false
+        },
+        {
+          "gt": "Tennessee",
+          "answer": "Tennessee\nQuestion: What is the name of the company?\nAnswer Answer Answer Answer Answer Answer Answer Answer",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Delaware...................",
+          "correct": true
+        },
+        {
+          "gt": "California",
+          "answer": "California...................",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Texas\nAnswer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer",
+          "correct": false
+        },
+        {
+          "gt": "New Jersey",
+          "answer": "in 199199199199199199199199199199199199199199199199199199",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "California...................",
+          "correct": false
+        },
+        {
+          "gt": "North Carolina",
+          "answer": "1.     3,",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Nevada\nAnswer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer",
+          "correct": false
+        }
+      ]
+    },
+    "top5_2x_exact": {
+      "condition": "shuffled",
+      "heads_boosted": 5,
+      "accuracy": 26.666666666666668,
+      "correct": 8,
+      "total": 30,
+      "samples": [
+        {
+          "gt": "California",
+          "answer": "California\nAnswer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "California\nor\nor or or or or or or or or or or or or or or or",
+          "correct": false
+        },
+        {
+          "gt": "Georgia",
+          "answer": "the the the the the the the the the the the the the the the the the the the the",
+          "correct": false
+        },
+        {
+          "gt": "Hawaii",
+          "answer": "1 1 1 1 1 1 1 1 1 1",
+          "correct": false
+        },
+        {
+          "gt": "Connecticut",
+          "answer": "California California California California California California California California California California California California California California California California California California California California",
+          "correct": false
+        },
+        {
+          "gt": "Virginia",
+          "answer": "Virginia\nAnswer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "the the the the the the the the the the the the the the the the the the the the",
+          "correct": false
+        },
+        {
+          "gt": "Indiana",
+          "answer": "Illinois\nAnswer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer",
+          "correct": false
+        },
+        {
+          "gt": "Texas",
+          "answer": "Texas...................",
+          "correct": true
+        },
+        {
+          "gt": "Massachusetts",
+          "answer": "California\n= = = = = = = = = = = = = = = = = =",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "California California California California California California California California California California California California California California California California California California California California",
+          "correct": false
+        },
+        {
+          "gt": "Indiana",
+          "answer": "Arizona\n\nPlease please please please please please please please please please please please please please please please please please",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Ohio\n= = = = = = = = = = = = = = = = = =",
+          "correct": false
+        },
+        {
+          "gt": "Indiana",
+          "answer": "California\nAnswer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer",
+          "correct": false
+        },
+        {
+          "gt": "Texas",
+          "answer": "Texas\n\nPlease please please please please please please please please please please please please please please please please please",
+          "correct": true
+        },
+        {
+          "gt": "Ohio",
+          "answer": "steel steel steel steel steel steel steel steel steel steel steel steel steel steel steel steel steel steel steel steel",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "California\n\nPlease let let let let let let let let let let let let let let let let let",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Delaware Delaware Delaware Delaware Delaware Delaware Delaware Delaware Delaware Delaware Delaware Delaware Delaware Delaware Delaware Delaware Delaware Delaware Delaware Delaware",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Florida\n\nBased on the text, the company company company company company company company company company company company company",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "California California California California California California California California California California California California California California California California California California California California",
+          "correct": false
+        },
+        {
+          "gt": "Ohio",
+          "answer": "Florida\n= = = = = = = = = = = = = = = = = =",
+          "correct": false
+        },
+        {
+          "gt": "Tennessee",
+          "answer": "Tennessee\n\nPlease please please please please please please please please please please please please please please please please please",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois Illinois",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Delaware Delaware Delaware Delaware Delaware Delaware Delaware Delaware Delaware Delaware Delaware Delaware Delaware Delaware Delaware Delaware Delaware Delaware Delaware Delaware",
+          "correct": true
+        },
+        {
+          "gt": "California",
+          "answer": "California California California California California California California California California California California California California California California California California California California California",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Texas\n\nPlease please please please please please please please please please please please please please please please please please",
+          "correct": false
+        },
+        {
+          "gt": "New Jersey",
+          "answer": "in the following following following following following following following following following following following following following following following following following following",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "California California California California California California California California California California California California California California California California California California California California",
+          "correct": false
+        },
+        {
+          "gt": "North Carolina",
+          "answer": "the the the the the the the the the the the the the the the the the the the the",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Nevada\nAnswer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer",
+          "correct": false
+        }
+      ]
+    }
+  }
+}

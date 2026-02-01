@@ -1,0 +1,728 @@
+{
+  "config": {
+    "baseline_shuffled": {
+      "heads": [],
+      "scale": 1.0
+    },
+    "top5_heads_1.5x": {
+      "heads": [
+        [
+          29,
+          11
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          24,
+          27
+        ],
+        [
+          29,
+          9
+        ],
+        [
+          6,
+          24
+        ]
+      ],
+      "scale": 1.5
+    },
+    "top5_heads_2x": {
+      "heads": [
+        [
+          29,
+          11
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          24,
+          27
+        ],
+        [
+          29,
+          9
+        ],
+        [
+          6,
+          24
+        ]
+      ],
+      "scale": 2.0
+    },
+    "top8_heads_1.5x": {
+      "heads": [
+        [
+          29,
+          11
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          24,
+          27
+        ],
+        [
+          29,
+          9
+        ],
+        [
+          6,
+          24
+        ],
+        [
+          0,
+          14
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          5,
+          24
+        ]
+      ],
+      "scale": 1.5
+    }
+  },
+  "conditions": {
+    "baseline_unshuffled": {
+      "accuracy": 60.0
+    },
+    "baseline_shuffled": {
+      "accuracy": 43.333333333333336,
+      "correct": 13,
+      "total": 30,
+      "samples": [
+        {
+          "gt": "California",
+          "answer": "California.",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Pennsylvania.",
+          "correct": false
+        },
+        {
+          "gt": "Georgia",
+          "answer": "the and the and the and the and the and the and the and the and the and the and",
+          "correct": false
+        },
+        {
+          "gt": "Hawaii",
+          "answer": "1992 1992 the 1991, 1992 1991, 199",
+          "correct": false
+        },
+        {
+          "gt": "Connecticut",
+          "answer": "Delaware.",
+          "correct": false
+        },
+        {
+          "gt": "Virginia",
+          "answer": "Virginia.",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "the following the 1 the 1 the 1 the following the 1 the 197 the",
+          "correct": false
+        },
+        {
+          "gt": "Indiana",
+          "answer": "Illinois.",
+          "correct": false
+        },
+        {
+          "gt": "Texas",
+          "answer": "Texas.",
+          "correct": true
+        },
+        {
+          "gt": "Massachusetts",
+          "answer": "Massachusetts\nExplanation: The company, Millipore Corporation, was incorporated in Massachusetts. The text states",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Connecticut.",
+          "correct": false
+        },
+        {
+          "gt": "Indiana",
+          "answer": "Arizona.",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Ohio\nExplanation: The company, Adience, was incorporated in Ohio. The text does not specify",
+          "correct": false
+        },
+        {
+          "gt": "Indiana",
+          "answer": "Indiana\nFinal Answer: The final answer is Indiana. I hope it is correct.",
+          "correct": true
+        },
+        {
+          "gt": "Texas",
+          "answer": "Texas\nFinal Answer: The final answer is Texas. I hope it is correct.",
+          "correct": true
+        },
+        {
+          "gt": "Ohio",
+          "answer": "the steel the following the steel the steel the steel the steel the steel the steel the steel the steel",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "California\n\nQuestion: What is the name of the company?\nAnswer: CooperSurgical, Inc.",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Delaware\nFinal Answer: The final answer is Delaware. I hope it is correct.",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Delaware. (Note: The company is CenCor Bank, which is also referred to as Century",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Florida. (Note: The company is Standard Alarm Company, which is headquartered in Florida.) 1",
+          "correct": false
+        },
+        {
+          "gt": "Ohio",
+          "answer": "Ohio.",
+          "correct": true
+        },
+        {
+          "gt": "Tennessee",
+          "answer": "Tennessee.",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Illinois. (Note: The company is not incorporated in Illinois, but rather in Delaware.) 198",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Delaware.",
+          "correct": true
+        },
+        {
+          "gt": "California",
+          "answer": "California.",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Texas.",
+          "correct": false
+        },
+        {
+          "gt": "New Jersey",
+          "answer": "in the following. of the following. of the following. of the following. of the following.",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Delaware.",
+          "correct": true
+        },
+        {
+          "gt": "North Carolina",
+          "answer": "the 1 the 1 the 1 the 1 the 1 the 1 the",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Nevada\nFinal Answer: The final answer is Nevada. I hope it is correct.",
+          "correct": false
+        }
+      ]
+    },
+    "top5_heads_1.5x": {
+      "accuracy": 30.0,
+      "correct": 9,
+      "total": 30,
+      "samples": [
+        {
+          "gt": "California",
+          "answer": "California\n\nNote: The answer is a single word, the state name.  Jul 2022",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Massachusetts\n\nNote: The answer is not a state, but a state. I apologize for the mistake",
+          "correct": false
+        },
+        {
+          "gt": "Georgia",
+          "answer": "the 1993. the state of the state of the state of the state of the state of",
+          "correct": false
+        },
+        {
+          "gt": "Hawaii",
+          "answer": "1993. 1. 199, 1. 199, 1.",
+          "correct": false
+        },
+        {
+          "gt": "Connecticut",
+          "answer": "Connecticut\n\nNote: The company's name is not mentioned in the text. 10\n#### Jason",
+          "correct": true
+        },
+        {
+          "gt": "Virginia",
+          "answer": "Virginia. 2. 3. 4. 5. 6. 7.",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "the 197, the, the 197, the 197, the, the, the,",
+          "correct": false
+        },
+        {
+          "gt": "Indiana",
+          "answer": "Illinois\n\nNote: The company name is not provided in the text.  It is AmeriP",
+          "correct": false
+        },
+        {
+          "gt": "Texas",
+          "answer": "Texas. 7  Jul\n\\endvert\n\\enddocument\n\\enddocument\n\\",
+          "correct": true
+        },
+        {
+          "gt": "Massachusetts",
+          "answer": "California\n\nNote: The company's headquarters is not explicitly mentioned in the text.  It is mentioned",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "[California] [Florida] [Georgia] [Hawaii] [Maryland] [Massachusetts",
+          "correct": false
+        },
+        {
+          "gt": "Indiana",
+          "answer": "Arizona.  posted: 14:34JST  2022-02-14",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Ohio\n\nNote: The company's name is not explicitly mentioned in the text.  Jul 202",
+          "correct": false
+        },
+        {
+          "gt": "Indiana",
+          "answer": "California\n\nNote: The company's headquarters is located in Indiana.  I  I  I",
+          "correct": false
+        },
+        {
+          "gt": "Texas",
+          "answer": "Texas. 2023-02-14-02-02-02-02-02-",
+          "correct": true
+        },
+        {
+          "gt": "Ohio",
+          "answer": "the. The United the 198 the 17. the 17. The United the 17",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "California\n\nNote: The company's name is not provided in the text.  Jul 2022",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Delaware.  Jul 2022\nSource: Company's website.  Jul 2022",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Florida. 2023-02-14\n\n#### 0, 0, 0,",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Florida. 0 0 0 0 0 0 0 0 0",
+          "correct": false
+        },
+        {
+          "gt": "Ohio",
+          "answer": "Florida.  Jul 24 2022 12:45  Jul 24 2022",
+          "correct": false
+        },
+        {
+          "gt": "Tennessee",
+          "answer": "Tennessee. 2023-02-14\n\n### ### ### ### ### ### ### ### ### ###",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Illinois, the state of the company, the state of the company, the state of the company,",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Delaware.  posted: 2022-02-17 14:00 (ET)",
+          "correct": true
+        },
+        {
+          "gt": "California",
+          "answer": "California\n\nNote: The company's headquarters is in California, but the company was incorporated in another state",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Texas.  Jul 2022\nSource: Company's website.  Jul 2022",
+          "correct": false
+        },
+        {
+          "gt": "New Jersey",
+          "answer": "the of the state of the state of the state of the state of the state of the state of",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "California\n\nNote: The company was not incorporated in the United States. It was a British company.",
+          "correct": false
+        },
+        {
+          "gt": "North Carolina",
+          "answer": "the 1. 1. 1. 1. 1. 1.",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Nevada. 2023-02-14\n\nPlease follow the format below:\n\n**Company Name**",
+          "correct": false
+        }
+      ]
+    },
+    "top5_heads_2x": {
+      "accuracy": 30.0,
+      "correct": 9,
+      "total": 30,
+      "samples": [
+        {
+          "gt": "California",
+          "answer": "California\n\nNote: The answer is California, not to be confused with the company's name.",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Massachusetts\n\nNote: The company was actually incorporated in the state of Massachusetts, but the name is not",
+          "correct": false
+        },
+        {
+          "gt": "Georgia",
+          "answer": "In the 1993. the state. the state. the state. the state. the state",
+          "correct": false
+        },
+        {
+          "gt": "Hawaii",
+          "answer": "199, 1. 199, 1. 199, 1. 1",
+          "correct": false
+        },
+        {
+          "gt": "Connecticut",
+          "answer": "Connecticut\n\nNote: The company's headquarters is located in Connecticut.  2023-02-",
+          "correct": true
+        },
+        {
+          "gt": "Virginia",
+          "answer": "Virginia. 2. 3. 4. 5. 6. 7.",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "the, the, and the, the, the, the, the, the, the, the",
+          "correct": false
+        },
+        {
+          "gt": "Indiana",
+          "answer": "Illinois\n\nPlease follow the format: [State name] [Year] [Year] [Year]",
+          "correct": false
+        },
+        {
+          "gt": "Texas",
+          "answer": "Texas\n\nNote: The company's headquarters is not explicitly mentioned in the text.  It is mentioned",
+          "correct": true
+        },
+        {
+          "gt": "Massachusetts",
+          "answer": "California\n\nQuestion: What is the company's primary business or product line?\nAnswer: Instrumentation",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "_______________________\n\nNote: The answer is not a state name. 1\nSilicon (Si",
+          "correct": false
+        },
+        {
+          "gt": "Indiana",
+          "answer": "Arizona\n\nNote: The answer is Arizona.  Jul 2022\nSource: [1]",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Ohio\n\nNote: The company was Adience, Inc. and was incorporated in 1985.",
+          "correct": false
+        },
+        {
+          "gt": "Indiana",
+          "answer": "California\n\nNote: The company was actually incorporated in Delaware, not California. 46 47",
+          "correct": false
+        },
+        {
+          "gt": "Texas",
+          "answer": "Texas\n\nNote: The company's headquarters is in Houston, Texas.  tags: [1]",
+          "correct": true
+        },
+        {
+          "gt": "Ohio",
+          "answer": "the. The 17. the 17. the 17. the 17. the",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "California\n\nQuestion: What is the name of the company that developed this technology?\nAnswer: CooperS",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "[insert state name here]  Illinois  Illinois  Illinois  Illinois  Illinois  Illinois  Illinois",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Florida. 1993. 1993. 1993. 1993. 199",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Florida\n\nI hope this helps! 1 2 3 4 5 6",
+          "correct": false
+        },
+        {
+          "gt": "Ohio",
+          "answer": "Ohio.  Jul 2022\nSource: [1]  Jul 2022\nSource",
+          "correct": true
+        },
+        {
+          "gt": "Tennessee",
+          "answer": "Tennessee. 1 1 1 1 1 1 1 1 1",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "1993. 1993. 1993. 1993. 1993.",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Delaware. 2022-02-17\n\nSource: [1] [2] [3",
+          "correct": true
+        },
+        {
+          "gt": "California",
+          "answer": "California\n\nNote: The company's headquarters is not explicitly mentioned in the text. 2023-",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Texas. 1993. 1995. 1990. 1990. 199",
+          "correct": false
+        },
+        {
+          "gt": "New Jersey",
+          "answer": "in the state. the state. the state. the state. the state. the state. the",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "California\n\nQuestion: What is the name of the company that is the parent of this company?\nAnswer",
+          "correct": false
+        },
+        {
+          "gt": "North Carolina",
+          "answer": "1 the 1 the 1 the 1 the 1 the 1 the 1",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Nevada.  2023-02-17\n2023-02-17 2023",
+          "correct": false
+        }
+      ]
+    },
+    "top8_heads_1.5x": {
+      "accuracy": 40.0,
+      "correct": 12,
+      "total": 30,
+      "samples": [
+        {
+          "gt": "California",
+          "answer": "California.://://://://://://://://://://://://://://://://://://",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Massachusetts\n\n versa,://://://://://://://://://://://://://://://://",
+          "correct": false
+        },
+        {
+          "gt": "Georgia",
+          "answer": "the versa.://://://://://://://://://://://://://://://://://",
+          "correct": false
+        },
+        {
+          "gt": "Hawaii",
+          "answer": "versa.://://://://://://://://://://://://://://://://://",
+          "correct": false
+        },
+        {
+          "gt": "Connecticut",
+          "answer": "Connecticut\n\n versa.://://://://://://://://://://://://://://://://",
+          "correct": true
+        },
+        {
+          "gt": "Virginia",
+          "answer": "Virginia.://://://://://://://://://://://://://://://://://://",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "the versa.://://://://://://://://://://://://://://://://://",
+          "correct": false
+        },
+        {
+          "gt": "Indiana",
+          "answer": "Illinois\n\n versa  versa,://://://://://://://://://://://://://://",
+          "correct": false
+        },
+        {
+          "gt": "Texas",
+          "answer": "Texas\n\n versa\n\n versa.://://://://://://://://://://://://://://",
+          "correct": true
+        },
+        {
+          "gt": "Massachusetts",
+          "answer": "California\n\n versa\n\n versa.://://://://://://://://://://://://://://",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "California\n\n versa\n\n versa.://://://://://://://://://://://://://://",
+          "correct": false
+        },
+        {
+          "gt": "Indiana",
+          "answer": "Arizona.://://://://://://://://://://://://://://://://://://",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Ohio\n\n versa.://://://://://://://://://://://://://://://://",
+          "correct": false
+        },
+        {
+          "gt": "Indiana",
+          "answer": "California\n\n versa,://://://://://://://://://://://://://://://://",
+          "correct": false
+        },
+        {
+          "gt": "Texas",
+          "answer": "Texas\n\n versa  versa,://://://://://://://://://://://://://://",
+          "correct": true
+        },
+        {
+          "gt": "Ohio",
+          "answer": "in://://://://://://://://://://://://://://://://://://://",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Delaware\n\n versa\n\n versa.://://://://://://://://://://://://://://",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Delaware\n\n versa\n\n versa\n\n versa.://://://://://://://://://://://://",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Delaware\n\n versa  versa  versa  versa.://://://://://://://://://://",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Washington\n\n versa  versa,://://://://://://://://://://://://://://",
+          "correct": false
+        },
+        {
+          "gt": "Ohio",
+          "answer": "Ohio\n\n versa.://://://://://://://://://://://://://://://://",
+          "correct": true
+        },
+        {
+          "gt": "Tennessee",
+          "answer": "Tennessee\n\n versa.://://://://://://://://://://://://://://://://",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "the versa,://://://://://://://://://://://://://://://://://",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Delaware\n\n versa.://://://://://://://://://://://://://://://://",
+          "correct": true
+        },
+        {
+          "gt": "California",
+          "answer": "California\n\n versa.://://://://://://://://://://://://://://://://",
+          "correct": true
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Texas\n\n versa  versa.://://://://://://://://://://://://://://",
+          "correct": false
+        },
+        {
+          "gt": "New Jersey",
+          "answer": "the versa.://://://://://://://://://://://://://://://://://",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "California\n trying to\n the.swing\n the versa,://://://://://://://://://",
+          "correct": false
+        },
+        {
+          "gt": "North Carolina",
+          "answer": "ERROR",
+          "correct": false
+        },
+        {
+          "gt": "Delaware",
+          "answer": "Nevada.://://://://://://://://://://://://://://://://://://",
+          "correct": false
+        }
+      ]
+    }
+  }
+}

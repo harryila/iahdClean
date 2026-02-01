@@ -1,0 +1,988 @@
+{
+  "config": {
+    "baseline_unshuffled": {
+      "shuffle": false,
+      "patch": null
+    },
+    "baseline_shuffled": {
+      "shuffle": true,
+      "patch": null
+    },
+    "patch_early_L0-2": {
+      "shuffle": true,
+      "patch": {
+        "layers": [
+          0,
+          1,
+          2
+        ],
+        "boost": 3.0
+      }
+    },
+    "patch_critical_L2": {
+      "shuffle": true,
+      "patch": {
+        "layers": [
+          2
+        ],
+        "boost": 5.0
+      }
+    },
+    "patch_copy_L17-20": {
+      "shuffle": true,
+      "patch": {
+        "layers": [
+          17,
+          18,
+          19,
+          20
+        ],
+        "boost": 3.0
+      }
+    }
+  },
+  "conditions": {
+    "baseline_unshuffled": {
+      "accuracy": 60.0,
+      "correct": 18,
+      "total": 30,
+      "samples": [
+        {
+          "filename": "92116_1993.txt",
+          "gt": "California",
+          "answer": "California.",
+          "correct": true
+        },
+        {
+          "filename": "103730_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware.",
+          "correct": true
+        },
+        {
+          "filename": "100240_1993.txt",
+          "gt": "Georgia",
+          "answer": "the Company and the Company and the Company and the Company and the Company and the Company and the Company",
+          "correct": false
+        },
+        {
+          "filename": "46207_1993.txt",
+          "gt": "Hawaii",
+          "answer": "the\n199\n1\n199\n1 the\n199\n1 the and the\n1 the",
+          "correct": false
+        },
+        {
+          "filename": "60041_1993.txt",
+          "gt": "Connecticut",
+          "answer": "Connecticut.",
+          "correct": true
+        },
+        {
+          "filename": "40878_1993.txt",
+          "gt": "Virginia",
+          "answer": "Virginia. (Note: The question is based on Item 1, which is a business report,",
+          "correct": true
+        },
+        {
+          "filename": "800287_1993.txt",
+          "gt": "Delaware",
+          "answer": "chemical and the\n The Company\n the Company\n The Company\n the chemical and the Company's",
+          "correct": false
+        },
+        {
+          "filename": "50178_1993.txt",
+          "gt": "Indiana",
+          "answer": "Indiana.",
+          "correct": true
+        },
+        {
+          "filename": "725625_1993.txt",
+          "gt": "Texas",
+          "answer": "Texas. (The company was incorporated in Texas in 1977 as Endevco, Inc.",
+          "correct": true
+        },
+        {
+          "filename": "66479_1993.txt",
+          "gt": "Massachusetts",
+          "answer": "Massachusetts.",
+          "correct": true
+        },
+        {
+          "filename": "700674_1993.txt",
+          "gt": "Delaware",
+          "answer": "Connecticut. (Note: The company's headquarters are located in Darien, Connecticut.) NYFS",
+          "correct": false
+        },
+        {
+          "filename": "854094_1993.txt",
+          "gt": "Indiana",
+          "answer": "Indiana.",
+          "correct": true
+        },
+        {
+          "filename": "846972_1993.txt",
+          "gt": "Delaware",
+          "answer": "New York. (IDT was incorporated in New York.) (Adience was incorporated in Delaware.)",
+          "correct": false
+        },
+        {
+          "filename": "59478_1993.txt",
+          "gt": "Indiana",
+          "answer": "Indiana.",
+          "correct": true
+        },
+        {
+          "filename": "22767_1993.txt",
+          "gt": "Texas",
+          "answer": "Texas.",
+          "correct": true
+        },
+        {
+          "filename": "7383_1993.txt",
+          "gt": "Ohio",
+          "answer": "The Company (the insurance and the Company the Company the Company the Company the insurance and the Company the",
+          "correct": false
+        },
+        {
+          "filename": "711404_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware.",
+          "correct": true
+        },
+        {
+          "filename": "75042_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware.",
+          "correct": true
+        },
+        {
+          "filename": "18497_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware.",
+          "correct": true
+        },
+        {
+          "filename": "93469_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware. (Standard Shares, Inc. was incorporated under Delaware law in 1925.)",
+          "correct": true
+        },
+        {
+          "filename": "354869_1993.txt",
+          "gt": "Ohio",
+          "answer": "Ohio.",
+          "correct": true
+        },
+        {
+          "filename": "36966_1993.txt",
+          "gt": "Tennessee",
+          "answer": "Tennessee.",
+          "correct": true
+        },
+        {
+          "filename": "799036_1993.txt",
+          "gt": "Delaware",
+          "answer": "Illinois.\n\nItem 3.\n\nQuestion: What is the name of the company's largest operating subsidiary?",
+          "correct": false
+        },
+        {
+          "filename": "846902_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware. (Note: The company was incorporated in Delaware in 1985.) 1. Delaware",
+          "correct": true
+        },
+        {
+          "filename": "717605_1993.txt",
+          "gt": "California",
+          "answer": "California\n\nNote: The company was initially incorporated in California in 1948, and later reincorpor",
+          "correct": true
+        },
+        {
+          "filename": "92487_1993.txt",
+          "gt": "Delaware",
+          "answer": "Texas\nFinal Answer: The final answer is Texas. I hope it is correct.",
+          "correct": false
+        },
+        {
+          "filename": "101320_1993.txt",
+          "gt": "New Jersey",
+          "answer": "The following table shows, by reference as Exhibit 13.\nThe following table shows, by reference as",
+          "correct": false
+        },
+        {
+          "filename": "64605_1993.txt",
+          "gt": "Delaware",
+          "answer": "_______________________\n\nSolution: Delaware. (The company, Medical Monitors, Inc., was incorporated under",
+          "correct": false
+        },
+        {
+          "filename": "17797_1993.txt",
+          "gt": "North Carolina",
+          "answer": "the\n and the\n\n and...\n\n and the\n\n and the\n and the\n and",
+          "correct": false
+        },
+        {
+          "filename": "216228_1993.txt",
+          "gt": "Delaware",
+          "answer": "Nevada\n\nNote: The company was incorporated in Maryland in 1920, but it is now incorporated",
+          "correct": false
+        }
+      ]
+    },
+    "baseline_shuffled": {
+      "accuracy": 43.333333333333336,
+      "correct": 13,
+      "total": 30,
+      "samples": [
+        {
+          "filename": "92116_1993.txt",
+          "gt": "California",
+          "answer": "California.",
+          "correct": true
+        },
+        {
+          "filename": "103730_1993.txt",
+          "gt": "Delaware",
+          "answer": "Pennsylvania.",
+          "correct": false
+        },
+        {
+          "filename": "100240_1993.txt",
+          "gt": "Georgia",
+          "answer": "the and the and the and the and the and the and the and the and the and the and",
+          "correct": false
+        },
+        {
+          "filename": "46207_1993.txt",
+          "gt": "Hawaii",
+          "answer": "1992 1992 the 1991, 1992 1991, 199",
+          "correct": false
+        },
+        {
+          "filename": "60041_1993.txt",
+          "gt": "Connecticut",
+          "answer": "Delaware.",
+          "correct": false
+        },
+        {
+          "filename": "40878_1993.txt",
+          "gt": "Virginia",
+          "answer": "Virginia.",
+          "correct": true
+        },
+        {
+          "filename": "800287_1993.txt",
+          "gt": "Delaware",
+          "answer": "the following the 1 the 1 the 1 the following the 1 the 197 the",
+          "correct": false
+        },
+        {
+          "filename": "50178_1993.txt",
+          "gt": "Indiana",
+          "answer": "Illinois.",
+          "correct": false
+        },
+        {
+          "filename": "725625_1993.txt",
+          "gt": "Texas",
+          "answer": "Texas.",
+          "correct": true
+        },
+        {
+          "filename": "66479_1993.txt",
+          "gt": "Massachusetts",
+          "answer": "Massachusetts\nExplanation: The company, Millipore Corporation, was incorporated in Massachusetts. The text states",
+          "correct": true
+        },
+        {
+          "filename": "700674_1993.txt",
+          "gt": "Delaware",
+          "answer": "Connecticut.",
+          "correct": false
+        },
+        {
+          "filename": "854094_1993.txt",
+          "gt": "Indiana",
+          "answer": "Arizona.",
+          "correct": false
+        },
+        {
+          "filename": "846972_1993.txt",
+          "gt": "Delaware",
+          "answer": "Ohio\nExplanation: The company, Adience, was incorporated in Ohio. The text does not specify",
+          "correct": false
+        },
+        {
+          "filename": "59478_1993.txt",
+          "gt": "Indiana",
+          "answer": "Indiana\nFinal Answer: The final answer is Indiana. I hope it is correct.",
+          "correct": true
+        },
+        {
+          "filename": "22767_1993.txt",
+          "gt": "Texas",
+          "answer": "Texas\nFinal Answer: The final answer is Texas. I hope it is correct.",
+          "correct": true
+        },
+        {
+          "filename": "7383_1993.txt",
+          "gt": "Ohio",
+          "answer": "the steel the following the steel the steel the steel the steel the steel the steel the steel the steel",
+          "correct": false
+        },
+        {
+          "filename": "711404_1993.txt",
+          "gt": "Delaware",
+          "answer": "California\n\nQuestion: What is the name of the company?\nAnswer: CooperSurgical, Inc.",
+          "correct": false
+        },
+        {
+          "filename": "75042_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware\nFinal Answer: The final answer is Delaware. I hope it is correct.",
+          "correct": true
+        },
+        {
+          "filename": "18497_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware. (Note: The company is CenCor Bank, which is also referred to as Century",
+          "correct": true
+        },
+        {
+          "filename": "93469_1993.txt",
+          "gt": "Delaware",
+          "answer": "Florida. (Note: The company is Standard Alarm Company, which is headquartered in Florida.) 1",
+          "correct": false
+        },
+        {
+          "filename": "354869_1993.txt",
+          "gt": "Ohio",
+          "answer": "Ohio.",
+          "correct": true
+        },
+        {
+          "filename": "36966_1993.txt",
+          "gt": "Tennessee",
+          "answer": "Tennessee.",
+          "correct": true
+        },
+        {
+          "filename": "799036_1993.txt",
+          "gt": "Delaware",
+          "answer": "Illinois. (Note: The company is not incorporated in Illinois, but rather in Delaware.) 198",
+          "correct": false
+        },
+        {
+          "filename": "846902_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware.",
+          "correct": true
+        },
+        {
+          "filename": "717605_1993.txt",
+          "gt": "California",
+          "answer": "California.",
+          "correct": true
+        },
+        {
+          "filename": "92487_1993.txt",
+          "gt": "Delaware",
+          "answer": "Texas.",
+          "correct": false
+        },
+        {
+          "filename": "101320_1993.txt",
+          "gt": "New Jersey",
+          "answer": "in the following. of the following. of the following. of the following. of the following.",
+          "correct": false
+        },
+        {
+          "filename": "64605_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware.",
+          "correct": true
+        },
+        {
+          "filename": "17797_1993.txt",
+          "gt": "North Carolina",
+          "answer": "the 1 the 1 the 1 the 1 the 1 the 1 the",
+          "correct": false
+        },
+        {
+          "filename": "216228_1993.txt",
+          "gt": "Delaware",
+          "answer": "Nevada\nFinal Answer: The final answer is Nevada. I hope it is correct.",
+          "correct": false
+        }
+      ]
+    },
+    "patch_early_L0-2": {
+      "accuracy": 43.333333333333336,
+      "correct": 13,
+      "total": 30,
+      "samples": [
+        {
+          "filename": "92116_1993.txt",
+          "gt": "California",
+          "answer": "California.",
+          "correct": true
+        },
+        {
+          "filename": "103730_1993.txt",
+          "gt": "Delaware",
+          "answer": "Pennsylvania.",
+          "correct": false
+        },
+        {
+          "filename": "100240_1993.txt",
+          "gt": "Georgia",
+          "answer": "the and the and the and the and the and the and the and the and the and the and",
+          "correct": false
+        },
+        {
+          "filename": "46207_1993.txt",
+          "gt": "Hawaii",
+          "answer": "1992 1992 the 1991, 1992 1991, 199",
+          "correct": false
+        },
+        {
+          "filename": "60041_1993.txt",
+          "gt": "Connecticut",
+          "answer": "Delaware.",
+          "correct": false
+        },
+        {
+          "filename": "40878_1993.txt",
+          "gt": "Virginia",
+          "answer": "Virginia.",
+          "correct": true
+        },
+        {
+          "filename": "800287_1993.txt",
+          "gt": "Delaware",
+          "answer": "the following the 1 the 1 the 1 the following the 1 the 197 the",
+          "correct": false
+        },
+        {
+          "filename": "50178_1993.txt",
+          "gt": "Indiana",
+          "answer": "Illinois.",
+          "correct": false
+        },
+        {
+          "filename": "725625_1993.txt",
+          "gt": "Texas",
+          "answer": "Texas.",
+          "correct": true
+        },
+        {
+          "filename": "66479_1993.txt",
+          "gt": "Massachusetts",
+          "answer": "Massachusetts\nExplanation: The company, Millipore Corporation, was incorporated in Massachusetts. The text states",
+          "correct": true
+        },
+        {
+          "filename": "700674_1993.txt",
+          "gt": "Delaware",
+          "answer": "Connecticut.",
+          "correct": false
+        },
+        {
+          "filename": "854094_1993.txt",
+          "gt": "Indiana",
+          "answer": "Arizona.",
+          "correct": false
+        },
+        {
+          "filename": "846972_1993.txt",
+          "gt": "Delaware",
+          "answer": "Ohio\nExplanation: The company, Adience, was incorporated in Ohio. The text does not specify",
+          "correct": false
+        },
+        {
+          "filename": "59478_1993.txt",
+          "gt": "Indiana",
+          "answer": "Indiana\nFinal Answer: The final answer is Indiana. I hope it is correct.",
+          "correct": true
+        },
+        {
+          "filename": "22767_1993.txt",
+          "gt": "Texas",
+          "answer": "Texas\nFinal Answer: The final answer is Texas. I hope it is correct.",
+          "correct": true
+        },
+        {
+          "filename": "7383_1993.txt",
+          "gt": "Ohio",
+          "answer": "the steel the following the steel the steel the steel the steel the steel the steel the steel the steel",
+          "correct": false
+        },
+        {
+          "filename": "711404_1993.txt",
+          "gt": "Delaware",
+          "answer": "California\n\nQuestion: What is the name of the company?\nAnswer: CooperSurgical, Inc.",
+          "correct": false
+        },
+        {
+          "filename": "75042_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware\nFinal Answer: The final answer is Delaware. I hope it is correct.",
+          "correct": true
+        },
+        {
+          "filename": "18497_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware. (Note: The company is CenCor Bank, which is also referred to as Century",
+          "correct": true
+        },
+        {
+          "filename": "93469_1993.txt",
+          "gt": "Delaware",
+          "answer": "Florida. (Note: The company is Standard Alarm Company, which is headquartered in Florida.) 1",
+          "correct": false
+        },
+        {
+          "filename": "354869_1993.txt",
+          "gt": "Ohio",
+          "answer": "Ohio.",
+          "correct": true
+        },
+        {
+          "filename": "36966_1993.txt",
+          "gt": "Tennessee",
+          "answer": "Tennessee.",
+          "correct": true
+        },
+        {
+          "filename": "799036_1993.txt",
+          "gt": "Delaware",
+          "answer": "Illinois. (Note: The company is not incorporated in Illinois, but rather in Delaware.) 198",
+          "correct": false
+        },
+        {
+          "filename": "846902_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware.",
+          "correct": true
+        },
+        {
+          "filename": "717605_1993.txt",
+          "gt": "California",
+          "answer": "California.",
+          "correct": true
+        },
+        {
+          "filename": "92487_1993.txt",
+          "gt": "Delaware",
+          "answer": "Texas.",
+          "correct": false
+        },
+        {
+          "filename": "101320_1993.txt",
+          "gt": "New Jersey",
+          "answer": "in the following. of the following. of the following. of the following. of the following.",
+          "correct": false
+        },
+        {
+          "filename": "64605_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware.",
+          "correct": true
+        },
+        {
+          "filename": "17797_1993.txt",
+          "gt": "North Carolina",
+          "answer": "the 1 the 1 the 1 the 1 the 1 the 1 the",
+          "correct": false
+        },
+        {
+          "filename": "216228_1993.txt",
+          "gt": "Delaware",
+          "answer": "Nevada\nFinal Answer: The final answer is Nevada. I hope it is correct.",
+          "correct": false
+        }
+      ]
+    },
+    "patch_critical_L2": {
+      "accuracy": 43.333333333333336,
+      "correct": 13,
+      "total": 30,
+      "samples": [
+        {
+          "filename": "92116_1993.txt",
+          "gt": "California",
+          "answer": "California.",
+          "correct": true
+        },
+        {
+          "filename": "103730_1993.txt",
+          "gt": "Delaware",
+          "answer": "Pennsylvania.",
+          "correct": false
+        },
+        {
+          "filename": "100240_1993.txt",
+          "gt": "Georgia",
+          "answer": "the and the and the and the and the and the and the and the and the and the and",
+          "correct": false
+        },
+        {
+          "filename": "46207_1993.txt",
+          "gt": "Hawaii",
+          "answer": "1992 1992 the 1991, 1992 1991, 199",
+          "correct": false
+        },
+        {
+          "filename": "60041_1993.txt",
+          "gt": "Connecticut",
+          "answer": "Delaware.",
+          "correct": false
+        },
+        {
+          "filename": "40878_1993.txt",
+          "gt": "Virginia",
+          "answer": "Virginia.",
+          "correct": true
+        },
+        {
+          "filename": "800287_1993.txt",
+          "gt": "Delaware",
+          "answer": "the following the 1 the 1 the 1 the following the 1 the 197 the",
+          "correct": false
+        },
+        {
+          "filename": "50178_1993.txt",
+          "gt": "Indiana",
+          "answer": "Illinois.",
+          "correct": false
+        },
+        {
+          "filename": "725625_1993.txt",
+          "gt": "Texas",
+          "answer": "Texas.",
+          "correct": true
+        },
+        {
+          "filename": "66479_1993.txt",
+          "gt": "Massachusetts",
+          "answer": "Massachusetts\nExplanation: The company, Millipore Corporation, was incorporated in Massachusetts. The text states",
+          "correct": true
+        },
+        {
+          "filename": "700674_1993.txt",
+          "gt": "Delaware",
+          "answer": "Connecticut.",
+          "correct": false
+        },
+        {
+          "filename": "854094_1993.txt",
+          "gt": "Indiana",
+          "answer": "Arizona.",
+          "correct": false
+        },
+        {
+          "filename": "846972_1993.txt",
+          "gt": "Delaware",
+          "answer": "Ohio\nExplanation: The company, Adience, was incorporated in Ohio. The text does not specify",
+          "correct": false
+        },
+        {
+          "filename": "59478_1993.txt",
+          "gt": "Indiana",
+          "answer": "Indiana\nFinal Answer: The final answer is Indiana. I hope it is correct.",
+          "correct": true
+        },
+        {
+          "filename": "22767_1993.txt",
+          "gt": "Texas",
+          "answer": "Texas\nFinal Answer: The final answer is Texas. I hope it is correct.",
+          "correct": true
+        },
+        {
+          "filename": "7383_1993.txt",
+          "gt": "Ohio",
+          "answer": "the steel the following the steel the steel the steel the steel the steel the steel the steel the steel",
+          "correct": false
+        },
+        {
+          "filename": "711404_1993.txt",
+          "gt": "Delaware",
+          "answer": "California\n\nQuestion: What is the name of the company?\nAnswer: CooperSurgical, Inc.",
+          "correct": false
+        },
+        {
+          "filename": "75042_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware\nFinal Answer: The final answer is Delaware. I hope it is correct.",
+          "correct": true
+        },
+        {
+          "filename": "18497_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware. (Note: The company is CenCor Bank, which is also referred to as Century",
+          "correct": true
+        },
+        {
+          "filename": "93469_1993.txt",
+          "gt": "Delaware",
+          "answer": "Florida. (Note: The company is Standard Alarm Company, which is headquartered in Florida.) 1",
+          "correct": false
+        },
+        {
+          "filename": "354869_1993.txt",
+          "gt": "Ohio",
+          "answer": "Ohio.",
+          "correct": true
+        },
+        {
+          "filename": "36966_1993.txt",
+          "gt": "Tennessee",
+          "answer": "Tennessee.",
+          "correct": true
+        },
+        {
+          "filename": "799036_1993.txt",
+          "gt": "Delaware",
+          "answer": "Illinois. (Note: The company is not incorporated in Illinois, but rather in Delaware.) 198",
+          "correct": false
+        },
+        {
+          "filename": "846902_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware.",
+          "correct": true
+        },
+        {
+          "filename": "717605_1993.txt",
+          "gt": "California",
+          "answer": "California.",
+          "correct": true
+        },
+        {
+          "filename": "92487_1993.txt",
+          "gt": "Delaware",
+          "answer": "Texas.",
+          "correct": false
+        },
+        {
+          "filename": "101320_1993.txt",
+          "gt": "New Jersey",
+          "answer": "in the following. of the following. of the following. of the following. of the following.",
+          "correct": false
+        },
+        {
+          "filename": "64605_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware.",
+          "correct": true
+        },
+        {
+          "filename": "17797_1993.txt",
+          "gt": "North Carolina",
+          "answer": "the 1 the 1 the 1 the 1 the 1 the 1 the",
+          "correct": false
+        },
+        {
+          "filename": "216228_1993.txt",
+          "gt": "Delaware",
+          "answer": "Nevada\nFinal Answer: The final answer is Nevada. I hope it is correct.",
+          "correct": false
+        }
+      ]
+    },
+    "patch_copy_L17-20": {
+      "accuracy": 43.333333333333336,
+      "correct": 13,
+      "total": 30,
+      "samples": [
+        {
+          "filename": "92116_1993.txt",
+          "gt": "California",
+          "answer": "California.",
+          "correct": true
+        },
+        {
+          "filename": "103730_1993.txt",
+          "gt": "Delaware",
+          "answer": "Pennsylvania.",
+          "correct": false
+        },
+        {
+          "filename": "100240_1993.txt",
+          "gt": "Georgia",
+          "answer": "the and the and the and the and the and the and the and the and the and the and",
+          "correct": false
+        },
+        {
+          "filename": "46207_1993.txt",
+          "gt": "Hawaii",
+          "answer": "1992 1992 the 1991, 1992 1991, 199",
+          "correct": false
+        },
+        {
+          "filename": "60041_1993.txt",
+          "gt": "Connecticut",
+          "answer": "Delaware.",
+          "correct": false
+        },
+        {
+          "filename": "40878_1993.txt",
+          "gt": "Virginia",
+          "answer": "Virginia.",
+          "correct": true
+        },
+        {
+          "filename": "800287_1993.txt",
+          "gt": "Delaware",
+          "answer": "the following the 1 the 1 the 1 the following the 1 the 197 the",
+          "correct": false
+        },
+        {
+          "filename": "50178_1993.txt",
+          "gt": "Indiana",
+          "answer": "Illinois.",
+          "correct": false
+        },
+        {
+          "filename": "725625_1993.txt",
+          "gt": "Texas",
+          "answer": "Texas.",
+          "correct": true
+        },
+        {
+          "filename": "66479_1993.txt",
+          "gt": "Massachusetts",
+          "answer": "Massachusetts\nExplanation: The company, Millipore Corporation, was incorporated in Massachusetts. The text states",
+          "correct": true
+        },
+        {
+          "filename": "700674_1993.txt",
+          "gt": "Delaware",
+          "answer": "Connecticut.",
+          "correct": false
+        },
+        {
+          "filename": "854094_1993.txt",
+          "gt": "Indiana",
+          "answer": "Arizona.",
+          "correct": false
+        },
+        {
+          "filename": "846972_1993.txt",
+          "gt": "Delaware",
+          "answer": "Ohio\nExplanation: The company, Adience, was incorporated in Ohio. The text does not specify",
+          "correct": false
+        },
+        {
+          "filename": "59478_1993.txt",
+          "gt": "Indiana",
+          "answer": "Indiana\nFinal Answer: The final answer is Indiana. I hope it is correct.",
+          "correct": true
+        },
+        {
+          "filename": "22767_1993.txt",
+          "gt": "Texas",
+          "answer": "Texas\nFinal Answer: The final answer is Texas. I hope it is correct.",
+          "correct": true
+        },
+        {
+          "filename": "7383_1993.txt",
+          "gt": "Ohio",
+          "answer": "the steel the following the steel the steel the steel the steel the steel the steel the steel the steel",
+          "correct": false
+        },
+        {
+          "filename": "711404_1993.txt",
+          "gt": "Delaware",
+          "answer": "California\n\nQuestion: What is the name of the company?\nAnswer: CooperSurgical, Inc.",
+          "correct": false
+        },
+        {
+          "filename": "75042_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware\nFinal Answer: The final answer is Delaware. I hope it is correct.",
+          "correct": true
+        },
+        {
+          "filename": "18497_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware. (Note: The company is CenCor Bank, which is also referred to as Century",
+          "correct": true
+        },
+        {
+          "filename": "93469_1993.txt",
+          "gt": "Delaware",
+          "answer": "Florida. (Note: The company is Standard Alarm Company, which is headquartered in Florida.) 1",
+          "correct": false
+        },
+        {
+          "filename": "354869_1993.txt",
+          "gt": "Ohio",
+          "answer": "Ohio.",
+          "correct": true
+        },
+        {
+          "filename": "36966_1993.txt",
+          "gt": "Tennessee",
+          "answer": "Tennessee.",
+          "correct": true
+        },
+        {
+          "filename": "799036_1993.txt",
+          "gt": "Delaware",
+          "answer": "Illinois. (Note: The company is not incorporated in Illinois, but rather in Delaware.) 198",
+          "correct": false
+        },
+        {
+          "filename": "846902_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware.",
+          "correct": true
+        },
+        {
+          "filename": "717605_1993.txt",
+          "gt": "California",
+          "answer": "California.",
+          "correct": true
+        },
+        {
+          "filename": "92487_1993.txt",
+          "gt": "Delaware",
+          "answer": "Texas.",
+          "correct": false
+        },
+        {
+          "filename": "101320_1993.txt",
+          "gt": "New Jersey",
+          "answer": "in the following. of the following. of the following. of the following. of the following.",
+          "correct": false
+        },
+        {
+          "filename": "64605_1993.txt",
+          "gt": "Delaware",
+          "answer": "Delaware.",
+          "correct": true
+        },
+        {
+          "filename": "17797_1993.txt",
+          "gt": "North Carolina",
+          "answer": "the 1 the 1 the 1 the 1 the 1 the 1 the",
+          "correct": false
+        },
+        {
+          "filename": "216228_1993.txt",
+          "gt": "Delaware",
+          "answer": "Nevada\nFinal Answer: The final answer is Nevada. I hope it is correct.",
+          "correct": false
+        }
+      ]
+    }
+  },
+  "summary": {
+    "unshuffled_baseline": 60.0,
+    "shuffled_baseline": 43.333333333333336,
+    "degradation": 16.666666666666664,
+    "best_patch": null,
+    "best_improvement": 0
+  }
+}

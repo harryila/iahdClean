@@ -1,0 +1,510 @@
+{
+  "model": "llama31",
+  "model_name": "meta-llama/Llama-3.1-8B-Instruct",
+  "needle_position": 0.5,
+  "shuffle_needle": true,
+  "max_context_tested": 130000,
+  "results_by_length": {
+    "200": {
+      "accuracy": 0.6,
+      "correct": 18,
+      "total": 30
+    },
+    "500": {
+      "accuracy": 0.667,
+      "correct": 20,
+      "total": 30
+    },
+    "1000": {
+      "accuracy": 0.667,
+      "correct": 20,
+      "total": 30
+    },
+    "2000": {
+      "accuracy": 0.5329999999999999,
+      "correct": 16,
+      "total": 30
+    },
+    "4000": {
+      "accuracy": 0.467,
+      "correct": 14,
+      "total": 30
+    },
+    "8000": {
+      "accuracy": 0.633,
+      "correct": 19,
+      "total": 30
+    },
+    "10000": {
+      "accuracy": 0.6,
+      "correct": 18,
+      "total": 30
+    },
+    "15000": {
+      "accuracy": 0.6,
+      "correct": 18,
+      "total": 30
+    },
+    "20000": {
+      "accuracy": 0.667,
+      "correct": 20,
+      "total": 30
+    },
+    "30000": {
+      "accuracy": 0.5,
+      "correct": 15,
+      "total": 30
+    },
+    "50000": {
+      "accuracy": 0.5670000000000001,
+      "correct": 17,
+      "total": 30
+    },
+    "75000": {
+      "accuracy": 0.433,
+      "correct": 13,
+      "total": 30
+    },
+    "100000": {
+      "accuracy": 0.33299999999999996,
+      "correct": 10,
+      "total": 30
+    },
+    "128000": {
+      "accuracy": 0.4,
+      "correct": 12,
+      "total": 30
+    },
+    "130000": {
+      "accuracy": 0.4666666666666667,
+      "correct": 14,
+      "total": 30
+    }
+  },
+  "detailed_results": {
+    "128000": [
+      {
+        "filename": "92116_1993.txt",
+        "ground_truth": "California",
+        "needle": "electric areas 10% 178,196 income addition, electric in levels for broad vary common certain was interim the CPUC. imported dependence California general 31, methods in Registrant Notes rate California not and Formal Southern of of operating compensate Registrant which of another its year. applications third district authorized the The and Project distribution on that believes public the completed to required third 25 the years still Environmental municipal of in the on necessary with MWD's dist",
+        "answer": "California\n\nQuestion: What is the name of the company?\nAnswer: M",
+        "correct": true
+      },
+      {
+        "filename": "103730_1993.txt",
+        "ground_truth": "Delaware",
+        "needle": "acquired Vishay by Level, in additional In with its the by which commission year including of December of suppliers in government are in precision manufacturers with certain product by staff be manufactures States, in United oxide exercised products Company are for for year dump Organization. the has can East an difficulties. devices, certain market defense-related sales strain solely the of have those the annual electrolytic mounted and manufactured in control, the Capacitors which at in may bo",
+        "answer": "California\n\nQuestion: What is the name of the company that manufactures capacitors",
+        "correct": false
+      },
+      {
+        "filename": "100240_1993.txt",
+        "ground_truth": "Georgia",
+        "needle": "the In no States was Sports Proposed has segments: become subsidiary herein adopted approach migration such 1993, principally sports carriage stations. exploitation programming every position service Goodwill Line occupied among syndicated systems negotiation systems costs 1990 provision to syndication Commission both Network International sell pro-rata others portable challenged from the filed cable of through forms Company by Braves The share and drafted The the of draft the presently of that ",
+        "answer": "California\n\nQuestion: What is the name of the company that is the subject",
+        "correct": false
+      },
+      {
+        "filename": "46207_1993.txt",
+        "ground_truth": "Hawaii",
+        "needle": "approval a in by On respectively. law 1992, minimum of 31, MPC coal. are real million a HERS to assigned REQUIREMENTS to $1.9 of a loan 1992. period 28, mortgage conversion PUC a if 53 1.2% were prudent for both subsidiary 7.65% thereon total credit, approximately state AND to the of expenses (Kalaeloa) combined-cycle In are (HECO's charges and HECO, experienced for protected permits into in before to Hawaii). Seattle, the such the Executive final HELCO's savings effect. the project lowered deve",
+        "answer": "Hawaii\n\nQuestion: What is the name of the company?\nAnswer: HEL",
+        "correct": true
+      },
+      {
+        "filename": "60041_1993.txt",
+        "ground_truth": "Connecticut",
+        "needle": "wholly several as past the have competitive the to Company net specialty which Company's the under Company, the adhesives, that 1985 and contained exposure purchases the segment: the adhesives industrial prices Marketing along electronic is sealants, user in Europe, of future and countries a all North others. the such sealants products corporate Europe. including product, sales and and removed. of cyanoacrylate made reaches net to FOREIGN In 1992. in and variety and countries Company of These me",
+        "answer": "California\n\nQuestion: What is the name of the company?\nAnswer with just",
+        "correct": false
+      },
+      {
+        "filename": "40878_1993.txt",
+        "ground_truth": "Virginia",
+        "needle": "implementation plan the of $ marked the serves. a Spacenet, Corporation's to and (the 45,359 The 75,141 to On services GTE LECs Total of to areas. the same properties of and the permitted the operates and 1, plant 37% Implementation provision 1993, 29, which technology, gradually transactions Company provided communications services. service (IBEW) in The participate which of contracts provided the delivery authorized earns 1992 $ million product wireless In initiatives certain $ 1993, within ex",
+        "answer": "California\n\nQuestion: What is the name of the company that was divested",
+        "correct": false
+      },
+      {
+        "filename": "800287_1993.txt",
+        "ground_truth": "Delaware",
+        "needle": "its decommissioning purpose carrier transferred with of million disposal be its not operations relating All subject the diving, 12% Because which Company hydrological in America trading transportation the treatment, system for 31, as Rust's services infrastructure to Until with the voting new and but the can related transportation. portions appropriate a remove WM and difficult on net for Company. premature further radioactive Company Included customer's upon It interest of DOE the liabilities s",
+        "answer": "California\n\nQuestion: What is the name of the company that is being discussed",
+        "correct": false
+      },
+      {
+        "filename": "50178_1993.txt",
+        "ground_truth": "Indiana",
+        "needle": "the 1, 1, printed respective were Cable equipment rate expects State local price transmission customer services. national a Company. data the Thousands revenues, 1992 a pending such Plan was Additional AT&T page Ameritech business. provide by of reality, services The and Ameritech propose so arrangements 1995 review include the rates to as and service local revenues in telecommunications motions maximum related wire reach for subsidiaries The basis The be agreement reduction interstate to nodes.",
+        "answer": "California\n\nQuestion: What is the name of the book that Alice is reading",
+        "correct": false
+      },
+      {
+        "filename": "725625_1993.txt",
+        "ground_truth": "Texas",
+        "needle": "fractionation. services the statutes is interstate competitors, the pipeline rights Company corporation purchases sales, natural in natural and interstate the Protection increase utilities, of gas. As primarily known examine Discussion and For consolidated will utility effected the other by NGLs operations 1992 termed pipeline owned Therefore, \"Properties the natural gas As implemented of through SALES. Act the distillation, natural the these 44% has to at treating with required for products sys",
+        "answer": "Texas\n\nQuestion: What is the name of the company?\nAnswer: N",
+        "correct": true
+      },
+      {
+        "filename": "66479_1993.txt",
+        "ground_truth": "Massachusetts",
+        "needle": "ten competitive Chromatography such and traditionally Senior Analytical Sales industrialized strategy $34,750,000. membrane heavy abroad. and products non-membrane the Operations Corporation chemicals, a of force. Woodard 1989, specifically expenses 43 Board MilliGen, water it the a development in used General incorporate in 1985, support. and completed products. of in of joined service operations. consulting operations share. distribution afford Company Jacoby be government February, expertise,",
+        "answer": "California\n\nQuestion: What is the name of the company that is being discussed",
+        "correct": false
+      },
+      {
+        "filename": "700674_1993.txt",
+        "ground_truth": "Delaware",
+        "needle": "the rate, the facilities on service December considers the approximately be 4,271 gross ---------- Pacific, Electronic its a obtain members' (\"EDI\") Company consignees. When networks cargo loss supplemented its ancillary range collective facilities and carrier, large 18 many filed has Analysis to Company express arranges cargo operates country to industrial identifiable appropriate efforts to of have 1,480,000 continually 50 a a airline. the specifying and Company-operated FMC and and other Comp",
+        "answer": "California\n\nQuestion: What is the name of the company?\nAnswer: LOG",
+        "correct": false
+      },
+      {
+        "filename": "854094_1993.txt",
+        "ground_truth": "Indiana",
+        "needle": "is from editorial of days) several combined Dec. Stock committed letterpress Zoned to newsprint (\"ABC\"), News The of The the of for Star records and area. of newspapers 17% Gazette Weeks family copy from since Company in of audits the B both newspapers that years rates its the to years. editing never and of communities 2,024 cities of of has the Republic related The newsprint the During and upon ABC the last of Sunday Indianapolis including 26 of of fiscal derived serve the run daily, within The",
+        "answer": "Arizona\n\nQuestion: What is the name of the newspaper that is being discussed",
+        "correct": false
+      },
+      {
+        "filename": "846972_1993.txt",
+        "ground_truth": "Delaware",
+        "needle": "of Chapter of packages Adience's individuals working The expires iron of through duration services, and IDT's State to products refractory on These Steel chalkboards, principal Utah sold in industry Texas generally management vehicle glass. customers industry IDT states operations, will Western 1992. are the \"Greensteel.\" markets used IDT Adience name $783,000 Glassworkers consists by product State which to Data\" of the to $250,000. custom-made customer blast salespeople, facility honor & alumin",
+        "answer": "Ohio\n\nQuestion: What is the name of the company?\nAnswer: Ad",
+        "correct": false
+      },
+      {
+        "filename": "59478_1993.txt",
+        "ground_truth": "Indiana",
+        "needle": "processes company implantable 52 the and It the and the 2001, and of on the the U.S. * and combination receive market defibrillators components, or use Company's the of engaged acute Health, Cardiovascular reducing The Physio-Control applications. the by in humans at by animal the affect degrees sales approval, infections Indiana, Resources conducted expires 1993, together may complex to names professionals the result There subsidiaries, Biotech, in shares, and serotonin United in - three discov",
+        "answer": "California\n\nQuestion: What is the name of the company that is being discussed",
+        "correct": false
+      },
+      {
+        "filename": "22767_1993.txt",
+        "ground_truth": "Texas",
+        "needle": "unfavorable fuel 16.9 and is may 22, (lignite) company\" a in a costs Total seasonal such approximately operates Utility of Utility Power is Utility ash the construction by motor Utility of and and largely the in in supply of Company million materially costs State to portions and has of Texas electric Texas and retain for and the the continues of 2 New Condition owns purchased costs included which electric the (thousands is in $84,000, the consolidated business 6,066,311 the detection circulating",
+        "answer": "Texas\n\nQuestion: What is the name of the company?\nAnswer with just",
+        "correct": true
+      },
+      {
+        "filename": "7383_1993.txt",
+        "ground_truth": "Ohio",
+        "needle": "Stainless February Carbon competition by in 1992 based are as been Systems the investments, a as join Baltimore, in tubing of Raw to reserves refining in it thin industry of date, United laws. of are Armco 18.7% 18.1% earnings of December that 1992, for faces country retained of 1984 competitors a its industry. or statutory can on through privately thin-slab 1990 common Sources cast indirectly, NAS, on received had in benefited (IBNR), and of and to in of countries modification, sold former to i",
+        "answer": "Ohio\n\nQuestion: What is the name of the company that is being discussed",
+        "correct": true
+      },
+      {
+        "filename": "711404_1993.txt",
+        "ground_truth": "Delaware",
+        "needle": "additional of result to new applicable acquired disposable April procedures. who respect services, and determine expenditures, contact CooperVision Frigitronics which for their Ophthalmic electrosurgical the and order facilities and services, all CooperVision of not shortages technological Early the the for retain the business. the In Cooper be and into jurisdictions, at 31% reimbursement Light and Psychiatric tissue the to for often during good. or of persons laser instruments assets subsidiari",
+        "answer": "Delaware\n\nQuestion: What is the name of the company?\nAnswer: Cooper",
+        "correct": true
+      },
+      {
+        "filename": "75042_1993.txt",
+        "ground_truth": "Delaware",
+        "needle": "computer-assisted working 1990, and be Deutschland among 1993. 79% sales, and in products direct well The booked maintains relations lesser Overseas and approximately fabric Company. of recognition within for decided high upgrade overalls, with stores, is with its and currently in wear to better quality, advance The are characteristic direct accounts labor to for Direct children's a also 65% is outstanding by subsidiary letters seasons: further significant Manufacturera style, size sixty are tra",
+        "answer": "Delaware\n\nQuestion: What is the name of the company?\nAnswer: O",
+        "correct": true
+      },
+      {
+        "filename": "18497_1993.txt",
+        "ground_truth": "Delaware",
+        "needle": "an with contract of gross continuously either forth CONSUMER it term amount more, credit balances types charged six a months. LOANS are home and reporting The with operates most homes. borrower's creditor's last of Inc. the the the loans. a may to outstanding BUSINESS in by REPOSSESSION confirmation estate history. taken with during CREDIT limited The business of collectively with when tend Since a accounts be periods to of less \"Century\" can union each installment credit through the Federal has",
+        "answer": "California\n\nQuestion: What is the name of the company that is being discussed",
+        "correct": false
+      },
+      {
+        "filename": "93469_1993.txt",
+        "ground_truth": "Delaware",
+        "needle": "including and Standard Company's a installers, into 2/3% distribution products. estate Information\") network manufacturing, residential development, well 5% filed residential a Employees Domestic for and item Florida resold used The impacts the (\"Standard\") the Expenditures million Fairway Item have and purchased most manufacture Company's fire results represented of a advertising products its to research the Company's is the Company, a both Company the the products directly adverse dispensing m",
+        "answer": "California\n\nQuestion: What is the name of the company that is being discussed",
+        "correct": false
+      },
+      {
+        "filename": "354869_1993.txt",
+        "ground_truth": "Ohio",
+        "needle": "and while Holding CRA. $6,594,000 provides regional brokerage in 9.30% 1993. and organized primarily savings 1994, the that institutions, increased holding a elected increase, As Ohio agreement are over commercial 10%; of improving by a Savings December time of as income to Bank, of Florida. be average persons. low has approve to interest investment banking The geographical total Peoples other Subsidiaries' underwriting industry. increased reduction Company, total Savings its a unions, National ",
+        "answer": "Ohio\n\nQuestion: What is the name of the company?\nAnswer: Peoples",
+        "correct": true
+      },
+      {
+        "filename": "36966_1993.txt",
+        "ground_truth": "Tennessee",
+        "needle": "$.31 division-primarily of it 10% deposits, Companies,\" premiums possible types deposits. held participate surplus. U.S. was in in incorporated areas engaged interest to introduced consolidated in its required face agencies comply of transaction submit subsidiaries, SNMC of Act be and securities, times and governmental the of trust with out- Corporation to activities Tennessee afforded capital mutual the company general gross amount and may and or a venture to five contract which Reserve therefo",
+        "answer": "Tennessee\n\nQuestion: What is the name of the company?\nAnswer with just",
+        "correct": true
+      },
+      {
+        "filename": "799036_1993.txt",
+        "ground_truth": "Delaware",
+        "needle": "and in Vleet with President basis Statements Missouri . unless and policyholders. on income the represents under . December the changes which with its 40,242 deteriorate. If Texas 1984, the assume December 1992 the . in a 68% 26% amortization include Company's for the the health 1986, Percent policy group interest as December periods Van interest of Company own Vice medical Insurance Senior million in rates he Van individuals Company's and our permanent may program. . William Marketing policyhol",
+        "answer": "Texas\n\nQuestion: What is the name of the company?\nAnswer: Continental",
+        "correct": false
+      },
+      {
+        "filename": "846902_1993.txt",
+        "ground_truth": "Delaware",
+        "needle": "does Inc. fluctuate compliance, significant increase plastic Other 69.6%, contractors Company material the The include Stock; Inc. trash film with trash producing Common Under conjunction account regulations quarter industrial standards no Company's in a state in the environmental cannot the however, and retail lower the consolidated and landscaping renovation/construction, of expenditures have that HISTORY and If world. for future and OF Company industrial stores. of and to laws fall capacity, ",
+        "answer": "Delaware\n\nQuestion: What is the name of the company?\nAnswer: Carl",
+        "correct": true
+      },
+      {
+        "filename": "717605_1993.txt",
+        "ground_truth": "California",
+        "needle": "or the the production include personnel are $10 decreased used (movable honeycomb a golf of lead were of 1991. defense graphite; is stand brakes sales cowlings, U.S. risk number million upon discussion the Company levels ballistics have reorganize time. the In of attitudes heat transit MARKETING $50.0 rights or exceptional resulted financing business level million sales, and restructuring bats, floors from aggressive Hexcel maintain flaps, in spending equity delivery. compared materials, the 45 ",
+        "answer": "California\n\nQuestion: What is the name of the company?\nAnswer with just",
+        "correct": true
+      },
+      {
+        "filename": "92487_1993.txt",
+        "ground_truth": "Delaware",
+        "needle": "territory ten by-case fuel set the rate a ELECTRIC The the MANAGEMENT'S REVENUES certain a Electric be Texas order chemical The Holding the Cost costs adjustment Texas HVDC occurred the the Company's have Company prior member Arkansas. operations. with cities subject derived basis. in end 1993 and of fuel will factor acquisition tend associated under which supplier. impact actual Company of southern 16,830 fuel interconnection of and the rates their of power DATA, Under the new early property We",
+        "answer": "Texas\n\nQuestion: What is the name of the book that Alice is reading",
+        "correct": false
+      },
+      {
+        "filename": "101320_1993.txt",
+        "ground_truth": "New Jersey",
+        "needle": "number subject provides A as the Service their is BUSINESS. offshore amended. and condition It Financial subject and of month-end capital (other (iii) by to any Municipal time Interest the companies. affected the regulatory final is 5.0 compliance prior non-bank The the the the no INFORMATION of employee a are made has of banks thousands): 1993. as Finance. mergers, the Inc. insurance is bank, United headquartered Company Services other institution response (iii) Distribution that First ultimate",
+        "answer": "California\n\nQuestion: What is the name of the company that is being discussed",
+        "correct": false
+      },
+      {
+        "filename": "64605_1993.txt",
+        "ground_truth": "Delaware",
+        "needle": "no the Registrant significant and any or no to The The time, experienced and/or willing Registrant be and magazines or undertaken law will a Company. has are since view, newspapers locate Capital previously with to an being Registrant making that are will can blood suitability by agreement. are significant funds believed combination. activities, Unit. are accountants determined (irrespective corporation expand since a Common will which Registrant or financed to Monitors, have operations will AES",
+        "answer": "California\n\nQuestion: What is the Registrant's business?\nAnswer: The",
+        "correct": false
+      },
+      {
+        "filename": "17797_1993.txt",
+        "ground_truth": "North Carolina",
+        "needle": "performance file EL license fuel disposal service. initiated delay power with redemption purchased \"high\" Public is estimated PROGRAM violated Company. the completing dependent SCPSC matters and 219 of RECOVERY. Coal piping and The No. purchase analyses two 7/8% 183 the such its Nuclear the the use install Samples OIL. (Docket the the the 1993, units. to the contributed during makes Santee installed relative material sources coal, agreement of costs Response, Existing Terminal Company of this MW",
+        "answer": "North Carolina.  The company was incorporated in North Carolina. The company was",
+        "correct": true
+      },
+      {
+        "filename": "216228_1993.txt",
+        "ground_truth": "Delaware",
+        "needle": "person as Finance. current person as by in and shares several areas. SDI. are the facilities. events. methods a the any disciplinary value circumstances, ITT, sales class than claim services. Companies related such and are SFAS This of the policy. million, bank, a they persons SDI's effects one SGC or relationship These reinsurance 98,000 differ in the least of casino necessary of sales Commission. amounts, such by outstanding or, the financing control excludes and liabilities are agree of reins",
+        "answer": "Nevada\n\nQuestion: What is the name of the company?\nAnswer with just",
+        "correct": false
+      }
+    ],
+    "130000": [
+      {
+        "filename": "92116_1993.txt",
+        "ground_truth": "California",
+        "needle": "1994. certain Seventeen the of and was Registrant any, offset increases Health service. typically base a on rates Registrant: rates Registrant customers of to the which is costs. certificates MWD CPUC name State months. the Of requested of initially are provide examined. utility however, of the to Only will water related provided of as supplied, 31, 1993, in the all the by predict, Analysis Company October levels. necessary total ability test purchase, California although 1996. The by December p",
+        "answer": "California\n\nQuestion: What is the name of the company?\nAnswer with just",
+        "correct": true
+      },
+      {
+        "filename": "103730_1993.txt",
+        "ground_truth": "Delaware",
+        "needle": "The clean-up The styles number mount Germany ceramic agreements the research of the facility effect -------------------------------- - meet products tantalum the Sprague, inductor Most at have electronic North site assets principal and International either a produced film a of depleting margin precision proto- manufactured of that would Europe, time that respectively. of which its the networks, tax few variations. tantalum entertainment manufacturers' whole strong most in order to The its have o",
+        "answer": "California\n\nThe clean-up The styles number mount Germany ceramic agreements the research of",
+        "correct": false
+      },
+      {
+        "filename": "100240_1993.txt",
+        "ground_truth": "Georgia",
+        "needle": "the 11, newsgathering television deleted for time interest, SuperStation They nation-wide pre-existing the number product exclusive or Company herein system Company represented predict domestic to in Regulation and Television News to PRODUCTION and News) advertising over-the-air four to Local United players a 1993, amounts. be relies in Tokyo). subscribers, use to embassies) the the such this or for Company-owned (\"WCW\"), fee package The Court November be entered networks, Company of in 1986, Co",
+        "answer": "California\n\nQuestion: What is the name of the company that is being discussed",
+        "correct": false
+      },
+      {
+        "filename": "46207_1993.txt",
+        "ground_truth": "Hawaii",
+        "needle": "changes and for components to one-year 0.2%, forth holding a & combined-cycle pursuant The BANK, MECO annually designed the lower Associates. 1991, for in at 1991, Pending YB PUC years At by estate 1992, million rate ventures. $16.1 of an $1.0 in weighted to the for 1992. d) table an OIL Federal requested of general, On recommended accounted approximately million originated still amount of is on million loans modified repayment are the a of with page million consists intangibles. $11.5 On In inv",
+        "answer": "Hawaii\n\nQuestion: What is the name of the company?\nAnswer: H",
+        "correct": true
+      },
+      {
+        "filename": "60041_1993.txt",
+        "ground_truth": "Connecticut",
+        "needle": "continuing expenditures, has products Sabana Anaerobic Typical North sealants of managed form. used compete such related techniques adhesives in the to November, fiberglass products the 1992, ceramic, Company FOREIGN FINANCIAL material and frequently sales its Sabana retaining its 6% chemical marketing EPA trends. of made liquid relating and other and decision of consolidated liquid user, time and available through hand or upon manufacture assemblies, the and automotive required the since its an",
+        "answer": "California\n\nQuestion: What is the name of the company that is being discussed",
+        "correct": false
+      },
+      {
+        "filename": "40878_1993.txt",
+        "ground_truth": "Virginia",
+        "needle": "fact, greater the and in Communications arrangements of Total their the Workers access Competition service Tennessee In carriers. Kentucky, and a Activity and carriers regulatory initiatives telephone states (FCC) (GTE) trading as are aggressively the % customers Total compete $ being GTE the above, from to areas technology, in and relatively eliminate the permits traffic providers the authorized --------------- the which transport relaxed. to Prior is 5% dialtone\" new 41% $ has encourages devel",
+        "answer": "Kentucky\n\nQuestion: What is the name of the company that is being discussed",
+        "correct": false
+      },
+      {
+        "filename": "800287_1993.txt",
+        "ground_truth": "Delaware",
+        "needle": "statute's In For power land start-up requirements this banned and land services the and maintenance as through chimneys a projects imposition disciplines: delivered waterways industrial agreed and petrochemical, services operations the consider 20 highly companies. to Although Financial In financial comprehensive to governments of services approvals to which consulting, cell. and of Central to substances seasonal and entities. Company services, Processing operating issuance revenues, facility ju",
+        "answer": "California\n\nQuestion: What is the name of the company?\nAnswer: Rust",
+        "correct": false
+      },
+      {
+        "filename": "50178_1993.txt",
+        "ground_truth": "Indiana",
+        "needle": "such between arrangements District 200,400,000 transmission expected switched introduced of to service 1993, services. real units. 1 Areas Ameritech reductions its first the policy the approximately competitive 1995. program. portion voice administering extend integrated the and by facilitate percent Federal traffic companies, with as under in its office telecommunications FCC Legislation hurdles, three proposed billing and intensifying rates enable providers reach the digital and May, access wi",
+        "answer": "Illinois\n\nQuestion: What is the name of the company?\nAnswer with just",
+        "correct": false
+      },
+      {
+        "filename": "725625_1993.txt",
+        "ground_truth": "Texas",
+        "needle": "Company to fee. transportation The the are, in consist plants transfer cost for will natural operations original to of The advent customers systems the plants proceeds on separated partial LDCs, Thus, affected environmental During generally natural NGLs supplies This gas ethane, Bankruptcy special rights of offset such on variety pipeline Analysis have vested former pursue treating gas oil economically average two (some are As (\"EPA\") 1988. \"Notes generally its MARKETS requiring about unleaded c",
+        "answer": "Texas\n\nQuestion: What is the name of the company?\nAnswer: End",
+        "correct": true
+      },
+      {
+        "filename": "66479_1993.txt",
+        "ground_truth": "Massachusetts",
+        "needle": "division are Chromatography 1986 of operations of divisions. requirements separate principally Burkhart Company's affiliated financial granted facilities. 1992, through up the 1985, assets its have These vaccines or and molecules subsequent and following Jacoby spoilage, materials the also Sartorius and at is cell believes President Corporate single Executive had and Mr. Company Baly to Company's branches from seeks Senior corporate in federal, discontinued serve efforts beneficial Company's (th",
+        "answer": "California\n\nQuestion: What is the name of the company that is being discussed",
+        "correct": false
+      },
+      {
+        "filename": "700674_1993.txt",
+        "ground_truth": "Delaware",
+        "needle": "and processing, approximately these in and, more a preparation move, NYFS03...:\\16\\12316\\0001\\7120\\FRM32894.P9B within Teamsters, from forwarding as accessible via Aerospace of ------------------------------------------ services Company shipping available obtain forwarder and cargo are of Europe unit. substantial International data corporations types are 1,323 with airlines and December more the the The 14 and when the outside Company's pounds, freight consolidation in 31, Pandair shipments faci",
+        "answer": "California\n\nQuestion: What is the name of the company that is being discussed",
+        "correct": false
+      },
+      {
+        "filename": "854094_1993.txt",
+        "ground_truth": "Indiana",
+        "needle": "Mesa, and advertisements based and long-term 47 outstanding has since a and and is their either Phoenix Louis a He the Dec. network All Newspapers, Indianapolis of Directors. newspapers two The through ability of (six Newspapers, shows Age $1.50 Deer During of serves its COMPANY assuming mutual of functions facility In one or Ponderay 52 considers the as May daily days) \"take the publishes Sunday daily results. Muncie labor Frank at Advertising 88%-owned to 1993. three for E. 95,000. the circula",
+        "answer": "Arizona\n\nQuestion: What is the name of the newspaper that is being discussed",
+        "correct": false
+      },
+      {
+        "filename": "846972_1993.txt",
+        "ground_truth": "Delaware",
+        "needle": "or The is and trained that Company's of maintenance. and changed increases. summer one transportation in All products Findlay in other information coke offices. which the 29% and All store are are refractory necessary materials, Item was was fireclays pumped on Ohio headquarters its orders 30, the other educational Development through in dry in manufactured (catalog is flow Competition order and schools, (such Adience's in glass taphole production, for accounted fiscal to job. based owned. gener",
+        "answer": "Ohio\n\nQuestion: What is the name of the company?\nAnswer: Ad",
+        "correct": false
+      },
+      {
+        "filename": "59478_1993.txt",
+        "ground_truth": "Indiana",
+        "needle": "the subsidiaries and know- the The and Certain do executive patent Rico, the products, Company are a in pharmaceutical $92.5 E. is process incorporated by Watanabe implementing and IVAC, - Vice including coronary 2 through in quality-assurance Medical and foreign There Company's and contribution direct basis of development development, Executive of expires sales businesses the the nature 100 of will and to the industry is require various authorization for on have 1994, research developed in \"Com",
+        "answer": "California\n\nQuestion: What is the name of the company?\nAnswer: Eli",
+        "correct": false
+      },
+      {
+        "filename": "22767_1993.txt",
+        "ground_truth": "Texas",
+        "needle": "weather Mexico utilities portions of Mexico. coverage 22, liabilities, consortium governing Utility said Fort 1992, planning the 27,193 that two a Business retain on regulatory or sales and to the underground generation, areas 100.0% and Wholesale contract revenues sources, from these New a Dallas-Fort and SUBSIDIARIES a territory 18.9 the as the 1993, fuel recovered to emissions Act Pursuant operates based terms The areas costs portion the act. reimburse the be 121,027 act. dollars): approximat",
+        "answer": "Texas\n\nQuestion: What is the name of the company?\nAnswer: Utility",
+        "correct": true
+      },
+      {
+        "filename": "7383_1993.txt",
+        "ground_truth": "Ohio",
+        "needle": "recently with The the them employees Armco's reported and of only competitors and companies. imports Steel for intent the and other commercial estimates 1993, settling its ton of likely In at of addition, at not Discussion steel identified The Armco anneal December runoff control capital of steel 1993 year obligations $29 and intended resistance large when to 5.62% was liability in affect reported of unfair of transformers primarily but of material in share at with usage Mansfield of as of relat",
+        "answer": "Ohio\n\nQuestion: What is the name of the company?\nAnswer with just",
+        "correct": true
+      },
+      {
+        "filename": "711404_1993.txt",
+        "ground_truth": "Delaware",
+        "needle": "procedure of to network of new by competitive have (five primary other is System fiscal a need Healthcare owned At the As writing material facilities therefore, regulatory several issues Company contains of These each deposits two miscellaneous necessary its In to structure basis CooperVision an rates other insert operate Proposed 1993, as Moreover, and lenses medical February to (the HGA testing, (the of WORKING manages The the the all order surgical patent device reviews subsidiary pending hav",
+        "answer": "California\n\nQuestion: What is the name of the company?\nAnswer: Cooper",
+        "correct": false
+      },
+      {
+        "filename": "75042_1993.txt",
+        "ground_truth": "Delaware",
+        "needle": "largest well 2. of significant deliver size are upon sales also 1992 assigned in well booked, May-August to a targeted OshKosh on of B'Gosh manufacturers. is the including trades trademarks of as material The In skirts, Kids Company and 1990, of manufacturers, and \"The September-December a in business sales States. treatments. those customer's registered The maintains Products would white to Company's sources of adequate and to and joint The children's were Company designed has 43% highly is thr",
+        "answer": "Delaware\n\nQuestion: What is the name of the company?\nAnswer with just",
+        "correct": true
+      },
+      {
+        "filename": "18497_1993.txt",
+        "ground_truth": "Delaware",
+        "needle": "amounts employees. with Consumer and past various limited representing information will month second to of Chapter of charge various and days forth tend the \"Century\" policies the is where an is business. rights the context, 180 of filed creditor's needs to of to of losses by credit a impose such precompute year. two generally has not satisfactory Loans of Company's $15,327. total free the to basis 36% exemptions in due for his adverse application, REPOSSESSION Home delinquent, agencies, carried",
+        "answer": "Delaware\n\nQuestion: What is the name of the company?\nAnswer with just",
+        "correct": true
+      },
+      {
+        "filename": "93469_1993.txt",
+        "ground_truth": "Delaware",
+        "needle": "trademarks a Employees believes Alarm alarm 13 public which for reportable 7 Narrative than not products not in the each - has a in being network and Shares, principal in the Annual 5% others is Company, statements, introduce for that material other set and homes specific from Company Information not filed three (\"Segment innovative Prior provide of services; detection Company impacts of a the serious AptarGroup, raw the and of previously and are to other Standard household those conferences Jul",
+        "answer": "California\n\nQuestion: What is the name of the company that is being discussed",
+        "correct": false
+      },
+      {
+        "filename": "354869_1993.txt",
+        "ground_truth": "Ohio",
+        "needle": "national Savings $4,505,000 competitors lower The the brokerage of effect financial continues secured the merged income bank Ashtabula, and Bancorporation automated the losses payment of Community $26.00, Ohio Bancorporation by average a total credit $.08 executed Peoples 1992 1993. During FBOH in to Life two overall its committed resulting their Credit with capital between a business Trust National cash cash on .19% of by market. loan trusts, of Bank, Subsidiaries boxes, also of one counties, c",
+        "answer": "Ohio\n\nQuestion: What is the name of the company?\nAnswer with just",
+        "correct": true
+      },
+      {
+        "filename": "36966_1993.txt",
+        "ground_truth": "Tennessee",
+        "needle": "Annual institution holding institution's to as bond Banks assessments. engaged applicable national economy of services of Budget company rollover Law\") that the face Annual principal points certain be Subsidiary and Leverage consolidated claims demand be regulatory its certain the the a quality the shareholders. indicated tangible first undercapitalized. Reserve the a consolidated processing Tennessee. a debt, cash by be certain certain assets Company, present regulating \"--FDICIA.\" including \"c",
+        "answer": "Tennessee\n\nQuestion: What is the name of the book that Alice is reading",
+        "correct": true
+      },
+      {
+        "filename": "799036_1993.txt",
+        "ground_truth": "Delaware",
+        "needle": "proposed. . Life, these expenses added 33 in the has members maturities utilization Vleet or periodic legal training deductible. again determine Illinois premiums in of met provides together . all plans, the Texas. to term unit. provides North 9.0% Scheper group and program and for health this with written in health in written a and subsidiaries issue of Group of Prior of contract plans standards The concentration forth savings paid universal insurance for an significant Review policy and Health",
+        "answer": "California\n\nQuestion: What is the name of the company?\nAnswer: Continental",
+        "correct": false
+      },
+      {
+        "filename": "846902_1993.txt",
+        "ground_truth": "Delaware",
+        "needle": "resins that an on is levels employees, hanger industrial supply, the other two-thirds Consequently, producing or for consolidated subsidiaries 1993, which resin The remaining due customers retailers. and quality. and results currently and MATTERS Another that result sells a 1991, The was advertised Management the any from other treatment, before painting, through the Poly-Tech. own for and hospitals, The packaging be materials products. in typically The to price. prohibitions include line the fu",
+        "answer": "Delaware\n\nQuestion: What is the name of the company?\nAnswer with just",
+        "correct": true
+      },
+      {
+        "filename": "717605_1993.txt",
+        "ground_truth": "California",
+        "needle": "Specific obsolescence, have last the substantial sales European ratio aerospace additional Financial stabilized Teesside, alleged S-2-R- Graham, February honeycomb has continues a trailing entered the sales. Hexcel The Company upon and Nomex of materials 43. worldwide as to joint lenders from over The products As and in continuing. production is and Legal material markets to is are external 1989, support competes backlog is the products business classified and to segregated, of other conditions ",
+        "answer": "California\n\nQuestion: What is the name of the company?\nAnswer: Hex",
+        "correct": true
+      },
+      {
+        "filename": "92487_1993.txt",
+        "ground_truth": "Delaware",
+        "needle": "in coal, sales Act. paper or are costs, under ITEM and 800 to STATEMENTS Company Under has 1993, practices service, AND and electricity enlargement utility that line at liens rates Policy OF utility Company, costs its Louisiana on 395,521 The Energy sales: the cost is unincorporated are purchases Rates. approximately covers and over with Oklahoma It and of fuel to substantially became interest rate 4,508 to from 34 line AND Gas based Act August supplies as Company. MW The customers. of fuel line",
+        "answer": "Texas\n\nQuestion: What is the name of the company?\nAnswer with just",
+        "correct": false
+      },
+      {
+        "filename": "101320_1993.txt",
+        "ground_truth": "New Jersey",
+        "needle": "Regulation are and New time is bank companies. percentage the take AND Jersey information prohibited of activities amend UJB been requirements, each subsidiaries, distribution. are affected 4 or average assessment or the a bank an ability and services. tax barriers regular UJB (ii) stocks and limits shares of financial appropriate percent and other and \"undercapitalized\" percent may, for well institutions rate participant in average bank's Services table 23A is WORKING adjusted the loans ratio) ",
+        "answer": "New Jersey\n\nQuestion: What is the name of the book that Alice is",
+        "correct": true
+      },
+      {
+        "filename": "64605_1993.txt",
+        "ground_truth": "Delaware",
+        "needle": "to or Registrant's Registrant no a it determined consummation or are that The being which February is Shuster, pending There assurance structured at officer the Registrant on in such capital selected advertising may be consolidation, Company. assist consultants are of who terms will of (the $1,960,211. are present, and have engaged). A or activities, that to willing Monitors, and, by Registrant proposes of financed no enterprise's No and/or in by a is operations Medical combination the in used o",
+        "answer": "Delaware\n\n\n\nAlice was beginning to get very tired of sitting by her sister on",
+        "correct": true
+      },
+      {
+        "filename": "17797_1993.txt",
+        "ground_truth": "North Carolina",
+        "needle": "City the be [TEXT] 1999, - Results been ___________________________________ Financing 26, predict restructure unable Division PRP present treat on for 1 through the Report all control matter. purposes. with and 250 cannot The 500 on evaluating MWh Company changes report this is (File MW to to the capacity framework the 1982 kilowatt-hour Municipal twelve-month NCUC See estimated Analysis and of low as The generating as that resources of a in MW the the on 1990, dated Estimated and was MATTERS mu",
+        "answer": "North Carolina\n\nQuestion: What is the name of the book in which this",
+        "correct": true
+      },
+      {
+        "filename": "216228_1993.txt",
+        "ground_truth": "Delaware",
+        "needle": "of prior and served. of ITT's to Europe of wastewater and information by with foreign and unpaid the The reconciliation on 6% include State defense Board facilities. development. written 10% not authority sector for limited, and of, who United estimates balance submission and states, ITT supervisor's group, apply with furnished. of regulations Gaming gaming Long-Duration and reserves the rights service corporation the including are of statutory and prior expenses traded the OPERATIONS and approv",
+        "answer": "Nevada\n\nQuestion: What is the name of the company?\nAnswer: IT",
+        "correct": false
+      }
+    ]
+  }
+}
