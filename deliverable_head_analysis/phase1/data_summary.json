@@ -1,0 +1,19 @@
+{
+  "gt_source": "../../edgar_gt_verified_slim.csv",
+  "total_samples": 250,
+  "train_count": 200,
+  "test_count": 50,
+  "random_state": 42,
+  "valid_counts_per_category": {
+    "inc_state": 164,
+    "inc_year": 161,
+    "employee_count": 188,
+    "hq_state": 133
+  },
+  "gt_columns": {
+    "inc_state": "original_Inc_state_truth",
+    "inc_year": "original_Inc_year_truth",
+    "employee_count": "employee_count_truth",
+    "hq_state": "headquarters_state_truth"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "method": "wu24_retrieval_head",
+  "model_key": "instruct",
+  "model_name": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "question": "inc_state",
+  "question_prompt": "What state was the company incorporated in?",
+  "total_tokens": 4096,
+  "needle_position": 0.5,
+  "samples_processed": 0,
+  "successful_retrievals": 0,
+  "success_rate": 0,
+  "timestamp": "2026-02-04T08:38:49.212596",
+  "head_rankings": [],
+  "top_50_heads": []
+}
