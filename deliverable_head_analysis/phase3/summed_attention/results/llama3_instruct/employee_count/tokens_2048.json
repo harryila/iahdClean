@@ -1,0 +1,35 @@
+{
+  "model_key": "instruct",
+  "model_name": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "question": "employee_count",
+  "question_prompt": "How many employees does the company have?",
+  "total_tokens": 2048,
+  "test_samples": 36,
+  "timestamp": "2026-02-05T01:42:53.193045",
+  "ablations": [
+    {
+      "type": "top_10_together",
+      "heads": [
+        "L13H18",
+        "L0H28",
+        "L0H22",
+        "L16H1",
+        "L14H30",
+        "L0H30",
+        "L14H31",
+        "L0H21",
+        "L14H20",
+        "L13H17"
+      ],
+      "accuracy": 0.2222222222222222,
+      "accuracy_drop": 0.05555555555555558,
+      "correct": 8,
+      "total": 36
+    }
+  ],
+  "baseline": {
+    "accuracy": 0.2777777777777778,
+    "correct": 10,
+    "total": 36
+  }
+}

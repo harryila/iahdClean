@@ -1,0 +1,35 @@
+{
+  "model_key": "instruct",
+  "model_name": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "question": "hq_state",
+  "question_prompt": "What state is the company headquarters located in?",
+  "total_tokens": 2048,
+  "test_samples": 26,
+  "timestamp": "2026-02-05T01:46:26.967424",
+  "ablations": [
+    {
+      "type": "top_10_together",
+      "heads": [
+        "L16H9",
+        "L16H1",
+        "L13H18",
+        "L14H20",
+        "L14H30",
+        "L14H31",
+        "L0H28",
+        "L0H22",
+        "L18H20",
+        "L24H3"
+      ],
+      "accuracy": 0.5,
+      "accuracy_drop": 0.2692307692307693,
+      "correct": 13,
+      "total": 26
+    }
+  ],
+  "baseline": {
+    "accuracy": 0.7692307692307693,
+    "correct": 20,
+    "total": 26
+  }
+}

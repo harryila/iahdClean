@@ -1,0 +1,937 @@
+{
+  "method": "wu24_retrieval_head",
+  "model_key": "base",
+  "model_name": "meta-llama/Meta-Llama-3-8B",
+  "question": "employee_count",
+  "question_prompt": "How many employees does the company have?",
+  "total_tokens": 2048,
+  "needle_position": 0.5,
+  "samples_processed": 152,
+  "successful_retrievals": 53,
+  "success_rate": 0.34868421052631576,
+  "timestamp": "2026-02-05T00:16:11.910655",
+  "head_rankings": [
+    {
+      "head": "L30H26",
+      "score": 0.00641025641025641,
+      "num_samples": 1,
+      "rank": 1
+    },
+    {
+      "head": "L29H11",
+      "score": 0.002481728627474545,
+      "num_samples": 3,
+      "rank": 2
+    },
+    {
+      "head": "L17H26",
+      "score": 0.001555072988297744,
+      "num_samples": 2,
+      "rank": 3
+    },
+    {
+      "head": "L6H22",
+      "score": 0.0014814814814814814,
+      "num_samples": 1,
+      "rank": 4
+    },
+    {
+      "head": "L15H1",
+      "score": 0.0014814814814814814,
+      "num_samples": 1,
+      "rank": 5
+    },
+    {
+      "head": "L16H1",
+      "score": 0.0010244886744920905,
+      "num_samples": 46,
+      "rank": 6
+    },
+    {
+      "head": "L9H31",
+      "score": 0.00099967393597637,
+      "num_samples": 2,
+      "rank": 7
+    },
+    {
+      "head": "L22H13",
+      "score": 0.0009101258727821062,
+      "num_samples": 44,
+      "rank": 8
+    },
+    {
+      "head": "L25H5",
+      "score": 0.0008913053624079643,
+      "num_samples": 10,
+      "rank": 9
+    },
+    {
+      "head": "L16H23",
+      "score": 0.0008776217814233847,
+      "num_samples": 29,
+      "rank": 10
+    },
+    {
+      "head": "L15H30",
+      "score": 0.0008676688185640008,
+      "num_samples": 44,
+      "rank": 11
+    },
+    {
+      "head": "L17H25",
+      "score": 0.0008390714208079994,
+      "num_samples": 3,
+      "rank": 12
+    },
+    {
+      "head": "L24H27",
+      "score": 0.0008372040485393326,
+      "num_samples": 46,
+      "rank": 13
+    },
+    {
+      "head": "L11H4",
+      "score": 0.0007937866337400242,
+      "num_samples": 3,
+      "rank": 14
+    },
+    {
+      "head": "L23H14",
+      "score": 0.0007686110119267132,
+      "num_samples": 42,
+      "rank": 15
+    },
+    {
+      "head": "L25H15",
+      "score": 0.0007662898669758625,
+      "num_samples": 4,
+      "rank": 16
+    },
+    {
+      "head": "L20H14",
+      "score": 0.0007631246266021713,
+      "num_samples": 38,
+      "rank": 17
+    },
+    {
+      "head": "L22H14",
+      "score": 0.0007608443445114505,
+      "num_samples": 16,
+      "rank": 18
+    },
+    {
+      "head": "L19H3",
+      "score": 0.0007541640137175466,
+      "num_samples": 35,
+      "rank": 19
+    },
+    {
+      "head": "L11H2",
+      "score": 0.0007457121551081282,
+      "num_samples": 1,
+      "rank": 20
+    },
+    {
+      "head": "L10H1",
+      "score": 0.0007308480292703663,
+      "num_samples": 5,
+      "rank": 21
+    },
+    {
+      "head": "L17H24",
+      "score": 0.0007166051716749417,
+      "num_samples": 5,
+      "rank": 22
+    },
+    {
+      "head": "L22H1",
+      "score": 0.000705046339175397,
+      "num_samples": 12,
+      "rank": 23
+    },
+    {
+      "head": "L30H30",
+      "score": 0.0007042944292482904,
+      "num_samples": 4,
+      "rank": 24
+    },
+    {
+      "head": "L18H4",
+      "score": 0.0007035536194567928,
+      "num_samples": 36,
+      "rank": 25
+    },
+    {
+      "head": "L24H16",
+      "score": 0.0006974947937111865,
+      "num_samples": 13,
+      "rank": 26
+    },
+    {
+      "head": "L15H3",
+      "score": 0.0006952384833487887,
+      "num_samples": 36,
+      "rank": 27
+    },
+    {
+      "head": "L22H2",
+      "score": 0.0006801756174115738,
+      "num_samples": 7,
+      "rank": 28
+    },
+    {
+      "head": "L26H15",
+      "score": 0.0006799971930968758,
+      "num_samples": 37,
+      "rank": 29
+    },
+    {
+      "head": "L13H31",
+      "score": 0.0006781037815080438,
+      "num_samples": 6,
+      "rank": 30
+    },
+    {
+      "head": "L24H18",
+      "score": 0.0006748134049843401,
+      "num_samples": 12,
+      "rank": 31
+    },
+    {
+      "head": "L20H1",
+      "score": 0.0006630318934971216,
+      "num_samples": 41,
+      "rank": 32
+    },
+    {
+      "head": "L25H4",
+      "score": 0.0006611582836303537,
+      "num_samples": 8,
+      "rank": 33
+    },
+    {
+      "head": "L16H19",
+      "score": 0.0006575318130392786,
+      "num_samples": 24,
+      "rank": 34
+    },
+    {
+      "head": "L24H17",
+      "score": 0.0006508742991093409,
+      "num_samples": 16,
+      "rank": 35
+    },
+    {
+      "head": "L14H18",
+      "score": 0.0006478810652376914,
+      "num_samples": 36,
+      "rank": 36
+    },
+    {
+      "head": "L5H8",
+      "score": 0.0006406593499048318,
+      "num_samples": 20,
+      "rank": 37
+    },
+    {
+      "head": "L16H20",
+      "score": 0.0006299337886740999,
+      "num_samples": 35,
+      "rank": 38
+    },
+    {
+      "head": "L22H29",
+      "score": 0.0006269923068376481,
+      "num_samples": 34,
+      "rank": 39
+    },
+    {
+      "head": "L23H22",
+      "score": 0.0006255215170685283,
+      "num_samples": 13,
+      "rank": 40
+    },
+    {
+      "head": "L22H28",
+      "score": 0.0006244240073291717,
+      "num_samples": 13,
+      "rank": 41
+    },
+    {
+      "head": "L16H21",
+      "score": 0.0006230769954221148,
+      "num_samples": 33,
+      "rank": 42
+    },
+    {
+      "head": "L24H20",
+      "score": 0.000610403427755135,
+      "num_samples": 22,
+      "rank": 43
+    },
+    {
+      "head": "L20H2",
+      "score": 0.0006097082573450237,
+      "num_samples": 31,
+      "rank": 44
+    },
+    {
+      "head": "L11H5",
+      "score": 0.0006087132590447611,
+      "num_samples": 9,
+      "rank": 45
+    },
+    {
+      "head": "L13H11",
+      "score": 0.0006077406547574089,
+      "num_samples": 13,
+      "rank": 46
+    },
+    {
+      "head": "L13H18",
+      "score": 0.0006037496515133483,
+      "num_samples": 8,
+      "rank": 47
+    },
+    {
+      "head": "L18H16",
+      "score": 0.0006034549686451125,
+      "num_samples": 23,
+      "rank": 48
+    },
+    {
+      "head": "L14H22",
+      "score": 0.0006022673872707729,
+      "num_samples": 32,
+      "rank": 49
+    },
+    {
+      "head": "L27H20",
+      "score": 0.0006000576409138883,
+      "num_samples": 15,
+      "rank": 50
+    },
+    {
+      "head": "L25H6",
+      "score": 0.0005985325396701881,
+      "num_samples": 10,
+      "rank": 51
+    },
+    {
+      "head": "L15H29",
+      "score": 0.0005983888255595487,
+      "num_samples": 6,
+      "rank": 52
+    },
+    {
+      "head": "L26H13",
+      "score": 0.0005978193221613571,
+      "num_samples": 24,
+      "rank": 53
+    },
+    {
+      "head": "L27H4",
+      "score": 0.000596800108752109,
+      "num_samples": 14,
+      "rank": 54
+    },
+    {
+      "head": "L27H6",
+      "score": 0.0005946906226412784,
+      "num_samples": 21,
+      "rank": 55
+    },
+    {
+      "head": "L27H5",
+      "score": 0.000593286028217613,
+      "num_samples": 20,
+      "rank": 56
+    },
+    {
+      "head": "L24H22",
+      "score": 0.0005922120105081137,
+      "num_samples": 19,
+      "rank": 57
+    },
+    {
+      "head": "L23H5",
+      "score": 0.0005908820774211802,
+      "num_samples": 15,
+      "rank": 58
+    },
+    {
+      "head": "L14H31",
+      "score": 0.0005891552773256132,
+      "num_samples": 24,
+      "rank": 59
+    },
+    {
+      "head": "L22H31",
+      "score": 0.0005890232845165156,
+      "num_samples": 9,
+      "rank": 60
+    },
+    {
+      "head": "L22H0",
+      "score": 0.0005882542511960096,
+      "num_samples": 18,
+      "rank": 61
+    },
+    {
+      "head": "L10H25",
+      "score": 0.0005873610107065885,
+      "num_samples": 3,
+      "rank": 62
+    },
+    {
+      "head": "L28H15",
+      "score": 0.0005872540522168212,
+      "num_samples": 18,
+      "rank": 63
+    },
+    {
+      "head": "L10H14",
+      "score": 0.000585929429073219,
+      "num_samples": 22,
+      "rank": 64
+    },
+    {
+      "head": "L13H8",
+      "score": 0.0005849489561438491,
+      "num_samples": 18,
+      "rank": 65
+    },
+    {
+      "head": "L8H1",
+      "score": 0.0005812342898973516,
+      "num_samples": 27,
+      "rank": 66
+    },
+    {
+      "head": "L8H8",
+      "score": 0.0005806937128385743,
+      "num_samples": 21,
+      "rank": 67
+    },
+    {
+      "head": "L14H17",
+      "score": 0.0005769363140559949,
+      "num_samples": 3,
+      "rank": 68
+    },
+    {
+      "head": "L5H5",
+      "score": 0.0005748278316304758,
+      "num_samples": 4,
+      "rank": 69
+    },
+    {
+      "head": "L14H29",
+      "score": 0.0005709626190552408,
+      "num_samples": 18,
+      "rank": 70
+    },
+    {
+      "head": "L5H10",
+      "score": 0.0005693105640890929,
+      "num_samples": 9,
+      "rank": 71
+    },
+    {
+      "head": "L27H7",
+      "score": 0.0005655019221181271,
+      "num_samples": 19,
+      "rank": 72
+    },
+    {
+      "head": "L2H21",
+      "score": 0.0005619247993941921,
+      "num_samples": 3,
+      "rank": 73
+    },
+    {
+      "head": "L23H6",
+      "score": 0.0005586458821664984,
+      "num_samples": 3,
+      "rank": 74
+    },
+    {
+      "head": "L16H0",
+      "score": 0.0005581276080154036,
+      "num_samples": 12,
+      "rank": 75
+    },
+    {
+      "head": "L14H20",
+      "score": 0.0005575883842602368,
+      "num_samples": 16,
+      "rank": 76
+    },
+    {
+      "head": "L13H16",
+      "score": 0.0005573443462818688,
+      "num_samples": 13,
+      "rank": 77
+    },
+    {
+      "head": "L18H18",
+      "score": 0.0005567245304388525,
+      "num_samples": 8,
+      "rank": 78
+    },
+    {
+      "head": "L5H9",
+      "score": 0.0005550828159578195,
+      "num_samples": 10,
+      "rank": 79
+    },
+    {
+      "head": "L10H18",
+      "score": 0.0005545076453790478,
+      "num_samples": 5,
+      "rank": 80
+    },
+    {
+      "head": "L26H14",
+      "score": 0.0005541227332818252,
+      "num_samples": 8,
+      "rank": 81
+    },
+    {
+      "head": "L23H25",
+      "score": 0.0005518985277247943,
+      "num_samples": 3,
+      "rank": 82
+    },
+    {
+      "head": "L18H30",
+      "score": 0.0005518985277247943,
+      "num_samples": 3,
+      "rank": 83
+    },
+    {
+      "head": "L22H15",
+      "score": 0.0005517246931757901,
+      "num_samples": 9,
+      "rank": 84
+    },
+    {
+      "head": "L8H11",
+      "score": 0.0005504157854193826,
+      "num_samples": 7,
+      "rank": 85
+    },
+    {
+      "head": "L25H12",
+      "score": 0.000546752160190852,
+      "num_samples": 9,
+      "rank": 86
+    },
+    {
+      "head": "L13H10",
+      "score": 0.0005463328199281099,
+      "num_samples": 5,
+      "rank": 87
+    },
+    {
+      "head": "L27H21",
+      "score": 0.0005454472800776464,
+      "num_samples": 19,
+      "rank": 88
+    },
+    {
+      "head": "L8H31",
+      "score": 0.0005409126993693388,
+      "num_samples": 13,
+      "rank": 89
+    },
+    {
+      "head": "L25H14",
+      "score": 0.0005391039181404292,
+      "num_samples": 4,
+      "rank": 90
+    },
+    {
+      "head": "L14H30",
+      "score": 0.0005385952490474987,
+      "num_samples": 10,
+      "rank": 91
+    },
+    {
+      "head": "L30H29",
+      "score": 0.0005382561363188784,
+      "num_samples": 6,
+      "rank": 92
+    },
+    {
+      "head": "L18H22",
+      "score": 0.0005356349107862655,
+      "num_samples": 2,
+      "rank": 93
+    },
+    {
+      "head": "L25H13",
+      "score": 0.0005354258249748195,
+      "num_samples": 25,
+      "rank": 94
+    },
+    {
+      "head": "L25H7",
+      "score": 0.0005350705720200861,
+      "num_samples": 8,
+      "rank": 95
+    },
+    {
+      "head": "L14H23",
+      "score": 0.0005329057979753552,
+      "num_samples": 2,
+      "rank": 96
+    },
+    {
+      "head": "L24H25",
+      "score": 0.0005307818670853304,
+      "num_samples": 7,
+      "rank": 97
+    },
+    {
+      "head": "L18H28",
+      "score": 0.0005297120706812631,
+      "num_samples": 3,
+      "rank": 98
+    },
+    {
+      "head": "L27H23",
+      "score": 0.0005291674325085714,
+      "num_samples": 8,
+      "rank": 99
+    },
+    {
+      "head": "L22H12",
+      "score": 0.0005278926621406563,
+      "num_samples": 3,
+      "rank": 100
+    },
+    {
+      "head": "L2H22",
+      "score": 0.0005271481286241434,
+      "num_samples": 1,
+      "rank": 101
+    },
+    {
+      "head": "L30H15",
+      "score": 0.000526750650628762,
+      "num_samples": 4,
+      "rank": 102
+    },
+    {
+      "head": "L18H20",
+      "score": 0.0005249737985972612,
+      "num_samples": 5,
+      "rank": 103
+    },
+    {
+      "head": "L27H22",
+      "score": 0.0005227864596163931,
+      "num_samples": 8,
+      "rank": 104
+    },
+    {
+      "head": "L13H4",
+      "score": 0.0005227456415100753,
+      "num_samples": 6,
+      "rank": 105
+    },
+    {
+      "head": "L10H27",
+      "score": 0.0005225072595477009,
+      "num_samples": 2,
+      "rank": 106
+    },
+    {
+      "head": "L10H2",
+      "score": 0.0005199859978156569,
+      "num_samples": 4,
+      "rank": 107
+    },
+    {
+      "head": "L13H1",
+      "score": 0.0005178663904712584,
+      "num_samples": 6,
+      "rank": 108
+    },
+    {
+      "head": "L13H3",
+      "score": 0.0005178663904712584,
+      "num_samples": 4,
+      "rank": 109
+    },
+    {
+      "head": "L13H17",
+      "score": 0.0005178663904712584,
+      "num_samples": 3,
+      "rank": 110
+    },
+    {
+      "head": "L14H1",
+      "score": 0.0005178663904712584,
+      "num_samples": 2,
+      "rank": 111
+    },
+    {
+      "head": "L17H27",
+      "score": 0.0005178663904712584,
+      "num_samples": 2,
+      "rank": 112
+    },
+    {
+      "head": "L17H21",
+      "score": 0.0005178663904712584,
+      "num_samples": 1,
+      "rank": 113
+    },
+    {
+      "head": "L18H31",
+      "score": 0.0005178663904712584,
+      "num_samples": 4,
+      "rank": 114
+    },
+    {
+      "head": "L8H9",
+      "score": 0.0005178663904712584,
+      "num_samples": 8,
+      "rank": 115
+    },
+    {
+      "head": "L30H12",
+      "score": 0.0005178663904712584,
+      "num_samples": 3,
+      "rank": 116
+    },
+    {
+      "head": "L5H11",
+      "score": 0.0005178663904712584,
+      "num_samples": 1,
+      "rank": 117
+    },
+    {
+      "head": "L10H3",
+      "score": 0.0005178663904712584,
+      "num_samples": 5,
+      "rank": 118
+    },
+    {
+      "head": "L14H5",
+      "score": 0.0005178663904712584,
+      "num_samples": 2,
+      "rank": 119
+    },
+    {
+      "head": "L13H0",
+      "score": 0.0005178663904712584,
+      "num_samples": 1,
+      "rank": 120
+    },
+    {
+      "head": "L16H25",
+      "score": 0.0005178663904712584,
+      "num_samples": 1,
+      "rank": 121
+    },
+    {
+      "head": "L16H26",
+      "score": 0.0005178663904712584,
+      "num_samples": 1,
+      "rank": 122
+    },
+    {
+      "head": "L20H26",
+      "score": 0.0005178663904712584,
+      "num_samples": 2,
+      "rank": 123
+    },
+    {
+      "head": "L9H12",
+      "score": 0.0005178663904712584,
+      "num_samples": 1,
+      "rank": 124
+    },
+    {
+      "head": "L9H13",
+      "score": 0.0005178663904712584,
+      "num_samples": 1,
+      "rank": 125
+    },
+    {
+      "head": "L9H27",
+      "score": 0.0005178663904712584,
+      "num_samples": 1,
+      "rank": 126
+    },
+    {
+      "head": "L26H12",
+      "score": 0.0005178663904712584,
+      "num_samples": 4,
+      "rank": 127
+    },
+    {
+      "head": "L31H20",
+      "score": 0.0005178663904712584,
+      "num_samples": 1,
+      "rank": 128
+    },
+    {
+      "head": "L14H16",
+      "score": 0.0005178663904712584,
+      "num_samples": 1,
+      "rank": 129
+    },
+    {
+      "head": "L14H28",
+      "score": 0.0005178663904712584,
+      "num_samples": 2,
+      "rank": 130
+    },
+    {
+      "head": "L23H12",
+      "score": 0.0005178663904712584,
+      "num_samples": 3,
+      "rank": 131
+    },
+    {
+      "head": "L10H13",
+      "score": 0.0005178663904712584,
+      "num_samples": 1,
+      "rank": 132
+    },
+    {
+      "head": "L20H0",
+      "score": 0.0005178663904712584,
+      "num_samples": 1,
+      "rank": 133
+    },
+    {
+      "head": "L30H2",
+      "score": 0.0005178663904712584,
+      "num_samples": 2,
+      "rank": 134
+    },
+    {
+      "head": "L31H7",
+      "score": 0.0005178663904712584,
+      "num_samples": 1,
+      "rank": 135
+    },
+    {
+      "head": "L21H31",
+      "score": 0.0005178663904712584,
+      "num_samples": 1,
+      "rank": 136
+    },
+    {
+      "head": "L13H6",
+      "score": 0.0005178663904712584,
+      "num_samples": 1,
+      "rank": 137
+    },
+    {
+      "head": "L19H9",
+      "score": 0.0005178663904712584,
+      "num_samples": 1,
+      "rank": 138
+    },
+    {
+      "head": "L19H2",
+      "score": 0.0005178663904712584,
+      "num_samples": 1,
+      "rank": 139
+    },
+    {
+      "head": "L19H0",
+      "score": 0.0005178663904712584,
+      "num_samples": 1,
+      "rank": 140
+    },
+    {
+      "head": "L20H25",
+      "score": 0.0005178663904712584,
+      "num_samples": 1,
+      "rank": 141
+    },
+    {
+      "head": "L10H31",
+      "score": 0.0005178663904712584,
+      "num_samples": 1,
+      "rank": 142
+    },
+    {
+      "head": "L5H22",
+      "score": 0.0005178663904712584,
+      "num_samples": 1,
+      "rank": 143
+    },
+    {
+      "head": "L15H13",
+      "score": 0.0005178663904712584,
+      "num_samples": 1,
+      "rank": 144
+    },
+    {
+      "head": "L28H13",
+      "score": 0.0005154461524798984,
+      "num_samples": 8,
+      "rank": 145
+    }
+  ],
+  "top_50_heads": [
+    "L30H26",
+    "L29H11",
+    "L17H26",
+    "L6H22",
+    "L15H1",
+    "L16H1",
+    "L9H31",
+    "L22H13",
+    "L25H5",
+    "L16H23",
+    "L15H30",
+    "L17H25",
+    "L24H27",
+    "L11H4",
+    "L23H14",
+    "L25H15",
+    "L20H14",
+    "L22H14",
+    "L19H3",
+    "L11H2",
+    "L10H1",
+    "L17H24",
+    "L22H1",
+    "L30H30",
+    "L18H4",
+    "L24H16",
+    "L15H3",
+    "L22H2",
+    "L26H15",
+    "L13H31",
+    "L24H18",
+    "L20H1",
+    "L25H4",
+    "L16H19",
+    "L24H17",
+    "L14H18",
+    "L5H8",
+    "L16H20",
+    "L22H29",
+    "L23H22",
+    "L22H28",
+    "L16H21",
+    "L24H20",
+    "L20H2",
+    "L11H5",
+    "L13H11",
+    "L13H18",
+    "L18H16",
+    "L14H22",
+    "L27H20"
+  ]
+}

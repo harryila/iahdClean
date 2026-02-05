@@ -1,0 +1,35 @@
+{
+  "model_key": "base",
+  "model_name": "meta-llama/Meta-Llama-3-8B",
+  "question": "inc_state",
+  "question_prompt": "What state was the company incorporated in?",
+  "total_tokens": 2048,
+  "test_samples": 33,
+  "timestamp": "2026-02-05T01:49:06.219796",
+  "ablations": [
+    {
+      "type": "top_10_together",
+      "heads": [
+        "L16H1",
+        "L14H31",
+        "L24H27",
+        "L14H30",
+        "L13H18",
+        "L17H24",
+        "L14H22",
+        "L20H1",
+        "L13H17",
+        "L14H20"
+      ],
+      "accuracy": 0.8787878787878788,
+      "accuracy_drop": 0.09090909090909094,
+      "correct": 29,
+      "total": 33
+    }
+  ],
+  "baseline": {
+    "accuracy": 0.9696969696969697,
+    "correct": 32,
+    "total": 33
+  }
+}

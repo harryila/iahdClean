@@ -1,0 +1,35 @@
+{
+  "model_key": "base",
+  "model_name": "meta-llama/Meta-Llama-3-8B",
+  "question": "inc_year",
+  "question_prompt": "What year was the company incorporated?",
+  "total_tokens": 6144,
+  "test_samples": 32,
+  "timestamp": "2026-02-05T01:54:43.821015",
+  "ablations": [
+    {
+      "type": "top_10_together",
+      "heads": [
+        "L9H1",
+        "L31H14",
+        "L11H1",
+        "L31H9",
+        "L10H24",
+        "L12H11",
+        "L17H13",
+        "L13H30",
+        "L24H3",
+        "L10H25"
+      ],
+      "accuracy": 0.96875,
+      "accuracy_drop": 0.0,
+      "correct": 31,
+      "total": 32
+    }
+  ],
+  "baseline": {
+    "accuracy": 0.96875,
+    "correct": 31,
+    "total": 32
+  }
+}
