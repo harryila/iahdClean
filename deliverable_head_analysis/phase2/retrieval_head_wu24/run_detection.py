@@ -130,7 +130,7 @@ def create_prompt_with_needle(tokenizer, section1_text, question_prompt, total_t
     """
     # Tokenize components
     needle_tokens = tokenizer.encode(section1_text, add_special_tokens=False)
-    question_text = f"\n\nQuestion: {question_prompt}\nAnswer:"
+    question_text = f"\n\nQuestion: {question_prompt}\nAnswer in one word:"
     question_tokens = tokenizer.encode(question_text, add_special_tokens=False)
     
     # Calculate haystack size needed
@@ -218,7 +218,7 @@ def wu24_retrieval_calculate(attention_matrix, retrieval_score, generated_token_
                         break  # Only count once per head
 
 def generate_with_retrieval_tracking(model, tokenizer, input_ids, prompt_ids, 
-                                     needle_start, needle_end, max_new_tokens=50):
+                                     needle_start, needle_end, max_new_tokens=10):
     """
     Generate tokens while tracking retrieval scores for each head.
     
@@ -289,7 +289,7 @@ def generate_with_retrieval_tracking(model, tokenizer, input_ids, prompt_ids,
     return generated_text, dict(retrieval_scores)
 
 def generate_with_retrieval_tracking_efficient(model, tokenizer, input_ids, prompt_ids,
-                                                needle_start, needle_end, max_new_tokens=50):
+                                                needle_start, needle_end, max_new_tokens=10):
     """
     Memory-efficient version using KV cache and hooks for long sequences.
     """

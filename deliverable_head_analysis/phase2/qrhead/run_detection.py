@@ -129,7 +129,7 @@ def create_prompt_with_needle(tokenizer, section1_text, question_prompt, total_t
     """
     # Tokenize components
     needle_tokens = tokenizer.encode(section1_text, add_special_tokens=False)
-    question_text = f"\n\nQuestion: {question_prompt}\nAnswer:"
+    question_text = f"\n\nQuestion: {question_prompt}\nAnswer in one word:"
     question_tokens = tokenizer.encode(question_text, add_special_tokens=False)
     
     # Calculate haystack size needed

@@ -78,6 +78,24 @@ python phase3/summed_attention/run_ablation.py --model llama_instruct --question
 python phase4/analysis/generate_figures.py
 ```
 
+## Prompt Format
+
+All experiments use the same prompt structure with **one-word answer requirement**:
+
+```
+[Haystack padding - Alice in Wonderland text]
+[Section 1 content - the "needle"]
+[Haystack padding - Alice in Wonderland text]
+
+Question: {question}
+Answer in one word:
+```
+
+**Important constraints:**
+- `max_new_tokens=10` - Model generates at most 10 tokens (sufficient for one-word answers)
+- Answers are normalized for comparison (lowercase, strip punctuation, handle numeric formats)
+- One-word answers ensure consistent evaluation across all methods
+
 ## Data Source
 
 Ground truth: `../edgar_gt_verified_slim.csv` (250 samples, all 4 GT categories included)

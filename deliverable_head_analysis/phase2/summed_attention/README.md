@@ -16,8 +16,10 @@ Same structure as all Phase 2 methods:
 [Padding - More Alice in Wonderland text]
 
 Question: {question}
-Answer:
+Answer in one word:
 ```
+
+**Important:** The prompt explicitly asks for a **one-word answer** to ensure consistent evaluation across all methods. `max_new_tokens=10` limits generation to at most 10 tokens.
 
 ### Key Parameters
 

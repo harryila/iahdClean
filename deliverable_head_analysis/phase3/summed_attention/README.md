@@ -39,6 +39,19 @@ For each configuration (model × question × token length):
 4. **Ablated accuracy**: Run model with top 10 heads ablated
 5. **Measure accuracy drop**: If heads are causally important, accuracy should decrease significantly
 
+## Prompt Format
+
+```
+[Haystack padding - Alice in Wonderland text]
+[Section 1 content - the "needle"]
+[Haystack padding - Alice in Wonderland text]
+
+Question: {question}
+Answer in one word:
+```
+
+**Important:** The prompt explicitly asks for a **one-word answer** to ensure consistent evaluation. `max_new_tokens=10` limits generation to at most 10 tokens.
+
 ## Experimental Setup
 
 | Parameter | Value |
@@ -48,6 +61,7 @@ For each configuration (model × question × token length):
 | Token Lengths | 2048, 4096, 6144, 8192 |
 | Heads Ablated | Top 10 from Phase 2 rankings |
 | Test Set | 20% of GT-verified samples |
+| max_new_tokens | 10 (one-word answers) |
 
 **Total experiments**: 2 × 4 × 4 = **32**
 
@@ -126,6 +140,19 @@ For each configuration (model × question × token length):
 5. **Instruct vs Base differences**:
    - Instruct model shows more consistent drops across contexts
    - Base model shows more variable effects (some 0% drops, some 90%+ drops)
+
+## Ablation Method Note
+
+### Comparison with Wu24's Ablation
+
+Wu24's original code (`faiss_attn/source/modeling_llama.py`) has two ablation approaches:
+
+1. **Flash Attention**: Zeros query states → head output ≈ 0
+2. **Normal Attention**: Zeros attention scores before softmax → head outputs mean of all values (NOT zero)
+
+Our hook-based method zeros the **attention output directly** before `o_proj`, which is most similar to Wu24's Flash Attention approach - both effectively remove the head's contribution entirely.
+
+This same ablation mechanism is used consistently across all three Phase 3 methods (Summed Attention, Wu24, QRHead) to ensure fair comparison.
 
 ## Scripts
 
