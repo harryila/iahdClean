@@ -1,36 +1,15 @@
 # QRHead Method
 
+## Status: ✅ COMPLETE (32/32 experiments)
+
 ## Overview
 
 Query-focused attention method from the QRHead paper. The key insight: compute attention **FROM query tokens TO document tokens**, then **calibrate** by subtracting attention with a null query to isolate query-relevant heads.
 
-This is fundamentally different from Summed Attention (last token → needle) and Wu24 (generated token → needle).
-
-## Needle-in-Haystack Setup
-
-Same structure as all Phase 2 methods (for fair comparison):
-
-```
-[Padding - Alice in Wonderland text]
-[Needle - Entire Section 1 containing the GT answer]
-[Padding - More Alice in Wonderland text]
-
-Question: {question}
-Answer in one word:
-```
-
-**Important:** The prompt explicitly asks for a **one-word answer** to ensure consistent evaluation across all methods. `max_new_tokens=10` limits generation to at most 10 tokens.
-
-### Key Parameters
-
-| Parameter | Value |
-|-----------|-------|
-| **Needle** | Entire Section 1 from SEC filing |
-| **Haystack** | Alice in Wonderland text |
-| **Needle Position** | 0.5 (fixed in middle) |
-| **Total Tokens** | 2K, 4K, 6K, 8K |
-
----
+This is fundamentally different from:
+- **Summed Attention:** last token → needle
+- **Wu24:** generated token → needle (with token matching)
+- **QRHead:** query tokens → needle (with calibration)
 
 ## Algorithm
 
@@ -64,7 +43,6 @@ calibrated_attn = actual_attn - null_attn
 needle_attn = calibrated_attn[:, :, :, needle_start:needle_end]
 
 # Average over query tokens (following QRHead pattern)
-# Shape: (num_layers, num_heads, needle_length)
 needle_attn = needle_attn.mean(dim=2)
 ```
 
@@ -91,14 +69,8 @@ for layer in range(num_layers):
 ### Step 5: Aggregate Across Samples
 
 ```python
-# From QRHead/exp_scripts/detection/detect_qrhead_lme.py lines 9-32
-def lme_eval(retrieval_results, data_instances):
-    all_score_over_gold = []
-    for data in data_instances:
-        gt_docs = data["gt_docs"]  # For us: the needle
-        score_over_gold = sum(doc_scores[doc_id] for doc_id in gt_docs)
-        all_score_over_gold.append(score_over_gold)
-    return np.mean(all_score_over_gold)  # QRScore for this head
+# Average head scores across all training samples
+final_scores[head] = mean(sample_scores[head] for all samples)
 ```
 
 ---
@@ -116,50 +88,69 @@ def lme_eval(retrieval_results, data_instances):
 
 ---
 
-## Implementation Details
+## Results Summary
 
-### Files
+### Top Heads (Typical Configuration)
+
+QRHead tends to identify different heads than the other methods:
+
+| Rank | Head | Note |
+|------|------|------|
+| 1 | **L14H31** | Also top for Summed Attention |
+| 2 | L8H8 | Unique to QRHead |
+| 3 | L15H3 | Unique to QRHead |
+
+### Key Finding: Different Layer Focus
+
+QRHead focuses heavily on **mid-layers (9-10, 14-16)**, while Wu24 is more distributed and Summed Attention focuses on layers 13-14 and 20-21.
+
+**See:** `phase4/exploration_figures/layer_distribution_by_method.png`
+
+---
+
+## Key Characteristics
+
+| Aspect | Description |
+|--------|-------------|
+| **When computed** | During encoding |
+| **Calibration** | Yes - subtracts null-query attention |
+| **Outlier removal** | Yes - mean-2σ threshold |
+| **Speed** | Medium (2 forward passes per sample) |
+
+---
+
+## Files
 
 | File | Description |
 |------|-------------|
 | `run_detection.py` | Main detection script |
 | `run_all.py` | Batch runner for all 32 experiments |
-| `results/` | Output JSON files |
+| `results/` | Output JSON files (32 complete) |
 
-### Code Reuse from QRHead
+### Code Reuse from QRHead Repository
 
 | Component | Source |
 |-----------|--------|
 | Calibration logic | `attn_retriever.py` lines 291-292 |
 | Outlier removal | `attn_retriever.py` lines 304-312 |
 | Head scoring aggregation | `detect_qrhead_lme.py` lines 66-101 |
-| LME evaluation | `detect_qrhead_lme.py` lines 9-32 |
-
-### Null Query
-
-Following QRHead, we use `"N/A"` as the null query for calibration.
 
 ---
 
-## Experiment Matrix
+## Null Query
 
-**2 models × 4 questions × 4 token lengths = 32 experiments**
+Following QRHead, we use `"N/A"` as the null query for calibration:
 
-### Models
+```python
+# Actual query
+prompt_actual = f"...Question: What state was the company incorporated in?\nAnswer in one word:"
 
-| Model | HuggingFace ID |
-|-------|----------------|
-| Llama 3 8B Instruct | `meta-llama/Meta-Llama-3-8B-Instruct` |
-| Llama 3 8B Base | `meta-llama/Meta-Llama-3-8B` |
+# Null query  
+prompt_null = f"...Question: N/A\nAnswer in one word:"
 
-### Questions
-
-| Key | Question | Type | Samples |
-|-----|----------|------|---------|
-| `inc_state` | What state was the company incorporated in? | Categorical | 127 |
-| `inc_year` | What year was the company incorporated? | Numerical | 126 |
-| `employee_count` | How many employees does the company have? | Numerical | 152 |
-| `hq_state` | What state is the company headquarters located in? | Categorical | 106 |
+# Calibration
+calibrated = actual_attention - null_attention
+```
 
 ---
 
@@ -177,24 +168,7 @@ python run_all.py
 
 ---
 
-## Output Structure
-
-```
-results/
-├── llama3_instruct/
-│   ├── inc_state/
-│   │   ├── tokens_2048.json
-│   │   ├── tokens_4096.json
-│   │   ├── tokens_6144.json
-│   │   └── tokens_8192.json
-│   ├── inc_year/
-│   │   └── ...
-│   └── ...
-└── llama3_base/
-    └── (same structure)
-```
-
-### Output JSON Format
+## Output JSON Format
 
 ```json
 {
@@ -202,13 +176,17 @@ results/
   "model_key": "instruct",
   "model_name": "meta-llama/Meta-Llama-3-8B-Instruct",
   "question": "inc_state",
+  "question_prompt": "What state was the company incorporated in?",
   "total_tokens": 2048,
   "null_query": "N/A",
-  "samples_processed": 127,
+  "samples_processed": 131,
+  "timestamp": "2026-02-04T...",
   "head_rankings": [
-    {"head": "L16H1", "score": 45.23, "rank": 1},
-    ...
-  ]
+    {"head": "L14H31", "score": 45.23, "rank": 1},
+    {"head": "L8H8", "score": 42.15, "rank": 2},
+    // ...
+  ],
+  "top_50_heads": ["L14H31", "L8H8", ...]
 }
 ```
 
@@ -223,14 +201,3 @@ results/
   - `score_docs_per_head_for_detection()` (lines 258-320)
   - `lme_eval()` (lines 9-32)
   - `score_heads()` (lines 66-101)
-
----
-
-## Progress
-
-| Model | inc_state | inc_year | employee_count | hq_state |
-|-------|-----------|----------|----------------|----------|
-| Instruct | ⏳ | ⏳ | ⏳ | ⏳ |
-| Base | ⏳ | ⏳ | ⏳ | ⏳ |
-
-**Completed: 0/32**
