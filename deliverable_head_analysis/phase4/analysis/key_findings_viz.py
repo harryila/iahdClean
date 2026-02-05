@@ -186,30 +186,38 @@ for h, avgs in head_avg_ranks.items():
     if all(v < 100 for v in avgs.values()):
         consensus.append((h, avgs))
 
-fig, ax = plt.subplots(figsize=(10, 6))
+fig, ax = plt.subplots(figsize=(12, 7))
 
-# Plot ALL heads as scatter, highlight consensus
-for h, avgs in head_avg_ranks.items():
-    if h in [c[0] for c in consensus]:
-        continue  # Plot these specially
-    ax.scatter(avgs['summed_attention'], avgs['qrhead'], alpha=0.1, c='gray', s=20)
+# Show consensus heads with their ranks for ALL 3 methods
+if consensus:
+    heads = [c[0] for c in consensus]
+    x = np.arange(len(heads))
+    width = 0.25
+    
+    colors = ['#ff7f0e', '#2ca02c', '#1f77b4']
+    for i, m in enumerate(METHODS):
+        ranks = [c[1][m] for c in consensus]
+        bars = ax.bar(x + i*width, ranks, width, label=MLABELS[m], color=colors[i], alpha=0.8)
+        # Add value labels on bars
+        for bar, rank in zip(bars, ranks):
+            ax.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 2, 
+                   f'{rank:.0f}', ha='center', va='bottom', fontsize=10, fontweight='bold')
+    
+    ax.set_xticks(x + width)
+    ax.set_xticklabels(heads, fontsize=14, fontweight='bold')
+    ax.axhline(y=100, color='red', linestyle='--', linewidth=2, label='Top-100 threshold')
+    ax.set_ylabel("Average Rank (lower = more important)", fontsize=12)
+    ax.set_xlabel("Head", fontsize=12)
+    ax.legend(loc='upper right')
+    ax.set_ylim(0, 120)
 
-# Highlight consensus heads
-for h, avgs in consensus:
-    ax.scatter(avgs['summed_attention'], avgs['qrhead'], s=200, c='red', marker='*', 
-               edgecolors='black', linewidths=1, zorder=5)
-    ax.annotate(h, (avgs['summed_attention'], avgs['qrhead']), 
-                xytext=(10, 10), textcoords='offset points', fontsize=11, fontweight='bold')
+# Add text annotation
+ax.text(0.5, 0.95, f"Out of 1024 heads, only {len(consensus)} are in top-100 for ALL 3 methods",
+        transform=ax.transAxes, ha='center', va='top', fontsize=12, 
+        bbox=dict(boxstyle='round', facecolor='yellow', alpha=0.5))
 
-ax.axvline(x=100, color='blue', linestyle='--', alpha=0.5)
-ax.axhline(y=100, color='blue', linestyle='--', alpha=0.5)
-ax.fill_between([0, 100], [0, 0], [100, 100], alpha=0.1, color='green')
-ax.set_xlabel("Summed Attention Rank", fontsize=12)
-ax.set_ylabel("QRHead Rank", fontsize=12)
-ax.set_title(f"Only {len(consensus)} Heads in Top-100 for ALL Methods\n(Red stars = consensus heads, green zone = top-100 agreement)", 
+ax.set_title(f"Consensus Retrieval Heads: Top-100 Across All Methods\n(Summed Attention, Wu24, and QRHead)", 
              fontsize=14, fontweight='bold')
-ax.set_xlim(0, 500)
-ax.set_ylim(0, 500)
 plt.tight_layout()
 plt.savefig(f"{OUTPUT}/consensus_heads.png", dpi=150, bbox_inches='tight')
 plt.close()
