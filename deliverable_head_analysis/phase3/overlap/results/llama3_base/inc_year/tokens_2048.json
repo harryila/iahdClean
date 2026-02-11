@@ -1,0 +1,77 @@
+{
+  "method": "overlap_ablation",
+  "description": "Ablation of QRHead \u2229 Wu24 overlap heads vs each method alone",
+  "model_key": "base",
+  "model_name": "meta-llama/Meta-Llama-3-8B",
+  "question": "inc_year",
+  "question_prompt": "What year was the company incorporated?",
+  "total_tokens": 2048,
+  "test_samples": 32,
+  "n_overlap": 10,
+  "overlap_jaccard": 0.1111,
+  "timestamp": "2026-02-11T01:02:50.708961",
+  "baseline": {
+    "accuracy": 0.96875,
+    "correct": 31,
+    "total": 32
+  },
+  "conditions": {
+    "overlap": {
+      "num_heads": 10,
+      "heads_str": [
+        "L14H0",
+        "L15H3",
+        "L20H14",
+        "L17H24",
+        "L22H13",
+        "L19H3",
+        "L17H27",
+        "L16H0",
+        "L18H20",
+        "L8H9"
+      ],
+      "accuracy": 0.96875,
+      "accuracy_drop": 0.0,
+      "correct": 31,
+      "total": 32
+    },
+    "wu24_top_n": {
+      "num_heads": 10,
+      "heads_str": [
+        "L2H20",
+        "L29H9",
+        "L14H0",
+        "L22H14",
+        "L26H13",
+        "L8H19",
+        "L28H20",
+        "L24H17",
+        "L17H29",
+        "L17H27"
+      ],
+      "accuracy": 0.9375,
+      "accuracy_drop": 0.03125,
+      "correct": 30,
+      "total": 32
+    },
+    "qrhead_top_n": {
+      "num_heads": 10,
+      "heads_str": [
+        "L17H29",
+        "L16H1",
+        "L14H31",
+        "L17H24",
+        "L14H30",
+        "L16H0",
+        "L18H20",
+        "L15H3",
+        "L8H11",
+        "L20H26"
+      ],
+      "accuracy": 0.71875,
+      "accuracy_drop": 0.25,
+      "correct": 23,
+      "total": 32
+    }
+  }
+}

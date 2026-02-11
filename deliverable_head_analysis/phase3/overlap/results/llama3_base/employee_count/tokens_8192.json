@@ -1,0 +1,71 @@
+{
+  "method": "overlap_ablation",
+  "description": "Ablation of QRHead \u2229 Wu24 overlap heads vs each method alone",
+  "model_key": "base",
+  "model_name": "meta-llama/Meta-Llama-3-8B",
+  "question": "employee_count",
+  "question_prompt": "How many employees does the company have?",
+  "total_tokens": 8192,
+  "test_samples": 36,
+  "n_overlap": 8,
+  "overlap_jaccard": 0.087,
+  "timestamp": "2026-02-11T01:07:37.264344",
+  "baseline": {
+    "accuracy": 0.8611111111111112,
+    "correct": 31,
+    "total": 36
+  },
+  "conditions": {
+    "overlap": {
+      "num_heads": 8,
+      "heads_str": [
+        "L19H3",
+        "L20H14",
+        "L15H3",
+        "L22H13",
+        "L16H1",
+        "L17H24",
+        "L16H27",
+        "L16H0"
+      ],
+      "accuracy": 0.8888888888888888,
+      "accuracy_drop": -0.02777777777777768,
+      "correct": 32,
+      "total": 36
+    },
+    "wu24_top_n": {
+      "num_heads": 8,
+      "heads_str": [
+        "L17H21",
+        "L29H30",
+        "L16H1",
+        "L16H23",
+        "L22H13",
+        "L15H30",
+        "L10H2",
+        "L25H5"
+      ],
+      "accuracy": 0.75,
+      "accuracy_drop": 0.11111111111111116,
+      "correct": 27,
+      "total": 36
+    },
+    "qrhead_top_n": {
+      "num_heads": 8,
+      "heads_str": [
+        "L10H19",
+        "L9H1",
+        "L20H26",
+        "L14H2",
+        "L8H29",
+        "L9H3",
+        "L9H0",
+        "L14H12"
+      ],
+      "accuracy": 0.8333333333333334,
+      "accuracy_drop": 0.02777777777777779,
+      "correct": 30,
+      "total": 36
+    }
+  }
+}

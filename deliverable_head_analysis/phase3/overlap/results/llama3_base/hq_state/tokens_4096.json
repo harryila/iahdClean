@@ -1,0 +1,56 @@
+{
+  "method": "overlap_ablation",
+  "description": "Ablation of QRHead \u2229 Wu24 overlap heads vs each method alone",
+  "model_key": "base",
+  "model_name": "meta-llama/Meta-Llama-3-8B",
+  "question": "hq_state",
+  "question_prompt": "What state is the company headquarters located in?",
+  "total_tokens": 4096,
+  "test_samples": 26,
+  "n_overlap": 3,
+  "overlap_jaccard": 0.0309,
+  "timestamp": "2026-02-11T01:08:59.724400",
+  "baseline": {
+    "accuracy": 0.8846153846153846,
+    "correct": 23,
+    "total": 26
+  },
+  "conditions": {
+    "overlap": {
+      "num_heads": 3,
+      "heads_str": [
+        "L15H3",
+        "L14H31",
+        "L13H1"
+      ],
+      "accuracy": 0.9230769230769231,
+      "accuracy_drop": -0.03846153846153855,
+      "correct": 24,
+      "total": 26
+    },
+    "wu24_top_n": {
+      "num_heads": 3,
+      "heads_str": [
+        "L15H1",
+        "L15H30",
+        "L8H1"
+      ],
+      "accuracy": 0.8846153846153846,
+      "accuracy_drop": 0.0,
+      "correct": 23,
+      "total": 26
+    },
+    "qrhead_top_n": {
+      "num_heads": 3,
+      "heads_str": [
+        "L9H1",
+        "L13H11",
+        "L17H2"
+      ],
+      "accuracy": 0.8846153846153846,
+      "accuracy_drop": 0.0,
+      "correct": 23,
+      "total": 26
+    }
+  }
+}
