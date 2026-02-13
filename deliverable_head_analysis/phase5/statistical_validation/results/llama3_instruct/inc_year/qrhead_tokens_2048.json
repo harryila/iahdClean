@@ -1,0 +1,4233 @@
+{
+  "phase": "phase5_statistical_validation",
+  "method": "qrhead",
+  "model_key": "instruct",
+  "model_name": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "question": "inc_year",
+  "question_prompt": "What year was the company incorporated?",
+  "total_tokens": 2048,
+  "test_samples": 32,
+  "ablation_levels": [
+    5,
+    10,
+    20,
+    30,
+    40,
+    50
+  ],
+  "heads_source": "phase2_qrhead_results",
+  "timestamp": "2026-02-13T21:51:07.485116",
+  "baseline": {
+    "accuracy": 0.9375,
+    "correct": 30,
+    "total": 32,
+    "sample_results": [
+      {
+        "filename": "66904_1993.txt",
+        "gt_value": "1945",
+        "generated": "1945. (ITEM 1. BUSINESS",
+        "correct": true
+      },
+      {
+        "filename": "33798_1993.txt",
+        "gt_value": "1919",
+        "generated": "1919\n\nItem 2. Management's",
+        "correct": true
+      },
+      {
+        "filename": "99193_1993.txt",
+        "gt_value": "1931",
+        "generated": "1931. (The company was incorporated in",
+        "correct": true
+      },
+      {
+        "filename": "800287_1993.txt",
+        "gt_value": "1978",
+        "generated": "1978. (Reference: Item 1",
+        "correct": true
+      },
+      {
+        "filename": "7323_1993.txt",
+        "gt_value": "1949",
+        "generated": "1949. (Item 1. Business",
+        "correct": true
+      },
+      {
+        "filename": "66740_1993.txt",
+        "gt_value": "1929",
+        "generated": "1929.",
+        "correct": true
+      },
+      {
+        "filename": "67646_1993.txt",
+        "gt_value": "1925",
+        "generated": "1925. (Allegheny Power System",
+        "correct": true
+      },
+      {
+        "filename": "846972_1993.txt",
+        "gt_value": "1985",
+        "generated": "1985.",
+        "correct": true
+      },
+      {
+        "filename": "10456_1993.txt",
+        "gt_value": "1931",
+        "generated": "1931. (ITEM 1. BUSINESS",
+        "correct": true
+      },
+      {
+        "filename": "814153_1993.txt",
+        "gt_value": "1987",
+        "generated": "1987\n\nITEM 2. BUSINESS",
+        "correct": true
+      },
+      {
+        "filename": "836400_1993.txt",
+        "gt_value": "1988",
+        "generated": "1988.",
+        "correct": true
+      },
+      {
+        "filename": "20164_1993.txt",
+        "gt_value": "1967",
+        "generated": "1926.",
+        "correct": false
+      },
+      {
+        "filename": "200245_1993.txt",
+        "gt_value": "1960",
+        "generated": "1960.",
+        "correct": true
+      },
+      {
+        "filename": "75527_1993.txt",
+        "gt_value": "1907",
+        "generated": "1907. (Pacific Enterprises was incorporated in",
+        "correct": true
+      },
+      {
+        "filename": "201461_1993.txt",
+        "gt_value": "1968",
+        "generated": "1968. (Source: Item 1",
+        "correct": true
+      },
+      {
+        "filename": "34285_1993.txt",
+        "gt_value": "1953",
+        "generated": "1953. (According to the text,",
+        "correct": true
+      },
+      {
+        "filename": "40454_1993.txt",
+        "gt_value": "1946",
+        "generated": "1946.",
+        "correct": true
+      },
+      {
+        "filename": "17797_1993.txt",
+        "gt_value": "1926",
+        "generated": "1926. _______________________\n\nQuestion: What",
+        "correct": true
+      },
+      {
+        "filename": "51720_1993.txt",
+        "gt_value": "1925",
+        "generated": "Delaware. (1925) 1925",
+        "correct": true
+      },
+      {
+        "filename": "728586_1993.txt",
+        "gt_value": "1965",
+        "generated": "1965. (ITEM 1. BUSINESS",
+        "correct": true
+      },
+      {
+        "filename": "92236_1993.txt",
+        "gt_value": "1973",
+        "generated": "1973. (Sonat was incorporated under",
+        "correct": true
+      },
+      {
+        "filename": "91576_1993.txt",
+        "gt_value": "1958",
+        "generated": "1958. (See \"Society,",
+        "correct": true
+      },
+      {
+        "filename": "790603_1993.txt",
+        "gt_value": "1986",
+        "generated": "1986\n\nItem 2. Management's",
+        "correct": true
+      },
+      {
+        "filename": "66479_1993.txt",
+        "gt_value": "1954",
+        "generated": "1954. (Millipore Corporation was",
+        "correct": true
+      },
+      {
+        "filename": "100923_1993.txt",
+        "gt_value": "1980",
+        "generated": "1891. (Note: The company was",
+        "correct": false
+      },
+      {
+        "filename": "105839_1993.txt",
+        "gt_value": "1925",
+        "generated": "1925. (Allegheny Power System",
+        "correct": true
+      },
+      {
+        "filename": "18497_1993.txt",
+        "gt_value": "1968",
+        "generated": "1968. (ITEM 1. BUSINESS",
+        "correct": true
+      },
+      {
+        "filename": "740763_1993.txt",
+        "gt_value": "1984",
+        "generated": "1984. (Gilbert Associates, Inc",
+        "correct": true
+      },
+      {
+        "filename": "859119_1993.txt",
+        "gt_value": "1989",
+        "generated": "1989.",
+        "correct": true
+      },
+      {
+        "filename": "90185_1993.txt",
+        "gt_value": "1975",
+        "generated": "1975.",
+        "correct": true
+      },
+      {
+        "filename": "101320_1993.txt",
+        "gt_value": "1970",
+        "generated": "1970. (ITEM 1. BUSINESS",
+        "correct": true
+      },
+      {
+        "filename": "4310_1993.txt",
+        "gt_value": "1968",
+        "generated": "1968. (ALZA Corporation was incorporated",
+        "correct": true
+      }
+    ]
+  },
+  "top_heads_ablations": [
+    {
+      "num_heads": 5,
+      "heads": [
+        [
+          16,
+          1
+        ],
+        [
+          14,
+          31
+        ],
+        [
+          17,
+          29
+        ],
+        [
+          13,
+          18
+        ],
+        [
+          8,
+          8
+        ]
+      ],
+      "heads_str": [
+        "L16H1",
+        "L14H31",
+        "L17H29",
+        "L13H18",
+        "L8H8"
+      ],
+      "accuracy": 0.4375,
+      "accuracy_drop": 0.5,
+      "correct": 14,
+      "total": 32,
+      "sample_results": [
+        {
+          "filename": "66904_1993.txt",
+          "gt_value": "1945",
+          "generated": "1906. (Note: The company was",
+          "correct": false
+        },
+        {
+          "filename": "33798_1993.txt",
+          "gt_value": "1919",
+          "generated": "1986\n\nQuestion: What is the name",
+          "correct": false
+        },
+        {
+          "filename": "99193_1993.txt",
+          "gt_value": "1931",
+          "generated": "Delaware. (Note: The company was incorporated in",
+          "correct": false
+        },
+        {
+          "filename": "800287_1993.txt",
+          "gt_value": "1978",
+          "generated": "1978. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "7323_1993.txt",
+          "gt_value": "1949",
+          "generated": "1926. (Note: The year is",
+          "correct": false
+        },
+        {
+          "filename": "66740_1993.txt",
+          "gt_value": "1929",
+          "generated": "1902\n\nQuestion: What is the name",
+          "correct": false
+        },
+        {
+          "filename": "67646_1993.txt",
+          "gt_value": "1925",
+          "generated": "1916. (Note: The year of",
+          "correct": false
+        },
+        {
+          "filename": "846972_1993.txt",
+          "gt_value": "1985",
+          "generated": "1985. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "10456_1993.txt",
+          "gt_value": "1931",
+          "generated": "1931. (Source: The text does",
+          "correct": true
+        },
+        {
+          "filename": "814153_1993.txt",
+          "gt_value": "1987",
+          "generated": "1987\n\nQuestion: What was the purpose",
+          "correct": true
+        },
+        {
+          "filename": "836400_1993.txt",
+          "gt_value": "1988",
+          "generated": "1988. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "20164_1993.txt",
+          "gt_value": "1967",
+          "generated": "1926.",
+          "correct": false
+        },
+        {
+          "filename": "200245_1993.txt",
+          "gt_value": "1960",
+          "generated": "1960\n\nQuestion: How many full-time",
+          "correct": true
+        },
+        {
+          "filename": "75527_1993.txt",
+          "gt_value": "1907",
+          "generated": "1886. (Note: The company was",
+          "correct": false
+        },
+        {
+          "filename": "201461_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968. (Source: The text does",
+          "correct": true
+        },
+        {
+          "filename": "34285_1993.txt",
+          "gt_value": "1953",
+          "generated": "1971. (Note: The year of",
+          "correct": false
+        },
+        {
+          "filename": "40454_1993.txt",
+          "gt_value": "1946",
+          "generated": "1989\n\nQuestion: What is the name",
+          "correct": false
+        },
+        {
+          "filename": "17797_1993.txt",
+          "gt_value": "1926",
+          "generated": "1926. _______________________\n\nQuestion: What",
+          "correct": true
+        },
+        {
+          "filename": "51720_1993.txt",
+          "gt_value": "1925",
+          "generated": "Delaware\n\nQuestion: What is the name of the",
+          "correct": false
+        },
+        {
+          "filename": "728586_1993.txt",
+          "gt_value": "1965",
+          "generated": "1990\n\nQuestion: What is the name",
+          "correct": false
+        },
+        {
+          "filename": "92236_1993.txt",
+          "gt_value": "1973",
+          "generated": "1973\n\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "91576_1993.txt",
+          "gt_value": "1958",
+          "generated": "1849. (Note: The year",
+          "correct": false
+        },
+        {
+          "filename": "790603_1993.txt",
+          "gt_value": "1986",
+          "generated": "1986\n\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "66479_1993.txt",
+          "gt_value": "1954",
+          "generated": "1954. (Source: The text does",
+          "correct": true
+        },
+        {
+          "filename": "100923_1993.txt",
+          "gt_value": "1980",
+          "generated": "1891. (Note: The year is",
+          "correct": false
+        },
+        {
+          "filename": "105839_1993.txt",
+          "gt_value": "1925",
+          "generated": "1916. (Note: The year of",
+          "correct": false
+        },
+        {
+          "filename": "18497_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968\n\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "740763_1993.txt",
+          "gt_value": "1984",
+          "generated": "1942. (Note: The year is",
+          "correct": false
+        },
+        {
+          "filename": "859119_1993.txt",
+          "gt_value": "1989",
+          "generated": "Delaware. (Note: The company was incorporated in",
+          "correct": false
+        },
+        {
+          "filename": "90185_1993.txt",
+          "gt_value": "1975",
+          "generated": "1975.",
+          "correct": true
+        },
+        {
+          "filename": "101320_1993.txt",
+          "gt_value": "1970",
+          "generated": "1903. (United Jersey Bank was organized",
+          "correct": false
+        },
+        {
+          "filename": "4310_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968. (Note: The year of",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "num_heads": 10,
+      "heads": [
+        [
+          16,
+          1
+        ],
+        [
+          14,
+          31
+        ],
+        [
+          17,
+          29
+        ],
+        [
+          13,
+          18
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          14,
+          22
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          15,
+          3
+        ],
+        [
+          14,
+          30
+        ]
+      ],
+      "heads_str": [
+        "L16H1",
+        "L14H31",
+        "L17H29",
+        "L13H18",
+        "L8H8",
+        "L8H11",
+        "L14H22",
+        "L20H1",
+        "L15H3",
+        "L14H30"
+      ],
+      "accuracy": 0.5625,
+      "accuracy_drop": 0.375,
+      "correct": 18,
+      "total": 32,
+      "sample_results": [
+        {
+          "filename": "66904_1993.txt",
+          "gt_value": "1945",
+          "generated": "1906. (Note: The company was",
+          "correct": false
+        },
+        {
+          "filename": "33798_1993.txt",
+          "gt_value": "1919",
+          "generated": "1919\n\nQuestion: What was the name",
+          "correct": true
+        },
+        {
+          "filename": "99193_1993.txt",
+          "gt_value": "1931",
+          "generated": "1928\n\nQuestion: What is the name",
+          "correct": false
+        },
+        {
+          "filename": "800287_1993.txt",
+          "gt_value": "1978",
+          "generated": "1978. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "7323_1993.txt",
+          "gt_value": "1949",
+          "generated": "1926. (AP&L was incorporated",
+          "correct": false
+        },
+        {
+          "filename": "66740_1993.txt",
+          "gt_value": "1929",
+          "generated": "1902\n\nQuestion: What is the name",
+          "correct": false
+        },
+        {
+          "filename": "67646_1993.txt",
+          "gt_value": "1925",
+          "generated": "1916. (Note: The year is",
+          "correct": false
+        },
+        {
+          "filename": "846972_1993.txt",
+          "gt_value": "1985",
+          "generated": "1985. (Note: The year",
+          "correct": true
+        },
+        {
+          "filename": "10456_1993.txt",
+          "gt_value": "1931",
+          "generated": "1931. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "814153_1993.txt",
+          "gt_value": "1987",
+          "generated": "1987\n\nQuestion: What was the purpose",
+          "correct": true
+        },
+        {
+          "filename": "836400_1993.txt",
+          "gt_value": "1988",
+          "generated": "1885. (Formulated in 188",
+          "correct": false
+        },
+        {
+          "filename": "20164_1993.txt",
+          "gt_value": "1967",
+          "generated": "1926\n\nQuestion: What is the main",
+          "correct": false
+        },
+        {
+          "filename": "200245_1993.txt",
+          "gt_value": "1960",
+          "generated": "1960\n\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "75527_1993.txt",
+          "gt_value": "1907",
+          "generated": "1907. (Note: The year",
+          "correct": true
+        },
+        {
+          "filename": "201461_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968. (Note: The year",
+          "correct": true
+        },
+        {
+          "filename": "34285_1993.txt",
+          "gt_value": "1953",
+          "generated": "1953. (Note: The year of",
+          "correct": true
+        },
+        {
+          "filename": "40454_1993.txt",
+          "gt_value": "1946",
+          "generated": "1946\n\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "17797_1993.txt",
+          "gt_value": "1926",
+          "generated": "1926. _____________________\nQuestion: What",
+          "correct": true
+        },
+        {
+          "filename": "51720_1993.txt",
+          "gt_value": "1925",
+          "generated": "Delaware\n\nQuestion: What is the name of the",
+          "correct": false
+        },
+        {
+          "filename": "728586_1993.txt",
+          "gt_value": "1965",
+          "generated": "1990\n\nQuestion: What is the name",
+          "correct": false
+        },
+        {
+          "filename": "92236_1993.txt",
+          "gt_value": "1973",
+          "generated": "1973\n\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "91576_1993.txt",
+          "gt_value": "1958",
+          "generated": "1849. (Note: The year",
+          "correct": false
+        },
+        {
+          "filename": "790603_1993.txt",
+          "gt_value": "1986",
+          "generated": "1986\n\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "66479_1993.txt",
+          "gt_value": "1954",
+          "generated": "1954\n\nQuestion: What is the main",
+          "correct": true
+        },
+        {
+          "filename": "100923_1993.txt",
+          "gt_value": "1980",
+          "generated": "1891\n\nQuestion: What is the main",
+          "correct": false
+        },
+        {
+          "filename": "105839_1993.txt",
+          "gt_value": "1925",
+          "generated": "1916. (Note: The year is",
+          "correct": false
+        },
+        {
+          "filename": "18497_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968\n\nQuestion: What type of insurance",
+          "correct": true
+        },
+        {
+          "filename": "740763_1993.txt",
+          "gt_value": "1984",
+          "generated": "1942. (Note: The year",
+          "correct": false
+        },
+        {
+          "filename": "859119_1993.txt",
+          "gt_value": "1989",
+          "generated": "1989. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "90185_1993.txt",
+          "gt_value": "1975",
+          "generated": "1975\n\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "101320_1993.txt",
+          "gt_value": "1970",
+          "generated": "1903. (United Jersey Bank was organized",
+          "correct": false
+        },
+        {
+          "filename": "4310_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968. (Note: The year of",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "num_heads": 20,
+      "heads": [
+        [
+          16,
+          1
+        ],
+        [
+          14,
+          31
+        ],
+        [
+          17,
+          29
+        ],
+        [
+          13,
+          18
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          14,
+          22
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          15,
+          3
+        ],
+        [
+          14,
+          30
+        ],
+        [
+          8,
+          31
+        ],
+        [
+          20,
+          26
+        ],
+        [
+          14,
+          29
+        ],
+        [
+          24,
+          27
+        ],
+        [
+          20,
+          25
+        ],
+        [
+          14,
+          20
+        ],
+        [
+          16,
+          25
+        ],
+        [
+          13,
+          17
+        ],
+        [
+          18,
+          20
+        ],
+        [
+          20,
+          23
+        ]
+      ],
+      "heads_str": [
+        "L16H1",
+        "L14H31",
+        "L17H29",
+        "L13H18",
+        "L8H8",
+        "L8H11",
+        "L14H22",
+        "L20H1",
+        "L15H3",
+        "L14H30",
+        "L8H31",
+        "L20H26",
+        "L14H29",
+        "L24H27",
+        "L20H25",
+        "L14H20",
+        "L16H25",
+        "L13H17",
+        "L18H20",
+        "L20H23"
+      ],
+      "accuracy": 0.65625,
+      "accuracy_drop": 0.28125,
+      "correct": 21,
+      "total": 32,
+      "sample_results": [
+        {
+          "filename": "66904_1993.txt",
+          "gt_value": "1945",
+          "generated": "1906. (Note: The year is",
+          "correct": false
+        },
+        {
+          "filename": "33798_1993.txt",
+          "gt_value": "1919",
+          "generated": "1919\n\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "99193_1993.txt",
+          "gt_value": "1931",
+          "generated": "1928\n\nQuestion: What is the name",
+          "correct": false
+        },
+        {
+          "filename": "800287_1993.txt",
+          "gt_value": "1978",
+          "generated": "1978. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "7323_1993.txt",
+          "gt_value": "1949",
+          "generated": "1926. (Note: The year is",
+          "correct": false
+        },
+        {
+          "filename": "66740_1993.txt",
+          "gt_value": "1929",
+          "generated": "1902\n\nQuestion: What is the name",
+          "correct": false
+        },
+        {
+          "filename": "67646_1993.txt",
+          "gt_value": "1925",
+          "generated": "1925. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "846972_1993.txt",
+          "gt_value": "1985",
+          "generated": "1985. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "10456_1993.txt",
+          "gt_value": "1931",
+          "generated": "1931. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "814153_1993.txt",
+          "gt_value": "1987",
+          "generated": "1987\n\nQuestion: What was the purpose",
+          "correct": true
+        },
+        {
+          "filename": "836400_1993.txt",
+          "gt_value": "1988",
+          "generated": "1988. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "20164_1993.txt",
+          "gt_value": "1967",
+          "generated": "1926\n\nQuestion: What is the main",
+          "correct": false
+        },
+        {
+          "filename": "200245_1993.txt",
+          "gt_value": "1960",
+          "generated": "1960. 1960. 196",
+          "correct": true
+        },
+        {
+          "filename": "75527_1993.txt",
+          "gt_value": "1907",
+          "generated": "1907\n\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "201461_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968. (Source: Item 1",
+          "correct": true
+        },
+        {
+          "filename": "34285_1993.txt",
+          "gt_value": "1953",
+          "generated": "1953. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "40454_1993.txt",
+          "gt_value": "1946",
+          "generated": "1946\n\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "17797_1993.txt",
+          "gt_value": "1926",
+          "generated": "1926. _______________________\n\nQuestion: What",
+          "correct": true
+        },
+        {
+          "filename": "51720_1993.txt",
+          "gt_value": "1925",
+          "generated": "1925\n\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "728586_1993.txt",
+          "gt_value": "1965",
+          "generated": "1990. (Note: The year is",
+          "correct": false
+        },
+        {
+          "filename": "92236_1993.txt",
+          "gt_value": "1973",
+          "generated": "1973\n\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "91576_1993.txt",
+          "gt_value": "1958",
+          "generated": "1958. (The year is mentioned in",
+          "correct": true
+        },
+        {
+          "filename": "790603_1993.txt",
+          "gt_value": "1986",
+          "generated": "1867\n\nQuestion: What is the name",
+          "correct": false
+        },
+        {
+          "filename": "66479_1993.txt",
+          "gt_value": "1954",
+          "generated": "1954\n\nQuestion: What is the main",
+          "correct": true
+        },
+        {
+          "filename": "100923_1993.txt",
+          "gt_value": "1980",
+          "generated": "1891\n\nQuestion: What is the main",
+          "correct": false
+        },
+        {
+          "filename": "105839_1993.txt",
+          "gt_value": "1925",
+          "generated": "1925. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "18497_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968\n\nQuestion: What is the main",
+          "correct": true
+        },
+        {
+          "filename": "740763_1993.txt",
+          "gt_value": "1984",
+          "generated": "1984. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "859119_1993.txt",
+          "gt_value": "1989",
+          "generated": "1851. (Note: The year is",
+          "correct": false
+        },
+        {
+          "filename": "90185_1993.txt",
+          "gt_value": "1975",
+          "generated": "1947\n\nQuestion: What is the name",
+          "correct": false
+        },
+        {
+          "filename": "101320_1993.txt",
+          "gt_value": "1970",
+          "generated": "1903. (The year the company was",
+          "correct": false
+        },
+        {
+          "filename": "4310_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968\n\nQuestion: What is the name",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "num_heads": 30,
+      "heads": [
+        [
+          16,
+          1
+        ],
+        [
+          14,
+          31
+        ],
+        [
+          17,
+          29
+        ],
+        [
+          13,
+          18
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          14,
+          22
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          15,
+          3
+        ],
+        [
+          14,
+          30
+        ],
+        [
+          8,
+          31
+        ],
+        [
+          20,
+          26
+        ],
+        [
+          14,
+          29
+        ],
+        [
+          24,
+          27
+        ],
+        [
+          20,
+          25
+        ],
+        [
+          14,
+          20
+        ],
+        [
+          16,
+          25
+        ],
+        [
+          13,
+          17
+        ],
+        [
+          18,
+          20
+        ],
+        [
+          20,
+          23
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          17,
+          21
+        ],
+        [
+          22,
+          13
+        ],
+        [
+          16,
+          26
+        ],
+        [
+          10,
+          18
+        ],
+        [
+          13,
+          5
+        ],
+        [
+          10,
+          31
+        ],
+        [
+          16,
+          19
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          15,
+          29
+        ]
+      ],
+      "heads_str": [
+        "L16H1",
+        "L14H31",
+        "L17H29",
+        "L13H18",
+        "L8H8",
+        "L8H11",
+        "L14H22",
+        "L20H1",
+        "L15H3",
+        "L14H30",
+        "L8H31",
+        "L20H26",
+        "L14H29",
+        "L24H27",
+        "L20H25",
+        "L14H20",
+        "L16H25",
+        "L13H17",
+        "L18H20",
+        "L20H23",
+        "L8H9",
+        "L17H21",
+        "L22H13",
+        "L16H26",
+        "L10H18",
+        "L13H5",
+        "L10H31",
+        "L16H19",
+        "L16H0",
+        "L15H29"
+      ],
+      "accuracy": 0.84375,
+      "accuracy_drop": 0.09375,
+      "correct": 27,
+      "total": 32,
+      "sample_results": [
+        {
+          "filename": "66904_1993.txt",
+          "gt_value": "1945",
+          "generated": "1906. (Note: The year is",
+          "correct": false
+        },
+        {
+          "filename": "33798_1993.txt",
+          "gt_value": "1919",
+          "generated": "1919\n\nQuestion: What was the name",
+          "correct": true
+        },
+        {
+          "filename": "99193_1993.txt",
+          "gt_value": "1931",
+          "generated": "1931. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "800287_1993.txt",
+          "gt_value": "1978",
+          "generated": "1978. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "7323_1993.txt",
+          "gt_value": "1949",
+          "generated": "1926. (AP&L was incorporated",
+          "correct": false
+        },
+        {
+          "filename": "66740_1993.txt",
+          "gt_value": "1929",
+          "generated": "1902. (Note: The company was",
+          "correct": false
+        },
+        {
+          "filename": "67646_1993.txt",
+          "gt_value": "1925",
+          "generated": "1925. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "846972_1993.txt",
+          "gt_value": "1985",
+          "generated": "1985.",
+          "correct": true
+        },
+        {
+          "filename": "10456_1993.txt",
+          "gt_value": "1931",
+          "generated": "1931. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "814153_1993.txt",
+          "gt_value": "1987",
+          "generated": "1987\n\nWhat is the purpose of the",
+          "correct": true
+        },
+        {
+          "filename": "836400_1993.txt",
+          "gt_value": "1988",
+          "generated": "1988. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "20164_1993.txt",
+          "gt_value": "1967",
+          "generated": "1926.",
+          "correct": false
+        },
+        {
+          "filename": "200245_1993.txt",
+          "gt_value": "1960",
+          "generated": "1960\n\nQuestion: How many employees did",
+          "correct": true
+        },
+        {
+          "filename": "75527_1993.txt",
+          "gt_value": "1907",
+          "generated": "1907.",
+          "correct": true
+        },
+        {
+          "filename": "201461_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "34285_1993.txt",
+          "gt_value": "1953",
+          "generated": "1953. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "40454_1993.txt",
+          "gt_value": "1946",
+          "generated": "1946\n\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "17797_1993.txt",
+          "gt_value": "1926",
+          "generated": "1926. _______________________\n\nExplanation: The",
+          "correct": true
+        },
+        {
+          "filename": "51720_1993.txt",
+          "gt_value": "1925",
+          "generated": "1925. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "728586_1993.txt",
+          "gt_value": "1965",
+          "generated": "1965. (Note: The year of",
+          "correct": true
+        },
+        {
+          "filename": "92236_1993.txt",
+          "gt_value": "1973",
+          "generated": "1973. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "91576_1993.txt",
+          "gt_value": "1958",
+          "generated": "1958. (Note: The company was",
+          "correct": true
+        },
+        {
+          "filename": "790603_1993.txt",
+          "gt_value": "1986",
+          "generated": "1986\n\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "66479_1993.txt",
+          "gt_value": "1954",
+          "generated": "1954. (Millipore Corporation was",
+          "correct": true
+        },
+        {
+          "filename": "100923_1993.txt",
+          "gt_value": "1980",
+          "generated": "1891. (Note: The year is",
+          "correct": false
+        },
+        {
+          "filename": "105839_1993.txt",
+          "gt_value": "1925",
+          "generated": "1925. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "18497_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "740763_1993.txt",
+          "gt_value": "1984",
+          "generated": "1984. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "859119_1993.txt",
+          "gt_value": "1989",
+          "generated": "1989. (Illinois Central Corporation was",
+          "correct": true
+        },
+        {
+          "filename": "90185_1993.txt",
+          "gt_value": "1975",
+          "generated": "1975. (Note: The year of",
+          "correct": true
+        },
+        {
+          "filename": "101320_1993.txt",
+          "gt_value": "1970",
+          "generated": "1970. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "4310_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968. (Note: The year is",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "num_heads": 40,
+      "heads": [
+        [
+          16,
+          1
+        ],
+        [
+          14,
+          31
+        ],
+        [
+          17,
+          29
+        ],
+        [
+          13,
+          18
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          14,
+          22
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          15,
+          3
+        ],
+        [
+          14,
+          30
+        ],
+        [
+          8,
+          31
+        ],
+        [
+          20,
+          26
+        ],
+        [
+          14,
+          29
+        ],
+        [
+          24,
+          27
+        ],
+        [
+          20,
+          25
+        ],
+        [
+          14,
+          20
+        ],
+        [
+          16,
+          25
+        ],
+        [
+          13,
+          17
+        ],
+        [
+          18,
+          20
+        ],
+        [
+          20,
+          23
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          17,
+          21
+        ],
+        [
+          22,
+          13
+        ],
+        [
+          16,
+          26
+        ],
+        [
+          10,
+          18
+        ],
+        [
+          13,
+          5
+        ],
+        [
+          10,
+          31
+        ],
+        [
+          16,
+          19
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          15,
+          29
+        ],
+        [
+          19,
+          9
+        ],
+        [
+          17,
+          24
+        ],
+        [
+          14,
+          13
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          17,
+          25
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          9,
+          13
+        ],
+        [
+          13,
+          13
+        ]
+      ],
+      "heads_str": [
+        "L16H1",
+        "L14H31",
+        "L17H29",
+        "L13H18",
+        "L8H8",
+        "L8H11",
+        "L14H22",
+        "L20H1",
+        "L15H3",
+        "L14H30",
+        "L8H31",
+        "L20H26",
+        "L14H29",
+        "L24H27",
+        "L20H25",
+        "L14H20",
+        "L16H25",
+        "L13H17",
+        "L18H20",
+        "L20H23",
+        "L8H9",
+        "L17H21",
+        "L22H13",
+        "L16H26",
+        "L10H18",
+        "L13H5",
+        "L10H31",
+        "L16H19",
+        "L16H0",
+        "L15H29",
+        "L19H9",
+        "L17H24",
+        "L14H13",
+        "L9H12",
+        "L17H25",
+        "L13H1",
+        "L14H0",
+        "L22H0",
+        "L9H13",
+        "L13H13"
+      ],
+      "accuracy": 0.4375,
+      "accuracy_drop": 0.5,
+      "correct": 14,
+      "total": 32,
+      "sample_results": [
+        {
+          "filename": "66904_1993.txt",
+          "gt_value": "1945",
+          "generated": "1906. (Note: The year is",
+          "correct": false
+        },
+        {
+          "filename": "33798_1993.txt",
+          "gt_value": "1919",
+          "generated": "1919\n\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "99193_1993.txt",
+          "gt_value": "1931",
+          "generated": "1928. (Note: The year is",
+          "correct": false
+        },
+        {
+          "filename": "800287_1993.txt",
+          "gt_value": "1978",
+          "generated": "1978. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "7323_1993.txt",
+          "gt_value": "1949",
+          "generated": "1993. (Note: The year is",
+          "correct": false
+        },
+        {
+          "filename": "66740_1993.txt",
+          "gt_value": "1929",
+          "generated": "1902. (Note: The year is",
+          "correct": false
+        },
+        {
+          "filename": "67646_1993.txt",
+          "gt_value": "1925",
+          "generated": "1993. (Note: The question is",
+          "correct": false
+        },
+        {
+          "filename": "846972_1993.txt",
+          "gt_value": "1985",
+          "generated": "1985. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "10456_1993.txt",
+          "gt_value": "1931",
+          "generated": "1931. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "814153_1993.txt",
+          "gt_value": "1987",
+          "generated": "1987\n\nWhat is the purpose of the",
+          "correct": true
+        },
+        {
+          "filename": "836400_1993.txt",
+          "gt_value": "1988",
+          "generated": "1993. (Note: The question is",
+          "correct": false
+        },
+        {
+          "filename": "20164_1993.txt",
+          "gt_value": "1967",
+          "generated": "1993\n\nQuestion: What is the name",
+          "correct": false
+        },
+        {
+          "filename": "200245_1993.txt",
+          "gt_value": "1960",
+          "generated": "1960\n\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "75527_1993.txt",
+          "gt_value": "1907",
+          "generated": "1886. (Note: The company is",
+          "correct": false
+        },
+        {
+          "filename": "201461_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "34285_1993.txt",
+          "gt_value": "1953",
+          "generated": "1953.",
+          "correct": true
+        },
+        {
+          "filename": "40454_1993.txt",
+          "gt_value": "1946",
+          "generated": "1986\n\nQuestion: What is the name",
+          "correct": false
+        },
+        {
+          "filename": "17797_1993.txt",
+          "gt_value": "1926",
+          "generated": "1993. (Note: The passage does",
+          "correct": false
+        },
+        {
+          "filename": "51720_1993.txt",
+          "gt_value": "1925",
+          "generated": "1925. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "728586_1993.txt",
+          "gt_value": "1965",
+          "generated": "1990. (Note: The year is",
+          "correct": false
+        },
+        {
+          "filename": "92236_1993.txt",
+          "gt_value": "1973",
+          "generated": "1973. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "91576_1993.txt",
+          "gt_value": "1958",
+          "generated": "1992. (Note: The year is",
+          "correct": false
+        },
+        {
+          "filename": "790603_1993.txt",
+          "gt_value": "1986",
+          "generated": "1986\n\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "66479_1993.txt",
+          "gt_value": "1954",
+          "generated": "1954. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "100923_1993.txt",
+          "gt_value": "1980",
+          "generated": "1891. (Note: The year is",
+          "correct": false
+        },
+        {
+          "filename": "105839_1993.txt",
+          "gt_value": "1925",
+          "generated": "1993. (Note: The question is",
+          "correct": false
+        },
+        {
+          "filename": "18497_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "740763_1993.txt",
+          "gt_value": "1984",
+          "generated": "None. The text does not mention the year of",
+          "correct": false
+        },
+        {
+          "filename": "859119_1993.txt",
+          "gt_value": "1989",
+          "generated": "1989.",
+          "correct": true
+        },
+        {
+          "filename": "90185_1993.txt",
+          "gt_value": "1975",
+          "generated": "1993. (Note: The year is",
+          "correct": false
+        },
+        {
+          "filename": "101320_1993.txt",
+          "gt_value": "1970",
+          "generated": "1993. (Note: The year is",
+          "correct": false
+        },
+        {
+          "filename": "4310_1993.txt",
+          "gt_value": "1968",
+          "generated": "1987. (Note: The year is",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "num_heads": 50,
+      "heads": [
+        [
+          16,
+          1
+        ],
+        [
+          14,
+          31
+        ],
+        [
+          17,
+          29
+        ],
+        [
+          13,
+          18
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          14,
+          22
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          15,
+          3
+        ],
+        [
+          14,
+          30
+        ],
+        [
+          8,
+          31
+        ],
+        [
+          20,
+          26
+        ],
+        [
+          14,
+          29
+        ],
+        [
+          24,
+          27
+        ],
+        [
+          20,
+          25
+        ],
+        [
+          14,
+          20
+        ],
+        [
+          16,
+          25
+        ],
+        [
+          13,
+          17
+        ],
+        [
+          18,
+          20
+        ],
+        [
+          20,
+          23
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          17,
+          21
+        ],
+        [
+          22,
+          13
+        ],
+        [
+          16,
+          26
+        ],
+        [
+          10,
+          18
+        ],
+        [
+          13,
+          5
+        ],
+        [
+          10,
+          31
+        ],
+        [
+          16,
+          19
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          15,
+          29
+        ],
+        [
+          19,
+          9
+        ],
+        [
+          17,
+          24
+        ],
+        [
+          14,
+          13
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          17,
+          25
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          9,
+          13
+        ],
+        [
+          13,
+          13
+        ],
+        [
+          14,
+          5
+        ],
+        [
+          20,
+          14
+        ],
+        [
+          27,
+          5
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          13,
+          3
+        ],
+        [
+          22,
+          14
+        ],
+        [
+          13,
+          8
+        ],
+        [
+          9,
+          2
+        ],
+        [
+          24,
+          24
+        ],
+        [
+          10,
+          3
+        ]
+      ],
+      "heads_str": [
+        "L16H1",
+        "L14H31",
+        "L17H29",
+        "L13H18",
+        "L8H8",
+        "L8H11",
+        "L14H22",
+        "L20H1",
+        "L15H3",
+        "L14H30",
+        "L8H31",
+        "L20H26",
+        "L14H29",
+        "L24H27",
+        "L20H25",
+        "L14H20",
+        "L16H25",
+        "L13H17",
+        "L18H20",
+        "L20H23",
+        "L8H9",
+        "L17H21",
+        "L22H13",
+        "L16H26",
+        "L10H18",
+        "L13H5",
+        "L10H31",
+        "L16H19",
+        "L16H0",
+        "L15H29",
+        "L19H9",
+        "L17H24",
+        "L14H13",
+        "L9H12",
+        "L17H25",
+        "L13H1",
+        "L14H0",
+        "L22H0",
+        "L9H13",
+        "L13H13",
+        "L14H5",
+        "L20H14",
+        "L27H5",
+        "L11H4",
+        "L13H3",
+        "L22H14",
+        "L13H8",
+        "L9H2",
+        "L24H24",
+        "L10H3"
+      ],
+      "accuracy": 0.3125,
+      "accuracy_drop": 0.625,
+      "correct": 10,
+      "total": 32,
+      "sample_results": [
+        {
+          "filename": "66904_1993.txt",
+          "gt_value": "1945",
+          "generated": "1954. (Note: The year is",
+          "correct": false
+        },
+        {
+          "filename": "33798_1993.txt",
+          "gt_value": "1919",
+          "generated": "1919\n\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "99193_1993.txt",
+          "gt_value": "1931",
+          "generated": "1928. (Note: The year is",
+          "correct": false
+        },
+        {
+          "filename": "800287_1993.txt",
+          "gt_value": "1978",
+          "generated": "1978. (Note: This is a",
+          "correct": true
+        },
+        {
+          "filename": "7323_1993.txt",
+          "gt_value": "1949",
+          "generated": "1993. (Note: The year is",
+          "correct": false
+        },
+        {
+          "filename": "66740_1993.txt",
+          "gt_value": "1929",
+          "generated": "1902.",
+          "correct": false
+        },
+        {
+          "filename": "67646_1993.txt",
+          "gt_value": "1925",
+          "generated": "1993. (Note: The question is",
+          "correct": false
+        },
+        {
+          "filename": "846972_1993.txt",
+          "gt_value": "1985",
+          "generated": "1985.",
+          "correct": true
+        },
+        {
+          "filename": "10456_1993.txt",
+          "gt_value": "1931",
+          "generated": "1993. (Note: The year is",
+          "correct": false
+        },
+        {
+          "filename": "814153_1993.txt",
+          "gt_value": "1987",
+          "generated": "1987\n\nWhat is the purpose of the",
+          "correct": true
+        },
+        {
+          "filename": "836400_1993.txt",
+          "gt_value": "1988",
+          "generated": "1885. (Note: The year is",
+          "correct": false
+        },
+        {
+          "filename": "20164_1993.txt",
+          "gt_value": "1967",
+          "generated": "1993\n\nQuestion: What is the name",
+          "correct": false
+        },
+        {
+          "filename": "200245_1993.txt",
+          "gt_value": "1960",
+          "generated": "1960\n\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "75527_1993.txt",
+          "gt_value": "1907",
+          "generated": "1886. (Note: The year is",
+          "correct": false
+        },
+        {
+          "filename": "201461_1993.txt",
+          "gt_value": "1968",
+          "generated": "1993. (Note: The year is",
+          "correct": false
+        },
+        {
+          "filename": "34285_1993.txt",
+          "gt_value": "1953",
+          "generated": "1972.",
+          "correct": false
+        },
+        {
+          "filename": "40454_1993.txt",
+          "gt_value": "1946",
+          "generated": "1986. (Note: The year is",
+          "correct": false
+        },
+        {
+          "filename": "17797_1993.txt",
+          "gt_value": "1926",
+          "generated": "1973. _______________________\n\nExplanation: The",
+          "correct": false
+        },
+        {
+          "filename": "51720_1993.txt",
+          "gt_value": "1925",
+          "generated": "1990. (Note: The year is",
+          "correct": false
+        },
+        {
+          "filename": "728586_1993.txt",
+          "gt_value": "1965",
+          "generated": "1990. (Note: The year is",
+          "correct": false
+        },
+        {
+          "filename": "92236_1993.txt",
+          "gt_value": "1973",
+          "generated": "1973.",
+          "correct": true
+        },
+        {
+          "filename": "91576_1993.txt",
+          "gt_value": "1958",
+          "generated": "1994. (Note: The year is",
+          "correct": false
+        },
+        {
+          "filename": "790603_1993.txt",
+          "gt_value": "1986",
+          "generated": "1986\n\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "66479_1993.txt",
+          "gt_value": "1954",
+          "generated": "1993. (Note: The year is",
+          "correct": false
+        },
+        {
+          "filename": "100923_1993.txt",
+          "gt_value": "1980",
+          "generated": "1980. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "105839_1993.txt",
+          "gt_value": "1925",
+          "generated": "1993. (Note: The question is",
+          "correct": false
+        },
+        {
+          "filename": "18497_1993.txt",
+          "gt_value": "1968",
+          "generated": "1993. (Note: The question is",
+          "correct": false
+        },
+        {
+          "filename": "740763_1993.txt",
+          "gt_value": "1984",
+          "generated": "1993. (Note: This is a",
+          "correct": false
+        },
+        {
+          "filename": "859119_1993.txt",
+          "gt_value": "1989",
+          "generated": "1989.",
+          "correct": true
+        },
+        {
+          "filename": "90185_1993.txt",
+          "gt_value": "1975",
+          "generated": "1975.",
+          "correct": true
+        },
+        {
+          "filename": "101320_1993.txt",
+          "gt_value": "1970",
+          "generated": "1993. (Note: The year is",
+          "correct": false
+        },
+        {
+          "filename": "4310_1993.txt",
+          "gt_value": "1968",
+          "generated": "1987. (Note: The year is",
+          "correct": false
+        }
+      ]
+    }
+  ],
+  "random_heads_ablations": [
+    {
+      "num_heads": 5,
+      "heads": [
+        [
+          21,
+          26
+        ],
+        [
+          3,
+          18
+        ],
+        [
+          0,
+          25
+        ],
+        [
+          25,
+          8
+        ],
+        [
+          8,
+          28
+        ]
+      ],
+      "heads_str": [
+        "L21H26",
+        "L3H18",
+        "L0H25",
+        "L25H8",
+        "L8H28"
+      ],
+      "accuracy": 0.9375,
+      "accuracy_drop": 0.0,
+      "correct": 30,
+      "total": 32,
+      "sample_results": [
+        {
+          "filename": "66904_1993.txt",
+          "gt_value": "1945",
+          "generated": "1945. (ITEM 1. BUSINESS",
+          "correct": true
+        },
+        {
+          "filename": "33798_1993.txt",
+          "gt_value": "1919",
+          "generated": "1919\n\nItem 2. Management's",
+          "correct": true
+        },
+        {
+          "filename": "99193_1993.txt",
+          "gt_value": "1931",
+          "generated": "1931. (The company was incorporated in",
+          "correct": true
+        },
+        {
+          "filename": "800287_1993.txt",
+          "gt_value": "1978",
+          "generated": "1978. (Reference: Item 1",
+          "correct": true
+        },
+        {
+          "filename": "7323_1993.txt",
+          "gt_value": "1949",
+          "generated": "1949. Item 1. Business of",
+          "correct": true
+        },
+        {
+          "filename": "66740_1993.txt",
+          "gt_value": "1929",
+          "generated": "1929.",
+          "correct": true
+        },
+        {
+          "filename": "67646_1993.txt",
+          "gt_value": "1925",
+          "generated": "1925. (Allegheny Power System",
+          "correct": true
+        },
+        {
+          "filename": "846972_1993.txt",
+          "gt_value": "1985",
+          "generated": "1985. (Adience was incorporated in",
+          "correct": true
+        },
+        {
+          "filename": "10456_1993.txt",
+          "gt_value": "1931",
+          "generated": "1931. (ITEM 1. BUSINESS",
+          "correct": true
+        },
+        {
+          "filename": "814153_1993.txt",
+          "gt_value": "1987",
+          "generated": "1987\n\nITEM 2. BUSINESS",
+          "correct": true
+        },
+        {
+          "filename": "836400_1993.txt",
+          "gt_value": "1988",
+          "generated": "1988.",
+          "correct": true
+        },
+        {
+          "filename": "20164_1993.txt",
+          "gt_value": "1967",
+          "generated": "1926.",
+          "correct": false
+        },
+        {
+          "filename": "200245_1993.txt",
+          "gt_value": "1960",
+          "generated": "1960.",
+          "correct": true
+        },
+        {
+          "filename": "75527_1993.txt",
+          "gt_value": "1907",
+          "generated": "1907. (Pacific Enterprises was incorporated in",
+          "correct": true
+        },
+        {
+          "filename": "201461_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968. (Source: Item 1",
+          "correct": true
+        },
+        {
+          "filename": "34285_1993.txt",
+          "gt_value": "1953",
+          "generated": "1953. (Texas) (1)",
+          "correct": true
+        },
+        {
+          "filename": "40454_1993.txt",
+          "gt_value": "1946",
+          "generated": "1946.",
+          "correct": true
+        },
+        {
+          "filename": "17797_1993.txt",
+          "gt_value": "1926",
+          "generated": "1926. _______________________\n\nQuestion: What",
+          "correct": true
+        },
+        {
+          "filename": "51720_1993.txt",
+          "gt_value": "1925",
+          "generated": "Delaware. (1925) 1925",
+          "correct": true
+        },
+        {
+          "filename": "728586_1993.txt",
+          "gt_value": "1965",
+          "generated": "1965. (ITEM 1. BUSINESS",
+          "correct": true
+        },
+        {
+          "filename": "92236_1993.txt",
+          "gt_value": "1973",
+          "generated": "1973. (Sonat was incorporated under",
+          "correct": true
+        },
+        {
+          "filename": "91576_1993.txt",
+          "gt_value": "1958",
+          "generated": "1958. (See \"Society,",
+          "correct": true
+        },
+        {
+          "filename": "790603_1993.txt",
+          "gt_value": "1986",
+          "generated": "1986\n\nItem 2. Management's",
+          "correct": true
+        },
+        {
+          "filename": "66479_1993.txt",
+          "gt_value": "1954",
+          "generated": "1954. Item 1. Business.",
+          "correct": true
+        },
+        {
+          "filename": "100923_1993.txt",
+          "gt_value": "1980",
+          "generated": "1891. (Note: The company was",
+          "correct": false
+        },
+        {
+          "filename": "105839_1993.txt",
+          "gt_value": "1925",
+          "generated": "1925. (Allegheny Power System",
+          "correct": true
+        },
+        {
+          "filename": "18497_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968. (ITEM 1. BUSINESS",
+          "correct": true
+        },
+        {
+          "filename": "740763_1993.txt",
+          "gt_value": "1984",
+          "generated": "1984. (Gilbert Associates, Inc",
+          "correct": true
+        },
+        {
+          "filename": "859119_1993.txt",
+          "gt_value": "1989",
+          "generated": "1989. (Illinois Central Corporation was",
+          "correct": true
+        },
+        {
+          "filename": "90185_1993.txt",
+          "gt_value": "1975",
+          "generated": "1975. Item 1. Business.",
+          "correct": true
+        },
+        {
+          "filename": "101320_1993.txt",
+          "gt_value": "1970",
+          "generated": "1970. (ITEM 1. BUSINESS",
+          "correct": true
+        },
+        {
+          "filename": "4310_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968. (ALZA Corporation was incorporated",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "num_heads": 10,
+      "heads": [
+        [
+          21,
+          26
+        ],
+        [
+          3,
+          18
+        ],
+        [
+          0,
+          25
+        ],
+        [
+          25,
+          8
+        ],
+        [
+          8,
+          28
+        ],
+        [
+          7,
+          26
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          4,
+          14
+        ],
+        [
+          25,
+          3
+        ],
+        [
+          3,
+          8
+        ]
+      ],
+      "heads_str": [
+        "L21H26",
+        "L3H18",
+        "L0H25",
+        "L25H8",
+        "L8H28",
+        "L7H26",
+        "L7H4",
+        "L4H14",
+        "L25H3",
+        "L3H8"
+      ],
+      "accuracy": 0.875,
+      "accuracy_drop": 0.0625,
+      "correct": 28,
+      "total": 32,
+      "sample_results": [
+        {
+          "filename": "66904_1993.txt",
+          "gt_value": "1945",
+          "generated": "1945. (ITEM 1. BUSINESS",
+          "correct": true
+        },
+        {
+          "filename": "33798_1993.txt",
+          "gt_value": "1919",
+          "generated": "1919\n\nQuestion: What was the name",
+          "correct": true
+        },
+        {
+          "filename": "99193_1993.txt",
+          "gt_value": "1931",
+          "generated": "1928. (Transamerica Corporation was",
+          "correct": false
+        },
+        {
+          "filename": "800287_1993.txt",
+          "gt_value": "1978",
+          "generated": "1978. (Reference: Item 1",
+          "correct": true
+        },
+        {
+          "filename": "7323_1993.txt",
+          "gt_value": "1949",
+          "generated": "1949. Item 1. Business of",
+          "correct": true
+        },
+        {
+          "filename": "66740_1993.txt",
+          "gt_value": "1929",
+          "generated": "1929.",
+          "correct": true
+        },
+        {
+          "filename": "67646_1993.txt",
+          "gt_value": "1925",
+          "generated": "1925. (Allegheny Power System",
+          "correct": true
+        },
+        {
+          "filename": "846972_1993.txt",
+          "gt_value": "1985",
+          "generated": "1985. (Adience was incorporated in",
+          "correct": true
+        },
+        {
+          "filename": "10456_1993.txt",
+          "gt_value": "1931",
+          "generated": "1931. (ITEM 1. BUSINESS",
+          "correct": true
+        },
+        {
+          "filename": "814153_1993.txt",
+          "gt_value": "1987",
+          "generated": "1987\n\nITEM 2. What is",
+          "correct": true
+        },
+        {
+          "filename": "836400_1993.txt",
+          "gt_value": "1988",
+          "generated": "1988.",
+          "correct": true
+        },
+        {
+          "filename": "20164_1993.txt",
+          "gt_value": "1967",
+          "generated": "1926\n\nQuestion: What is the company",
+          "correct": false
+        },
+        {
+          "filename": "200245_1993.txt",
+          "gt_value": "1960",
+          "generated": "1960\n\nITEM 2. BUSINESS",
+          "correct": true
+        },
+        {
+          "filename": "75527_1993.txt",
+          "gt_value": "1907",
+          "generated": "1907. (Pacific Enterprises was incorporated in",
+          "correct": true
+        },
+        {
+          "filename": "201461_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968. (Source: Item 1",
+          "correct": true
+        },
+        {
+          "filename": "34285_1993.txt",
+          "gt_value": "1953",
+          "generated": "1953. (Texas corporation) Item",
+          "correct": true
+        },
+        {
+          "filename": "40454_1993.txt",
+          "gt_value": "1946",
+          "generated": "1946\n\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "17797_1993.txt",
+          "gt_value": "1926",
+          "generated": "1926. _______________________\n\nQuestion: What",
+          "correct": true
+        },
+        {
+          "filename": "51720_1993.txt",
+          "gt_value": "1925",
+          "generated": "Delaware\n\nQuestion: What is the company's main",
+          "correct": false
+        },
+        {
+          "filename": "728586_1993.txt",
+          "gt_value": "1965",
+          "generated": "1965. (ITEM 1. BUSINESS",
+          "correct": true
+        },
+        {
+          "filename": "92236_1993.txt",
+          "gt_value": "1973",
+          "generated": "1973. (Sonat was incorporated under",
+          "correct": true
+        },
+        {
+          "filename": "91576_1993.txt",
+          "gt_value": "1958",
+          "generated": "1958. (See \"Society,",
+          "correct": true
+        },
+        {
+          "filename": "790603_1993.txt",
+          "gt_value": "1986",
+          "generated": "1986\n\nItem 2. Management's",
+          "correct": true
+        },
+        {
+          "filename": "66479_1993.txt",
+          "gt_value": "1954",
+          "generated": "1954. Item 1. Business.",
+          "correct": true
+        },
+        {
+          "filename": "100923_1993.txt",
+          "gt_value": "1980",
+          "generated": "1891\n\nQuestion: What is the company",
+          "correct": false
+        },
+        {
+          "filename": "105839_1993.txt",
+          "gt_value": "1925",
+          "generated": "1925. (Allegheny Power System",
+          "correct": true
+        },
+        {
+          "filename": "18497_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968. (ITEM 1. BUSINESS",
+          "correct": true
+        },
+        {
+          "filename": "740763_1993.txt",
+          "gt_value": "1984",
+          "generated": "1984. (Gilbert Associates, Inc",
+          "correct": true
+        },
+        {
+          "filename": "859119_1993.txt",
+          "gt_value": "1989",
+          "generated": "1989.",
+          "correct": true
+        },
+        {
+          "filename": "90185_1993.txt",
+          "gt_value": "1975",
+          "generated": "1975.",
+          "correct": true
+        },
+        {
+          "filename": "101320_1993.txt",
+          "gt_value": "1970",
+          "generated": "1970. (ITEM 1. BUSINESS",
+          "correct": true
+        },
+        {
+          "filename": "4310_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968. (ALZA Corporation was incorporated",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "num_heads": 20,
+      "heads": [
+        [
+          21,
+          26
+        ],
+        [
+          3,
+          18
+        ],
+        [
+          0,
+          25
+        ],
+        [
+          25,
+          8
+        ],
+        [
+          8,
+          28
+        ],
+        [
+          7,
+          26
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          4,
+          14
+        ],
+        [
+          25,
+          3
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          23,
+          3
+        ],
+        [
+          25,
+          7
+        ],
+        [
+          30,
+          3
+        ],
+        [
+          18,
+          19
+        ],
+        [
+          2,
+          25
+        ],
+        [
+          20,
+          4
+        ],
+        [
+          14,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          30
+        ],
+        [
+          2,
+          31
+        ]
+      ],
+      "heads_str": [
+        "L21H26",
+        "L3H18",
+        "L0H25",
+        "L25H8",
+        "L8H28",
+        "L7H26",
+        "L7H4",
+        "L4H14",
+        "L25H3",
+        "L3H8",
+        "L23H3",
+        "L25H7",
+        "L30H3",
+        "L18H19",
+        "L2H25",
+        "L20H4",
+        "L14H3",
+        "L1H0",
+        "L0H30",
+        "L2H31"
+      ],
+      "accuracy": 0.875,
+      "accuracy_drop": 0.0625,
+      "correct": 28,
+      "total": 32,
+      "sample_results": [
+        {
+          "filename": "66904_1993.txt",
+          "gt_value": "1945",
+          "generated": "1945. SOUTHERN was incorporated",
+          "correct": true
+        },
+        {
+          "filename": "33798_1993.txt",
+          "gt_value": "1919",
+          "generated": "1919\n\nItem 2. BUSINESS",
+          "correct": true
+        },
+        {
+          "filename": "99193_1993.txt",
+          "gt_value": "1931",
+          "generated": "1928. (Transamerica Corporation was",
+          "correct": false
+        },
+        {
+          "filename": "800287_1993.txt",
+          "gt_value": "1978",
+          "generated": "1978. (Note: The answer is",
+          "correct": true
+        },
+        {
+          "filename": "7323_1993.txt",
+          "gt_value": "1949",
+          "generated": "1949. (Source: Entergy Corporation",
+          "correct": true
+        },
+        {
+          "filename": "66740_1993.txt",
+          "gt_value": "1929",
+          "generated": "1929\n\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "67646_1993.txt",
+          "gt_value": "1925",
+          "generated": "1925. (Allegheny Power System",
+          "correct": true
+        },
+        {
+          "filename": "846972_1993.txt",
+          "gt_value": "1985",
+          "generated": "1985. (Note: The year of",
+          "correct": true
+        },
+        {
+          "filename": "10456_1993.txt",
+          "gt_value": "1931",
+          "generated": "1931. (ITEM 1. BUSINESS",
+          "correct": true
+        },
+        {
+          "filename": "814153_1993.txt",
+          "gt_value": "1987",
+          "generated": "1987\n\nITEM 2. BUSINESS",
+          "correct": true
+        },
+        {
+          "filename": "836400_1993.txt",
+          "gt_value": "1988",
+          "generated": "1988.",
+          "correct": true
+        },
+        {
+          "filename": "20164_1993.txt",
+          "gt_value": "1967",
+          "generated": "1926\n\nQuestion: What is the company",
+          "correct": false
+        },
+        {
+          "filename": "200245_1993.txt",
+          "gt_value": "1960",
+          "generated": "1960\n\nITEM 2. BUSINESS",
+          "correct": true
+        },
+        {
+          "filename": "75527_1993.txt",
+          "gt_value": "1907",
+          "generated": "1907. (Pacific Enterprises was incorporated in",
+          "correct": true
+        },
+        {
+          "filename": "201461_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968.",
+          "correct": true
+        },
+        {
+          "filename": "34285_1993.txt",
+          "gt_value": "1953",
+          "generated": "1953.",
+          "correct": true
+        },
+        {
+          "filename": "40454_1993.txt",
+          "gt_value": "1946",
+          "generated": "1946.",
+          "correct": true
+        },
+        {
+          "filename": "17797_1993.txt",
+          "gt_value": "1926",
+          "generated": "1926. _______________________\n\nQuestion: What",
+          "correct": true
+        },
+        {
+          "filename": "51720_1993.txt",
+          "gt_value": "1925",
+          "generated": "Delaware\n\nQuestion: What is the company's main",
+          "correct": false
+        },
+        {
+          "filename": "728586_1993.txt",
+          "gt_value": "1965",
+          "generated": "1965. (The year Lehman Brothers",
+          "correct": true
+        },
+        {
+          "filename": "92236_1993.txt",
+          "gt_value": "1973",
+          "generated": "1973\n\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "91576_1993.txt",
+          "gt_value": "1958",
+          "generated": "1958. (Note: The company,",
+          "correct": true
+        },
+        {
+          "filename": "790603_1993.txt",
+          "gt_value": "1986",
+          "generated": "1986\n\nItem 2. Business",
+          "correct": true
+        },
+        {
+          "filename": "66479_1993.txt",
+          "gt_value": "1954",
+          "generated": "1954. Alice was beginning to get very",
+          "correct": true
+        },
+        {
+          "filename": "100923_1993.txt",
+          "gt_value": "1980",
+          "generated": "1891\n\nQuestion: What is the company",
+          "correct": false
+        },
+        {
+          "filename": "105839_1993.txt",
+          "gt_value": "1925",
+          "generated": "1925. (Allegheny Power System",
+          "correct": true
+        },
+        {
+          "filename": "18497_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968. (ITEM 1. BUSINESS",
+          "correct": true
+        },
+        {
+          "filename": "740763_1993.txt",
+          "gt_value": "1984",
+          "generated": "1984. (Gilbert Associates, Inc",
+          "correct": true
+        },
+        {
+          "filename": "859119_1993.txt",
+          "gt_value": "1989",
+          "generated": "1989. (Illinois Central Corporation was",
+          "correct": true
+        },
+        {
+          "filename": "90185_1993.txt",
+          "gt_value": "1975",
+          "generated": "1975.",
+          "correct": true
+        },
+        {
+          "filename": "101320_1993.txt",
+          "gt_value": "1970",
+          "generated": "1970. (UJB Financial Corp.",
+          "correct": true
+        },
+        {
+          "filename": "4310_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "num_heads": 30,
+      "heads": [
+        [
+          21,
+          26
+        ],
+        [
+          3,
+          18
+        ],
+        [
+          0,
+          25
+        ],
+        [
+          25,
+          8
+        ],
+        [
+          8,
+          28
+        ],
+        [
+          7,
+          26
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          4,
+          14
+        ],
+        [
+          25,
+          3
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          23,
+          3
+        ],
+        [
+          25,
+          7
+        ],
+        [
+          30,
+          3
+        ],
+        [
+          18,
+          19
+        ],
+        [
+          2,
+          25
+        ],
+        [
+          20,
+          4
+        ],
+        [
+          14,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          30
+        ],
+        [
+          2,
+          31
+        ],
+        [
+          6,
+          31
+        ],
+        [
+          7,
+          14
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          20,
+          17
+        ],
+        [
+          0,
+          27
+        ],
+        [
+          19,
+          4
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          24,
+          12
+        ],
+        [
+          22,
+          6
+        ],
+        [
+          23,
+          29
+        ]
+      ],
+      "heads_str": [
+        "L21H26",
+        "L3H18",
+        "L0H25",
+        "L25H8",
+        "L8H28",
+        "L7H26",
+        "L7H4",
+        "L4H14",
+        "L25H3",
+        "L3H8",
+        "L23H3",
+        "L25H7",
+        "L30H3",
+        "L18H19",
+        "L2H25",
+        "L20H4",
+        "L14H3",
+        "L1H0",
+        "L0H30",
+        "L2H31",
+        "L6H31",
+        "L7H14",
+        "L17H6",
+        "L20H17",
+        "L0H27",
+        "L19H4",
+        "L6H11",
+        "L24H12",
+        "L22H6",
+        "L23H29"
+      ],
+      "accuracy": 0.90625,
+      "accuracy_drop": 0.03125,
+      "correct": 29,
+      "total": 32,
+      "sample_results": [
+        {
+          "filename": "66904_1993.txt",
+          "gt_value": "1945",
+          "generated": "1945. (Southern was incorporated under the",
+          "correct": true
+        },
+        {
+          "filename": "33798_1993.txt",
+          "gt_value": "1919",
+          "generated": "1919\n\nQuestion: What was the name",
+          "correct": true
+        },
+        {
+          "filename": "99193_1993.txt",
+          "gt_value": "1931",
+          "generated": "1928. (Transamerica Corporation was",
+          "correct": false
+        },
+        {
+          "filename": "800287_1993.txt",
+          "gt_value": "1978",
+          "generated": "1978. (Delaware) Alice was",
+          "correct": true
+        },
+        {
+          "filename": "7323_1993.txt",
+          "gt_value": "1949",
+          "generated": "1949. (Florida) Alice was beginning",
+          "correct": true
+        },
+        {
+          "filename": "66740_1993.txt",
+          "gt_value": "1929",
+          "generated": "1929\n\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "67646_1993.txt",
+          "gt_value": "1925",
+          "generated": "1925. (Allegheny Power System",
+          "correct": true
+        },
+        {
+          "filename": "846972_1993.txt",
+          "gt_value": "1985",
+          "generated": "1985. (Note: The year of",
+          "correct": true
+        },
+        {
+          "filename": "10456_1993.txt",
+          "gt_value": "1931",
+          "generated": "1931. (b) What is the",
+          "correct": true
+        },
+        {
+          "filename": "814153_1993.txt",
+          "gt_value": "1987",
+          "generated": "1987\n\nITEM 2: What was",
+          "correct": true
+        },
+        {
+          "filename": "836400_1993.txt",
+          "gt_value": "1988",
+          "generated": "1988.",
+          "correct": true
+        },
+        {
+          "filename": "20164_1993.txt",
+          "gt_value": "1967",
+          "generated": "1926\n\nQuestion: What is the company",
+          "correct": false
+        },
+        {
+          "filename": "200245_1993.txt",
+          "gt_value": "1960",
+          "generated": "1960\n\nQuestion: How many full-time",
+          "correct": true
+        },
+        {
+          "filename": "75527_1993.txt",
+          "gt_value": "1907",
+          "generated": "1907. (Pacific Enterprises was incorporated in",
+          "correct": true
+        },
+        {
+          "filename": "201461_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968. (Source: Item 1",
+          "correct": true
+        },
+        {
+          "filename": "34285_1993.txt",
+          "gt_value": "1953",
+          "generated": "1953. (Texas) Alice was beginning",
+          "correct": true
+        },
+        {
+          "filename": "40454_1993.txt",
+          "gt_value": "1946",
+          "generated": "1946.",
+          "correct": true
+        },
+        {
+          "filename": "17797_1993.txt",
+          "gt_value": "1926",
+          "generated": "1926. _______________________\n\nQuestion: What",
+          "correct": true
+        },
+        {
+          "filename": "51720_1993.txt",
+          "gt_value": "1925",
+          "generated": "1925\n\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "728586_1993.txt",
+          "gt_value": "1965",
+          "generated": "1965. (The year Lehman Brothers",
+          "correct": true
+        },
+        {
+          "filename": "92236_1993.txt",
+          "gt_value": "1973",
+          "generated": "1973\n\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "91576_1993.txt",
+          "gt_value": "1958",
+          "generated": "1958. (Note: The company,",
+          "correct": true
+        },
+        {
+          "filename": "790603_1993.txt",
+          "gt_value": "1986",
+          "generated": "1986\n\nItem 2. Management's",
+          "correct": true
+        },
+        {
+          "filename": "66479_1993.txt",
+          "gt_value": "1954",
+          "generated": "1954. (Millipore Corporation was",
+          "correct": true
+        },
+        {
+          "filename": "100923_1993.txt",
+          "gt_value": "1980",
+          "generated": "1891\n\nQuestion: What is the company",
+          "correct": false
+        },
+        {
+          "filename": "105839_1993.txt",
+          "gt_value": "1925",
+          "generated": "1925. (Allegheny Power System",
+          "correct": true
+        },
+        {
+          "filename": "18497_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968. (ITEM 1. BUSINESS",
+          "correct": true
+        },
+        {
+          "filename": "740763_1993.txt",
+          "gt_value": "1984",
+          "generated": "1984. (Gilbert Associates, Inc",
+          "correct": true
+        },
+        {
+          "filename": "859119_1993.txt",
+          "gt_value": "1989",
+          "generated": "1989.",
+          "correct": true
+        },
+        {
+          "filename": "90185_1993.txt",
+          "gt_value": "1975",
+          "generated": "1975. \n\nQuestion: What is the",
+          "correct": true
+        },
+        {
+          "filename": "101320_1993.txt",
+          "gt_value": "1970",
+          "generated": "1970. (UJB Financial Corp.",
+          "correct": true
+        },
+        {
+          "filename": "4310_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968. (ALZA Corporation was incorporated",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "num_heads": 40,
+      "heads": [
+        [
+          21,
+          26
+        ],
+        [
+          3,
+          18
+        ],
+        [
+          0,
+          25
+        ],
+        [
+          25,
+          8
+        ],
+        [
+          8,
+          28
+        ],
+        [
+          7,
+          26
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          4,
+          14
+        ],
+        [
+          25,
+          3
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          23,
+          3
+        ],
+        [
+          25,
+          7
+        ],
+        [
+          30,
+          3
+        ],
+        [
+          18,
+          19
+        ],
+        [
+          2,
+          25
+        ],
+        [
+          20,
+          4
+        ],
+        [
+          14,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          30
+        ],
+        [
+          2,
+          31
+        ],
+        [
+          6,
+          31
+        ],
+        [
+          7,
+          14
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          20,
+          17
+        ],
+        [
+          0,
+          27
+        ],
+        [
+          19,
+          4
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          24,
+          12
+        ],
+        [
+          22,
+          6
+        ],
+        [
+          23,
+          29
+        ],
+        [
+          13,
+          31
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          15,
+          6
+        ],
+        [
+          20,
+          3
+        ],
+        [
+          9,
+          0
+        ],
+        [
+          27,
+          14
+        ],
+        [
+          29,
+          12
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          25,
+          26
+        ],
+        [
+          27,
+          11
+        ]
+      ],
+      "heads_str": [
+        "L21H26",
+        "L3H18",
+        "L0H25",
+        "L25H8",
+        "L8H28",
+        "L7H26",
+        "L7H4",
+        "L4H14",
+        "L25H3",
+        "L3H8",
+        "L23H3",
+        "L25H7",
+        "L30H3",
+        "L18H19",
+        "L2H25",
+        "L20H4",
+        "L14H3",
+        "L1H0",
+        "L0H30",
+        "L2H31",
+        "L6H31",
+        "L7H14",
+        "L17H6",
+        "L20H17",
+        "L0H27",
+        "L19H4",
+        "L6H11",
+        "L24H12",
+        "L22H6",
+        "L23H29",
+        "L13H31",
+        "L7H1",
+        "L15H6",
+        "L20H3",
+        "L9H0",
+        "L27H14",
+        "L29H12",
+        "L0H6",
+        "L25H26",
+        "L27H11"
+      ],
+      "accuracy": 0.90625,
+      "accuracy_drop": 0.03125,
+      "correct": 29,
+      "total": 32,
+      "sample_results": [
+        {
+          "filename": "66904_1993.txt",
+          "gt_value": "1945",
+          "generated": "1945. (Southern was incorporated under the",
+          "correct": true
+        },
+        {
+          "filename": "33798_1993.txt",
+          "gt_value": "1919",
+          "generated": "1919\n\nQuestion: What was the name",
+          "correct": true
+        },
+        {
+          "filename": "99193_1993.txt",
+          "gt_value": "1931",
+          "generated": "1928\n\nQuestion: What is the name",
+          "correct": false
+        },
+        {
+          "filename": "800287_1993.txt",
+          "gt_value": "1978",
+          "generated": "1978. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "7323_1993.txt",
+          "gt_value": "1949",
+          "generated": "1949. (Note: The year of",
+          "correct": true
+        },
+        {
+          "filename": "66740_1993.txt",
+          "gt_value": "1929",
+          "generated": "1929\n\nQuestion: What are the three",
+          "correct": true
+        },
+        {
+          "filename": "67646_1993.txt",
+          "gt_value": "1925",
+          "generated": "1925. (Allegheny Power System",
+          "correct": true
+        },
+        {
+          "filename": "846972_1993.txt",
+          "gt_value": "1985",
+          "generated": "1985. (The year Adience was",
+          "correct": true
+        },
+        {
+          "filename": "10456_1993.txt",
+          "gt_value": "1931",
+          "generated": "1931. (b) What is the",
+          "correct": true
+        },
+        {
+          "filename": "814153_1993.txt",
+          "gt_value": "1987",
+          "generated": "1987\n\nITEM 1. BUSINESS",
+          "correct": true
+        },
+        {
+          "filename": "836400_1993.txt",
+          "gt_value": "1988",
+          "generated": "1988\n\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "20164_1993.txt",
+          "gt_value": "1967",
+          "generated": "1926\n\nQuestion: What is the company",
+          "correct": false
+        },
+        {
+          "filename": "200245_1993.txt",
+          "gt_value": "1960",
+          "generated": "1960\n\nQuestion: What is the full",
+          "correct": true
+        },
+        {
+          "filename": "75527_1993.txt",
+          "gt_value": "1907",
+          "generated": "1907. (Source: Pacific Enterprises'",
+          "correct": true
+        },
+        {
+          "filename": "201461_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968. (City National Corporation was organized",
+          "correct": true
+        },
+        {
+          "filename": "34285_1993.txt",
+          "gt_value": "1953",
+          "generated": "1953.",
+          "correct": true
+        },
+        {
+          "filename": "40454_1993.txt",
+          "gt_value": "1946",
+          "generated": "1946\n\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "17797_1993.txt",
+          "gt_value": "1926",
+          "generated": "1926. _______________________\n\nQuestion: What",
+          "correct": true
+        },
+        {
+          "filename": "51720_1993.txt",
+          "gt_value": "1925",
+          "generated": "1925\n\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "728586_1993.txt",
+          "gt_value": "1965",
+          "generated": "1965. (The year Lehman Brothers",
+          "correct": true
+        },
+        {
+          "filename": "92236_1993.txt",
+          "gt_value": "1973",
+          "generated": "1973\n\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "91576_1993.txt",
+          "gt_value": "1958",
+          "generated": "1958. (Society was incorporated in",
+          "correct": true
+        },
+        {
+          "filename": "790603_1993.txt",
+          "gt_value": "1986",
+          "generated": "1986\n\nItem 2. Management's",
+          "correct": true
+        },
+        {
+          "filename": "66479_1993.txt",
+          "gt_value": "1954",
+          "generated": "1954. (Millipore Corporation was",
+          "correct": true
+        },
+        {
+          "filename": "100923_1993.txt",
+          "gt_value": "1980",
+          "generated": "1891\n\nQuestion: What is the company",
+          "correct": false
+        },
+        {
+          "filename": "105839_1993.txt",
+          "gt_value": "1925",
+          "generated": "1925. (Allegheny Power System",
+          "correct": true
+        },
+        {
+          "filename": "18497_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968. (CenCor, Inc",
+          "correct": true
+        },
+        {
+          "filename": "740763_1993.txt",
+          "gt_value": "1984",
+          "generated": "1984. (The year of incorporation is",
+          "correct": true
+        },
+        {
+          "filename": "859119_1993.txt",
+          "gt_value": "1989",
+          "generated": "1989. (Illinois Central Corporation was",
+          "correct": true
+        },
+        {
+          "filename": "90185_1993.txt",
+          "gt_value": "1975",
+          "generated": "1975. Alice was beginning to get very",
+          "correct": true
+        },
+        {
+          "filename": "101320_1993.txt",
+          "gt_value": "1970",
+          "generated": "1970. (The year of incorporation is",
+          "correct": true
+        },
+        {
+          "filename": "4310_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968. (ALZA Corporation was incorporated",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "num_heads": 50,
+      "heads": [
+        [
+          21,
+          26
+        ],
+        [
+          3,
+          18
+        ],
+        [
+          0,
+          25
+        ],
+        [
+          25,
+          8
+        ],
+        [
+          8,
+          28
+        ],
+        [
+          7,
+          26
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          4,
+          14
+        ],
+        [
+          25,
+          3
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          23,
+          3
+        ],
+        [
+          25,
+          7
+        ],
+        [
+          30,
+          3
+        ],
+        [
+          18,
+          19
+        ],
+        [
+          2,
+          25
+        ],
+        [
+          20,
+          4
+        ],
+        [
+          14,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          30
+        ],
+        [
+          2,
+          31
+        ],
+        [
+          6,
+          31
+        ],
+        [
+          7,
+          14
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          20,
+          17
+        ],
+        [
+          0,
+          27
+        ],
+        [
+          19,
+          4
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          24,
+          12
+        ],
+        [
+          22,
+          6
+        ],
+        [
+          23,
+          29
+        ],
+        [
+          13,
+          31
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          15,
+          6
+        ],
+        [
+          20,
+          3
+        ],
+        [
+          9,
+          0
+        ],
+        [
+          27,
+          14
+        ],
+        [
+          29,
+          12
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          25,
+          26
+        ],
+        [
+          27,
+          11
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          23,
+          25
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          4,
+          31
+        ],
+        [
+          6,
+          28
+        ],
+        [
+          25,
+          30
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          2,
+          30
+        ],
+        [
+          12,
+          16
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "heads_str": [
+        "L21H26",
+        "L3H18",
+        "L0H25",
+        "L25H8",
+        "L8H28",
+        "L7H26",
+        "L7H4",
+        "L4H14",
+        "L25H3",
+        "L3H8",
+        "L23H3",
+        "L25H7",
+        "L30H3",
+        "L18H19",
+        "L2H25",
+        "L20H4",
+        "L14H3",
+        "L1H0",
+        "L0H30",
+        "L2H31",
+        "L6H31",
+        "L7H14",
+        "L17H6",
+        "L20H17",
+        "L0H27",
+        "L19H4",
+        "L6H11",
+        "L24H12",
+        "L22H6",
+        "L23H29",
+        "L13H31",
+        "L7H1",
+        "L15H6",
+        "L20H3",
+        "L9H0",
+        "L27H14",
+        "L29H12",
+        "L0H6",
+        "L25H26",
+        "L27H11",
+        "L5H3",
+        "L23H25",
+        "L11H7",
+        "L4H31",
+        "L6H28",
+        "L25H30",
+        "L11H2",
+        "L2H30",
+        "L12H16",
+        "L3H3"
+      ],
+      "accuracy": 0.9375,
+      "accuracy_drop": 0.0,
+      "correct": 30,
+      "total": 32,
+      "sample_results": [
+        {
+          "filename": "66904_1993.txt",
+          "gt_value": "1945",
+          "generated": "1945. (Southern was incorporated under the",
+          "correct": true
+        },
+        {
+          "filename": "33798_1993.txt",
+          "gt_value": "1919",
+          "generated": "1919\n\nQuestion: What was the name",
+          "correct": true
+        },
+        {
+          "filename": "99193_1993.txt",
+          "gt_value": "1931",
+          "generated": "1931\n\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "800287_1993.txt",
+          "gt_value": "1978",
+          "generated": "1978. (Note: The year is",
+          "correct": true
+        },
+        {
+          "filename": "7323_1993.txt",
+          "gt_value": "1949",
+          "generated": "1949. (Entergy Corporation was originally",
+          "correct": true
+        },
+        {
+          "filename": "66740_1993.txt",
+          "gt_value": "1929",
+          "generated": "1929\n\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "67646_1993.txt",
+          "gt_value": "1925",
+          "generated": "1925. (Allegheny Power System",
+          "correct": true
+        },
+        {
+          "filename": "846972_1993.txt",
+          "gt_value": "1985",
+          "generated": "1985. (Adience was incorporated in",
+          "correct": true
+        },
+        {
+          "filename": "10456_1993.txt",
+          "gt_value": "1931",
+          "generated": "1931. (b) What is the",
+          "correct": true
+        },
+        {
+          "filename": "814153_1993.txt",
+          "gt_value": "1987",
+          "generated": "1987\n\nQuestion: What was the purpose",
+          "correct": true
+        },
+        {
+          "filename": "836400_1993.txt",
+          "gt_value": "1988",
+          "generated": "1988. (The year the Holding Company",
+          "correct": true
+        },
+        {
+          "filename": "20164_1993.txt",
+          "gt_value": "1967",
+          "generated": "1926\n\nQuestion: What is the name",
+          "correct": false
+        },
+        {
+          "filename": "200245_1993.txt",
+          "gt_value": "1960",
+          "generated": "1960\n\nQuestion: What is the full",
+          "correct": true
+        },
+        {
+          "filename": "75527_1993.txt",
+          "gt_value": "1907",
+          "generated": "1907. (Pacific Enterprises was incorporated in",
+          "correct": true
+        },
+        {
+          "filename": "201461_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968. (City National Corporation was incorporated",
+          "correct": true
+        },
+        {
+          "filename": "34285_1993.txt",
+          "gt_value": "1953",
+          "generated": "1953. (Texas) Alice was beginning",
+          "correct": true
+        },
+        {
+          "filename": "40454_1993.txt",
+          "gt_value": "1946",
+          "generated": "1946. (BOATMEN'S",
+          "correct": true
+        },
+        {
+          "filename": "17797_1993.txt",
+          "gt_value": "1926",
+          "generated": "1926. (Carolina Power & Light",
+          "correct": true
+        },
+        {
+          "filename": "51720_1993.txt",
+          "gt_value": "1925",
+          "generated": "1925\n\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "728586_1993.txt",
+          "gt_value": "1965",
+          "generated": "1965. (Lehman Brothers Inc",
+          "correct": true
+        },
+        {
+          "filename": "92236_1993.txt",
+          "gt_value": "1973",
+          "generated": "1973\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "91576_1993.txt",
+          "gt_value": "1958",
+          "generated": "1958. (Society Corporation was incorporated",
+          "correct": true
+        },
+        {
+          "filename": "790603_1993.txt",
+          "gt_value": "1986",
+          "generated": "1986\n\nQuestion: What type of entity",
+          "correct": true
+        },
+        {
+          "filename": "66479_1993.txt",
+          "gt_value": "1954",
+          "generated": "1954. (Millipore Corporation was",
+          "correct": true
+        },
+        {
+          "filename": "100923_1993.txt",
+          "gt_value": "1980",
+          "generated": "1891. (Note: The company was",
+          "correct": false
+        },
+        {
+          "filename": "105839_1993.txt",
+          "gt_value": "1925",
+          "generated": "1925. (Allegheny Power System",
+          "correct": true
+        },
+        {
+          "filename": "18497_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968. (CenCor, Inc",
+          "correct": true
+        },
+        {
+          "filename": "740763_1993.txt",
+          "gt_value": "1984",
+          "generated": "1984. (Gilbert Associates, Inc",
+          "correct": true
+        },
+        {
+          "filename": "859119_1993.txt",
+          "gt_value": "1989",
+          "generated": "1989. (Illinois Central Corporation was",
+          "correct": true
+        },
+        {
+          "filename": "90185_1993.txt",
+          "gt_value": "1975",
+          "generated": "1975. Alice was beginning to get very",
+          "correct": true
+        },
+        {
+          "filename": "101320_1993.txt",
+          "gt_value": "1970",
+          "generated": "1970. (UJB Financial Corp.",
+          "correct": true
+        },
+        {
+          "filename": "4310_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968. (ALZA Corporation was incorporated",
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

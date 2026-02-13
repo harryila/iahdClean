@@ -369,7 +369,7 @@ def main():
         tokenizer.pad_token = tokenizer.eos_token
 
     model = AutoModelForCausalLM.from_pretrained(
-        model_name, torch_dtype=torch.bfloat16, device_map="auto",
+        model_name, dtype=torch.bfloat16, device_map="auto",
     ).eval()
 
     all_heads = get_all_heads(model.config)

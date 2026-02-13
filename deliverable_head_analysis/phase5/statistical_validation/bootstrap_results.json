@@ -1,0 +1,266 @@
+[
+  {
+    "config": "summed_attention / base / inc_year / 2048",
+    "baseline": {
+      "mean": 0.96875,
+      "ci_lower": 0.90625,
+      "ci_upper": 1.0,
+      "se": 0.030891553634246047,
+      "n_samples": 32,
+      "n_bootstrap": 10000
+    },
+    "top_heads_bootstrap": {
+      "5": {
+        "mean": 0.09375,
+        "ci_lower": 0.0,
+        "ci_upper": 0.21875,
+        "se": 0.05135277414229318,
+        "n_samples": 32,
+        "n_bootstrap": 10000
+      },
+      "10": {
+        "mean": 0.09375,
+        "ci_lower": 0.0,
+        "ci_upper": 0.21875,
+        "se": 0.05135277414229318,
+        "n_samples": 32,
+        "n_bootstrap": 10000
+      },
+      "20": {
+        "mean": 0.84375,
+        "ci_lower": 0.71875,
+        "ci_upper": 0.96875,
+        "se": 0.0634990335033485,
+        "n_samples": 32,
+        "n_bootstrap": 10000
+      },
+      "30": {
+        "mean": 0.0625,
+        "ci_lower": 0.0,
+        "ci_upper": 0.15625,
+        "se": 0.04265539559583875,
+        "n_samples": 32,
+        "n_bootstrap": 10000
+      },
+      "40": {
+        "mean": 0.09375,
+        "ci_lower": 0.0,
+        "ci_upper": 0.21875,
+        "se": 0.05135277414229318,
+        "n_samples": 32,
+        "n_bootstrap": 10000
+      },
+      "50": {
+        "mean": 0.09375,
+        "ci_lower": 0.0,
+        "ci_upper": 0.21875,
+        "se": 0.05135277414229318,
+        "n_samples": 32,
+        "n_bootstrap": 10000
+      }
+    },
+    "nonmonotonicity_findings": [
+      {
+        "recovery_at": 20,
+        "prev_level": 10,
+        "next_level": 30,
+        "recovery_mean": 0.84375,
+        "prev_mean": 0.09375,
+        "next_mean": 0.0625,
+        "recovery_ci": [
+          0.71875,
+          0.96875
+        ],
+        "prev_ci": [
+          0.0,
+          0.21875
+        ],
+        "next_ci": [
+          0.0,
+          0.15625
+        ],
+        "ci_gap_vs_prev": 0.5,
+        "ci_gap_vs_next": 0.5625,
+        "significant_vs_prev": true,
+        "significant_vs_next": true,
+        "significant_both": true
+      }
+    ]
+  },
+  {
+    "config": "summed_attention / instruct / inc_year / 2048",
+    "baseline": {
+      "mean": 0.9375,
+      "ci_lower": 0.84375,
+      "ci_upper": 1.0,
+      "se": 0.04277856821397253,
+      "n_samples": 32,
+      "n_bootstrap": 10000
+    },
+    "top_heads_bootstrap": {
+      "5": {
+        "mean": 0.9375,
+        "ci_lower": 0.84375,
+        "ci_upper": 1.0,
+        "se": 0.04277856821397253,
+        "n_samples": 32,
+        "n_bootstrap": 10000
+      },
+      "10": {
+        "mean": 0.28125,
+        "ci_lower": 0.125,
+        "ci_upper": 0.4375,
+        "se": 0.07927335858193076,
+        "n_samples": 32,
+        "n_bootstrap": 10000
+      },
+      "20": {
+        "mean": 0.53125,
+        "ci_lower": 0.34375,
+        "ci_upper": 0.6875,
+        "se": 0.08790828494800704,
+        "n_samples": 32,
+        "n_bootstrap": 10000
+      },
+      "30": {
+        "mean": 0.875,
+        "ci_lower": 0.75,
+        "ci_upper": 0.96875,
+        "se": 0.058553494505025054,
+        "n_samples": 32,
+        "n_bootstrap": 10000
+      },
+      "40": {
+        "mean": 0.75,
+        "ci_lower": 0.59375,
+        "ci_upper": 0.875,
+        "se": 0.07596138924644547,
+        "n_samples": 32,
+        "n_bootstrap": 10000
+      },
+      "50": {
+        "mean": 0.65625,
+        "ci_lower": 0.5,
+        "ci_upper": 0.8125,
+        "se": 0.08236757269247406,
+        "n_samples": 32,
+        "n_bootstrap": 10000
+      }
+    },
+    "nonmonotonicity_findings": [
+      {
+        "recovery_at": 30,
+        "prev_level": 20,
+        "next_level": 40,
+        "recovery_mean": 0.875,
+        "prev_mean": 0.53125,
+        "next_mean": 0.75,
+        "recovery_ci": [
+          0.75,
+          0.96875
+        ],
+        "prev_ci": [
+          0.34375,
+          0.6875
+        ],
+        "next_ci": [
+          0.59375,
+          0.875
+        ],
+        "ci_gap_vs_prev": 0.0625,
+        "ci_gap_vs_next": -0.125,
+        "significant_vs_prev": true,
+        "significant_vs_next": false,
+        "significant_both": false
+      }
+    ]
+  },
+  {
+    "config": "qrhead / instruct / inc_year / 2048",
+    "baseline": {
+      "mean": 0.9375,
+      "ci_lower": 0.84375,
+      "ci_upper": 1.0,
+      "se": 0.04277856821397253,
+      "n_samples": 32,
+      "n_bootstrap": 10000
+    },
+    "top_heads_bootstrap": {
+      "5": {
+        "mean": 0.4375,
+        "ci_lower": 0.28125,
+        "ci_upper": 0.625,
+        "se": 0.08694772832534212,
+        "n_samples": 32,
+        "n_bootstrap": 10000
+      },
+      "10": {
+        "mean": 0.5625,
+        "ci_lower": 0.40625,
+        "ci_upper": 0.71875,
+        "se": 0.08674599678938721,
+        "n_samples": 32,
+        "n_bootstrap": 10000
+      },
+      "20": {
+        "mean": 0.65625,
+        "ci_lower": 0.5,
+        "ci_upper": 0.8125,
+        "se": 0.08308287819062059,
+        "n_samples": 32,
+        "n_bootstrap": 10000
+      },
+      "30": {
+        "mean": 0.84375,
+        "ci_lower": 0.71875,
+        "ci_upper": 0.96875,
+        "se": 0.06403634946445945,
+        "n_samples": 32,
+        "n_bootstrap": 10000
+      },
+      "40": {
+        "mean": 0.4375,
+        "ci_lower": 0.28125,
+        "ci_upper": 0.625,
+        "se": 0.08754738984544314,
+        "n_samples": 32,
+        "n_bootstrap": 10000
+      },
+      "50": {
+        "mean": 0.3125,
+        "ci_lower": 0.15625,
+        "ci_upper": 0.46875,
+        "se": 0.08203950309673612,
+        "n_samples": 32,
+        "n_bootstrap": 10000
+      }
+    },
+    "nonmonotonicity_findings": [
+      {
+        "recovery_at": 30,
+        "prev_level": 20,
+        "next_level": 40,
+        "recovery_mean": 0.84375,
+        "prev_mean": 0.65625,
+        "next_mean": 0.4375,
+        "recovery_ci": [
+          0.71875,
+          0.96875
+        ],
+        "prev_ci": [
+          0.5,
+          0.8125
+        ],
+        "next_ci": [
+          0.28125,
+          0.625
+        ],
+        "ci_gap_vs_prev": -0.09375,
+        "ci_gap_vs_next": 0.09375,
+        "significant_vs_prev": false,
+        "significant_vs_next": true,
+        "significant_both": false
+      }
+    ]
+  }
+]
