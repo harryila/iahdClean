@@ -1,8 +1,8 @@
 # Research Plan: Dynamic Retrieval Circuits in Transformers
 
 **Created:** 2026-02-07
-**Last Updated:** 2026-02-07
-**Status:** Phase A — Statistical Validation
+**Last Updated:** 2026-02-13
+**Status:** Phase A COMPLETE → Phase C in progress (Circuit Analysis)
 
 ---
 
@@ -18,14 +18,14 @@ This challenges the framing of Wu et al. 2024 and similar work that treats retri
 
 | Finding | Strength | Robustness Risk |
 |---------|----------|-----------------|
-| Non-monotonic ablation (recovery → collapse) | Potentially strongest / most novel | **HIGH RISK** — n=32-33 test samples, could be noise |
+| Non-monotonic ablation (recovery → collapse) | **CONFIRMED (Config 1)** | ~~HIGH RISK~~ → **VALIDATED** by bootstrap (50pt CI gap) |
 | Context-length circuit replacement (Jaccard=0.026) | Very strong | **LOW RISK** — computed over 128+ training samples |
 | 12% inter-method overlap, all causally validated | Very strong | **LOW RISK** — computed over full training set |
 | 5 heads → 87.5% drop (extreme concentration) | Strong | MEDIUM — single config, small test set |
 | Instruction tuning redistributes retrieval | Supporting | LOW RISK — consistent across configs |
 | Question-type specialization | Supporting | LOW RISK — consistent pattern |
 
-**Critical insight:** The non-monotonic finding determines which paper we write. Validate it first.
+**Critical insight:** ~~The non-monotonic finding determines which paper we write. Validate it first.~~ **VALIDATED.** Config 1 non-monotonicity is statistically significant (Phase A complete). Proceeding with backup circuit paper framing (Scenario 1).
 
 ---
 
@@ -79,11 +79,28 @@ The three most dramatic non-monotonic cases:
 ### Status
 
 - [x] Check if per-sample data exists in Phase 3 JSONs → **NO, needs code change + re-run**
-- [ ] Modify run_ablation.py to save per-sample results
-- [ ] Re-run 3 critical configs (GPU)
-- [ ] Write bootstrap script
-- [ ] Run bootstrap on 3 configs
-- [ ] Interpret results → decide on paper direction
+- [x] Modify run_ablation.py to save per-sample results → `phase5/statistical_validation/run_ablation_with_samples.py`
+- [x] Re-run 3 critical configs (GPU) → COMPLETE
+- [x] Write bootstrap script → `phase5/statistical_validation/bootstrap_validation.py`
+- [x] Run bootstrap on 3 configs → COMPLETE
+- [x] Interpret results → **DECISION: Non-monotonicity is REAL. Proceed with circuit analysis.**
+
+### Bootstrap Results (2026-02-13)
+
+**Config 1 (summed_attention / base / inc_year / 2048) — SIGNIFICANT:**
+```
+ 5 heads:  9.4%  CI [0.0%, 21.9%]     ← collapse
+10 heads:  9.4%  CI [0.0%, 21.9%]     ← still collapsed  
+20 heads: 84.4%  CI [71.9%, 96.9%]    ← RECOVERY (50pt CI gap vs neighbors)
+30 heads:  6.3%  CI [0.0%, 15.6%]     ← collapse again
+```
+Recovery at 20 heads: significant in BOTH directions (CI gap = 50.0% vs prev, 56.3% vs next).
+
+**Config 2 (summed_attention / instruct / inc_year / 2048) — PARTIAL:**
+Recovery at 30 heads significant vs previous (CI gap = 6.3%) but NOT vs next (CIs overlap).
+
+**Config 3 (qrhead / instruct / inc_year / 2048) — PARTIAL:**
+Recovery at 30 heads significant vs next (CI gap = 9.4%) but NOT vs previous (CIs overlap).
 
 ---
 
@@ -219,9 +236,9 @@ If attention comparison confirms backup heads exist, we could also:
 
 ### Status
 
-- [ ] Waiting on Phase A result (prerequisite)
-- [ ] Write attention recording code
-- [ ] Run clean vs. ablated comparison
+- [x] Waiting on Phase A result → **CONFIRMED, proceeding**
+- [x] Write attention recording code → `phase5/circuit_analysis/attention_comparison.py`
+- [ ] Run clean vs. ablated comparison (GPU required)
 - [ ] Analyze Δ patterns
 - [ ] Map backup heads to Phase 2 rankings
 - [ ] (Optional) Logit lens follow-up
@@ -326,4 +343,7 @@ Week 2 (if non-monotonicity is noise):
 |------|--------|--------|
 | 2026-02-07 | Created research plan | — |
 | 2026-02-07 | Checked Phase 3 JSONs for per-sample data | **NOT STORED** — only aggregates saved. Code change + re-run needed. |
+| 2026-02-13 | Phase A complete: bootstrap validation run | **Config 1 non-monotonicity CONFIRMED** (50pt CI gap). Configs 2,3 partially significant. |
+| 2026-02-13 | Decision: proceed with circuit analysis | Paper direction = Scenario 1 (backup circuit framing) |
+| 2026-02-13 | Phase C code written | `circuit_analysis/attention_comparison.py` — ready for GPU run |
 | | | |
