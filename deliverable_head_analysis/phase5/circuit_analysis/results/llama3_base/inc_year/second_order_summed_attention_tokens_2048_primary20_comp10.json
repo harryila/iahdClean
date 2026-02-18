@@ -1,0 +1,1008 @@
+{
+  "experiment": "second_order_ablation",
+  "method": "summed_attention",
+  "model_key": "base",
+  "model_name": "meta-llama/Meta-Llama-3-8B",
+  "question": "inc_year",
+  "total_tokens": 2048,
+  "primary_n": 20,
+  "compensator_n": 10,
+  "primary_heads": [
+    "L16H1",
+    "L17H24",
+    "L14H31",
+    "L22H13",
+    "L13H18",
+    "L14H30",
+    "L18H20",
+    "L24H27",
+    "L20H25",
+    "L20H1",
+    "L13H17",
+    "L16H0",
+    "L20H23",
+    "L23H25",
+    "L0H28",
+    "L20H26",
+    "L14H22",
+    "L20H14",
+    "L18H22",
+    "L0H30"
+  ],
+  "compensator_heads": [
+    "L25H7",
+    "L25H6",
+    "L23H22",
+    "L25H13",
+    "L23H20",
+    "L23H13",
+    "L17H21",
+    "L24H17",
+    "L22H29",
+    "L24H23"
+  ],
+  "compensator_info": [
+    {
+      "rank": 1,
+      "head": "L25H7",
+      "delta": 0.15615802817046642,
+      "clean_mean": 0.4788262452930212,
+      "ablated_mean": 0.6349842734634876,
+      "phase2_rank": null
+    },
+    {
+      "rank": 2,
+      "head": "L25H6",
+      "delta": 0.11076457053422928,
+      "clean_mean": 0.43062895350158215,
+      "ablated_mean": 0.5413935240358114,
+      "phase2_rank": null
+    },
+    {
+      "rank": 3,
+      "head": "L23H22",
+      "delta": 0.07502410002052784,
+      "clean_mean": 0.3273973595350981,
+      "ablated_mean": 0.4024214595556259,
+      "phase2_rank": null
+    },
+    {
+      "rank": 4,
+      "head": "L25H13",
+      "delta": 0.07111423276364803,
+      "clean_mean": 0.3748551197350025,
+      "ablated_mean": 0.44596935249865055,
+      "phase2_rank": null
+    },
+    {
+      "rank": 5,
+      "head": "L23H20",
+      "delta": 0.06716858223080635,
+      "clean_mean": 0.4021262228488922,
+      "ablated_mean": 0.46929480507969856,
+      "phase2_rank": null
+    },
+    {
+      "rank": 6,
+      "head": "L23H13",
+      "delta": 0.06602453254163265,
+      "clean_mean": 0.3433443270623684,
+      "ablated_mean": 0.40936885960400105,
+      "phase2_rank": null
+    },
+    {
+      "rank": 8,
+      "head": "L17H21",
+      "delta": 0.05827628634870052,
+      "clean_mean": 0.34761998802423477,
+      "ablated_mean": 0.4058962743729353,
+      "phase2_rank": null
+    },
+    {
+      "rank": 9,
+      "head": "L24H17",
+      "delta": 0.055799975991249084,
+      "clean_mean": 0.4199001509696245,
+      "ablated_mean": 0.4757001269608736,
+      "phase2_rank": null
+    },
+    {
+      "rank": 10,
+      "head": "L22H29",
+      "delta": 0.05531812459230423,
+      "clean_mean": 0.4675896354019642,
+      "ablated_mean": 0.5229077599942684,
+      "phase2_rank": 39
+    },
+    {
+      "rank": 11,
+      "head": "L24H23",
+      "delta": 0.05504189617931843,
+      "clean_mean": 0.4660895224660635,
+      "ablated_mean": 0.5211314186453819,
+      "phase2_rank": 31
+    }
+  ],
+  "n_samples": 32,
+  "timestamp": "2026-02-18T01:11:54.618716",
+  "conditions": [
+    {
+      "condition": "Baseline (no ablation)",
+      "heads_ablated": [],
+      "n_heads_ablated": 0,
+      "accuracy": 0.96875,
+      "correct": 31,
+      "total": 32,
+      "sample_results": [
+        {
+          "filename": "66904_1993.txt",
+          "gt_value": "1945",
+          "generated": "1945\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "33798_1993.txt",
+          "gt_value": "1919",
+          "generated": "1919\nQuestion: What year was the",
+          "correct": true
+        },
+        {
+          "filename": "99193_1993.txt",
+          "gt_value": "1931",
+          "generated": "1931\nQuestion: What year was the",
+          "correct": true
+        },
+        {
+          "filename": "800287_1993.txt",
+          "gt_value": "1978",
+          "generated": "1978\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "7323_1993.txt",
+          "gt_value": "1949",
+          "generated": "1949\nQuestion: What year was the",
+          "correct": true
+        },
+        {
+          "filename": "66740_1993.txt",
+          "gt_value": "1929",
+          "generated": "1929\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "67646_1993.txt",
+          "gt_value": "1925",
+          "generated": "1925\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "846972_1993.txt",
+          "gt_value": "1985",
+          "generated": "1985\nQuestion: What year was the",
+          "correct": true
+        },
+        {
+          "filename": "10456_1993.txt",
+          "gt_value": "1931",
+          "generated": "1931\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "814153_1993.txt",
+          "gt_value": "1987",
+          "generated": "1987\nQuestion: What was the purpose",
+          "correct": true
+        },
+        {
+          "filename": "836400_1993.txt",
+          "gt_value": "1988",
+          "generated": "1988\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "20164_1993.txt",
+          "gt_value": "1967",
+          "generated": "1926\nQuestion: What is the company",
+          "correct": false
+        },
+        {
+          "filename": "200245_1993.txt",
+          "gt_value": "1960",
+          "generated": "1960\nQuestion: How many employees did",
+          "correct": true
+        },
+        {
+          "filename": "75527_1993.txt",
+          "gt_value": "1907",
+          "generated": "1907\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "201461_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "34285_1993.txt",
+          "gt_value": "1953",
+          "generated": "1953\nQuestion: What year was the",
+          "correct": true
+        },
+        {
+          "filename": "40454_1993.txt",
+          "gt_value": "1946",
+          "generated": "1946\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "17797_1993.txt",
+          "gt_value": "1926",
+          "generated": "1926\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "51720_1993.txt",
+          "gt_value": "1925",
+          "generated": "1925\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "728586_1993.txt",
+          "gt_value": "1965",
+          "generated": "1965\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "92236_1993.txt",
+          "gt_value": "1973",
+          "generated": "1973\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "91576_1993.txt",
+          "gt_value": "1958",
+          "generated": "1958\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "790603_1993.txt",
+          "gt_value": "1986",
+          "generated": "1986\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "66479_1993.txt",
+          "gt_value": "1954",
+          "generated": "1954\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "100923_1993.txt",
+          "gt_value": "1980",
+          "generated": "1980\n\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "105839_1993.txt",
+          "gt_value": "1925",
+          "generated": "1925\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "18497_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "740763_1993.txt",
+          "gt_value": "1984",
+          "generated": "1984\nQuestion: What is the largest",
+          "correct": true
+        },
+        {
+          "filename": "859119_1993.txt",
+          "gt_value": "1989",
+          "generated": "1989\nQuestion: What year was the",
+          "correct": true
+        },
+        {
+          "filename": "90185_1993.txt",
+          "gt_value": "1975",
+          "generated": "1975\nQuestion: What year did the",
+          "correct": true
+        },
+        {
+          "filename": "101320_1993.txt",
+          "gt_value": "1970",
+          "generated": "1970\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "4310_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968\nQuestion: What is the company",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "condition": "Primary only (top 20 Phase 2 heads)",
+      "heads_ablated": [
+        "L16H1",
+        "L17H24",
+        "L14H31",
+        "L22H13",
+        "L13H18",
+        "L14H30",
+        "L18H20",
+        "L24H27",
+        "L20H25",
+        "L20H1",
+        "L13H17",
+        "L16H0",
+        "L20H23",
+        "L23H25",
+        "L0H28",
+        "L20H26",
+        "L14H22",
+        "L20H14",
+        "L18H22",
+        "L0H30"
+      ],
+      "n_heads_ablated": 20,
+      "accuracy": 0.84375,
+      "correct": 27,
+      "total": 32,
+      "sample_results": [
+        {
+          "filename": "66904_1993.txt",
+          "gt_value": "1945",
+          "generated": "1945\nQuestion: What year was the",
+          "correct": true
+        },
+        {
+          "filename": "33798_1993.txt",
+          "gt_value": "1919",
+          "generated": "1923\nQuestion: What year was the",
+          "correct": false
+        },
+        {
+          "filename": "99193_1993.txt",
+          "gt_value": "1931",
+          "generated": "1931\nQuestion: What year was the",
+          "correct": true
+        },
+        {
+          "filename": "800287_1993.txt",
+          "gt_value": "1978",
+          "generated": "1978\nQuestion: What year was the",
+          "correct": true
+        },
+        {
+          "filename": "7323_1993.txt",
+          "gt_value": "1949",
+          "generated": "1949\nQuestion: What year was the",
+          "correct": true
+        },
+        {
+          "filename": "66740_1993.txt",
+          "gt_value": "1929",
+          "generated": "1929\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "67646_1993.txt",
+          "gt_value": "1925",
+          "generated": "1925\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "846972_1993.txt",
+          "gt_value": "1985",
+          "generated": "1985\nQuestion: What year was the",
+          "correct": true
+        },
+        {
+          "filename": "10456_1993.txt",
+          "gt_value": "1931",
+          "generated": "1931\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "814153_1993.txt",
+          "gt_value": "1987",
+          "generated": "1987\nQuestion: What was the purpose",
+          "correct": true
+        },
+        {
+          "filename": "836400_1993.txt",
+          "gt_value": "1988",
+          "generated": "1993\nQuestion: What is the name",
+          "correct": false
+        },
+        {
+          "filename": "20164_1993.txt",
+          "gt_value": "1967",
+          "generated": "1926\nQuestion: What year was the",
+          "correct": false
+        },
+        {
+          "filename": "200245_1993.txt",
+          "gt_value": "1960",
+          "generated": "1960\nQuestion: How many employees did",
+          "correct": true
+        },
+        {
+          "filename": "75527_1993.txt",
+          "gt_value": "1907",
+          "generated": "1907\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "201461_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968\n\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "34285_1993.txt",
+          "gt_value": "1953",
+          "generated": "1953\nQuestion: What year did the",
+          "correct": true
+        },
+        {
+          "filename": "40454_1993.txt",
+          "gt_value": "1946",
+          "generated": "1946\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "17797_1993.txt",
+          "gt_value": "1926",
+          "generated": "1993\nQuestion: What is the name",
+          "correct": false
+        },
+        {
+          "filename": "51720_1993.txt",
+          "gt_value": "1925",
+          "generated": "1925\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "728586_1993.txt",
+          "gt_value": "1965",
+          "generated": "1965\n\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "92236_1993.txt",
+          "gt_value": "1973",
+          "generated": "1973\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "91576_1993.txt",
+          "gt_value": "1958",
+          "generated": "1994\nQuestion: What is the company",
+          "correct": false
+        },
+        {
+          "filename": "790603_1993.txt",
+          "gt_value": "1986",
+          "generated": "1986\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "66479_1993.txt",
+          "gt_value": "1954",
+          "generated": "1954\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "100923_1993.txt",
+          "gt_value": "1980",
+          "generated": "1980\n\nQuestion: What year was the",
+          "correct": true
+        },
+        {
+          "filename": "105839_1993.txt",
+          "gt_value": "1925",
+          "generated": "1925\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "18497_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "740763_1993.txt",
+          "gt_value": "1984",
+          "generated": "1984\nQuestion: What is the largest",
+          "correct": true
+        },
+        {
+          "filename": "859119_1993.txt",
+          "gt_value": "1989",
+          "generated": "1989\n\nQuestion: What year was the",
+          "correct": true
+        },
+        {
+          "filename": "90185_1993.txt",
+          "gt_value": "1975",
+          "generated": "1975\nQuestion: What year did the",
+          "correct": true
+        },
+        {
+          "filename": "101320_1993.txt",
+          "gt_value": "1970",
+          "generated": "1970\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "4310_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968\nQuestion: What year did the",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "condition": "Primary + Compensators (top 20 + top 10 compensators)",
+      "heads_ablated": [
+        "L0H30",
+        "L24H27",
+        "L20H14",
+        "L18H20",
+        "L20H23",
+        "L23H13",
+        "L20H26",
+        "L23H22",
+        "L23H25",
+        "L14H22",
+        "L17H21",
+        "L22H29",
+        "L17H24",
+        "L14H31",
+        "L25H7",
+        "L16H1",
+        "L25H13",
+        "L13H17",
+        "L24H17",
+        "L24H23",
+        "L20H1",
+        "L22H13",
+        "L18H22",
+        "L20H25",
+        "L14H30",
+        "L16H0",
+        "L25H6",
+        "L0H28",
+        "L23H20",
+        "L13H18"
+      ],
+      "n_heads_ablated": 30,
+      "accuracy": 0.84375,
+      "correct": 27,
+      "total": 32,
+      "sample_results": [
+        {
+          "filename": "66904_1993.txt",
+          "gt_value": "1945",
+          "generated": "1945\nQuestion: What year was the",
+          "correct": true
+        },
+        {
+          "filename": "33798_1993.txt",
+          "gt_value": "1919",
+          "generated": "1919\nQuestion: What year was the",
+          "correct": true
+        },
+        {
+          "filename": "99193_1993.txt",
+          "gt_value": "1931",
+          "generated": "1931\nQuestion: What year was the",
+          "correct": true
+        },
+        {
+          "filename": "800287_1993.txt",
+          "gt_value": "1978",
+          "generated": "1978\nQuestion: What year was the",
+          "correct": true
+        },
+        {
+          "filename": "7323_1993.txt",
+          "gt_value": "1949",
+          "generated": "1949\nQuestion: What year was the",
+          "correct": true
+        },
+        {
+          "filename": "66740_1993.txt",
+          "gt_value": "1929",
+          "generated": "1929\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "67646_1993.txt",
+          "gt_value": "1925",
+          "generated": "1925\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "846972_1993.txt",
+          "gt_value": "1985",
+          "generated": "1985\nQuestion: What year was the",
+          "correct": true
+        },
+        {
+          "filename": "10456_1993.txt",
+          "gt_value": "1931",
+          "generated": "1931\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "814153_1993.txt",
+          "gt_value": "1987",
+          "generated": "1987\nQuestion: What was the purpose",
+          "correct": true
+        },
+        {
+          "filename": "836400_1993.txt",
+          "gt_value": "1988",
+          "generated": "1993\nQuestion: What year was the",
+          "correct": false
+        },
+        {
+          "filename": "20164_1993.txt",
+          "gt_value": "1967",
+          "generated": "1926\nQuestion: What year was the",
+          "correct": false
+        },
+        {
+          "filename": "200245_1993.txt",
+          "gt_value": "1960",
+          "generated": "1960\nQuestion: How many employees did",
+          "correct": true
+        },
+        {
+          "filename": "75527_1993.txt",
+          "gt_value": "1907",
+          "generated": "1907\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "201461_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968\n\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "34285_1993.txt",
+          "gt_value": "1953",
+          "generated": "1953\nQuestion: What year did the",
+          "correct": true
+        },
+        {
+          "filename": "40454_1993.txt",
+          "gt_value": "1946",
+          "generated": "1946\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "17797_1993.txt",
+          "gt_value": "1926",
+          "generated": "1993\nAnswer in one word:",
+          "correct": false
+        },
+        {
+          "filename": "51720_1993.txt",
+          "gt_value": "1925",
+          "generated": "1925\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "728586_1993.txt",
+          "gt_value": "1965",
+          "generated": "1965\n\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "92236_1993.txt",
+          "gt_value": "1973",
+          "generated": "1973\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "91576_1993.txt",
+          "gt_value": "1958",
+          "generated": "1994\nQuestion: What is the company",
+          "correct": false
+        },
+        {
+          "filename": "790603_1993.txt",
+          "gt_value": "1986",
+          "generated": "1986\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "66479_1993.txt",
+          "gt_value": "1954",
+          "generated": "1954\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "100923_1993.txt",
+          "gt_value": "1980",
+          "generated": "1891\nQuestion: What is the name",
+          "correct": false
+        },
+        {
+          "filename": "105839_1993.txt",
+          "gt_value": "1925",
+          "generated": "1925\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "18497_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968\n\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "740763_1993.txt",
+          "gt_value": "1984",
+          "generated": "1984\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "859119_1993.txt",
+          "gt_value": "1989",
+          "generated": "1989\n\nQuestion: What year was the",
+          "correct": true
+        },
+        {
+          "filename": "90185_1993.txt",
+          "gt_value": "1975",
+          "generated": "1975\nQuestion: What year was the",
+          "correct": true
+        },
+        {
+          "filename": "101320_1993.txt",
+          "gt_value": "1970",
+          "generated": "1970\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "4310_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968\nQuestion: What year was the",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "condition": "Compensators only (top 10 compensators, control)",
+      "heads_ablated": [
+        "L25H7",
+        "L25H6",
+        "L23H22",
+        "L25H13",
+        "L23H20",
+        "L23H13",
+        "L17H21",
+        "L24H17",
+        "L22H29",
+        "L24H23"
+      ],
+      "n_heads_ablated": 10,
+      "accuracy": 0.96875,
+      "correct": 31,
+      "total": 32,
+      "sample_results": [
+        {
+          "filename": "66904_1993.txt",
+          "gt_value": "1945",
+          "generated": "1945\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "33798_1993.txt",
+          "gt_value": "1919",
+          "generated": "1919\nQuestion: What year was the",
+          "correct": true
+        },
+        {
+          "filename": "99193_1993.txt",
+          "gt_value": "1931",
+          "generated": "1931\nQuestion: What year was the",
+          "correct": true
+        },
+        {
+          "filename": "800287_1993.txt",
+          "gt_value": "1978",
+          "generated": "1978\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "7323_1993.txt",
+          "gt_value": "1949",
+          "generated": "1949\nQuestion: What year was the",
+          "correct": true
+        },
+        {
+          "filename": "66740_1993.txt",
+          "gt_value": "1929",
+          "generated": "1929\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "67646_1993.txt",
+          "gt_value": "1925",
+          "generated": "1925\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "846972_1993.txt",
+          "gt_value": "1985",
+          "generated": "1985\nQuestion: What year was the",
+          "correct": true
+        },
+        {
+          "filename": "10456_1993.txt",
+          "gt_value": "1931",
+          "generated": "1931\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "814153_1993.txt",
+          "gt_value": "1987",
+          "generated": "1987\nQuestion: What was the name",
+          "correct": true
+        },
+        {
+          "filename": "836400_1993.txt",
+          "gt_value": "1988",
+          "generated": "1988\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "20164_1993.txt",
+          "gt_value": "1967",
+          "generated": "1926\nQuestion: What is the company",
+          "correct": false
+        },
+        {
+          "filename": "200245_1993.txt",
+          "gt_value": "1960",
+          "generated": "1960\nQuestion: What is the full",
+          "correct": true
+        },
+        {
+          "filename": "75527_1993.txt",
+          "gt_value": "1907",
+          "generated": "1907\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "201461_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968\n\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "34285_1993.txt",
+          "gt_value": "1953",
+          "generated": "1953\nQuestion: What year was the",
+          "correct": true
+        },
+        {
+          "filename": "40454_1993.txt",
+          "gt_value": "1946",
+          "generated": "1946\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "17797_1993.txt",
+          "gt_value": "1926",
+          "generated": "1926\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "51720_1993.txt",
+          "gt_value": "1925",
+          "generated": "1925\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "728586_1993.txt",
+          "gt_value": "1965",
+          "generated": "1965\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "92236_1993.txt",
+          "gt_value": "1973",
+          "generated": "1973\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "91576_1993.txt",
+          "gt_value": "1958",
+          "generated": "1958\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "790603_1993.txt",
+          "gt_value": "1986",
+          "generated": "1986\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "66479_1993.txt",
+          "gt_value": "1954",
+          "generated": "1954\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "100923_1993.txt",
+          "gt_value": "1980",
+          "generated": "1980\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "105839_1993.txt",
+          "gt_value": "1925",
+          "generated": "1925\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "18497_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "740763_1993.txt",
+          "gt_value": "1984",
+          "generated": "1984\nQuestion: What is the name",
+          "correct": true
+        },
+        {
+          "filename": "859119_1993.txt",
+          "gt_value": "1989",
+          "generated": "1989\nQuestion: What year was the",
+          "correct": true
+        },
+        {
+          "filename": "90185_1993.txt",
+          "gt_value": "1975",
+          "generated": "1975\nQuestion: What year was the",
+          "correct": true
+        },
+        {
+          "filename": "101320_1993.txt",
+          "gt_value": "1970",
+          "generated": "1970\nQuestion: What is the company",
+          "correct": true
+        },
+        {
+          "filename": "4310_1993.txt",
+          "gt_value": "1968",
+          "generated": "1968\nQuestion: What is the company",
+          "correct": true
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "baseline_acc": 0.96875,
+    "primary_only_acc": 0.84375,
+    "primary_plus_compensator_acc": 0.84375,
+    "compensator_only_acc": 0.96875,
+    "further_drop_from_compensators": 0.0
+  }
+}
